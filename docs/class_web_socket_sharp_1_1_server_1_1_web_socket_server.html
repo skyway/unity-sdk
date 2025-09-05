@@ -1,0 +1,1095 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.Server.WebSocketServer クラス</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_web_socket_sharp_1_1_server_1_1_web_socket_server.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="class_web_socket_sharp_1_1_server_1_1_web_socket_server-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp.Server.WebSocketServer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Provides a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> protocol server.  
+ <a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3a70719d3a8dc8536188bde24a0131f9" id="r_a3a70719d3a8dc8536188bde24a0131f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a70719d3a8dc8536188bde24a0131f9">WebSocketServer</a> ()</td></tr>
+<tr class="memdesc:a3a70719d3a8dc8536188bde24a0131f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class.  <br /></td></tr>
+<tr class="separator:a3a70719d3a8dc8536188bde24a0131f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681c2379294a4430e32cdf0dea978444" id="r_a681c2379294a4430e32cdf0dea978444"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a681c2379294a4430e32cdf0dea978444">WebSocketServer</a> (int port)</td></tr>
+<tr class="memdesc:a681c2379294a4430e32cdf0dea978444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified port.  <br /></td></tr>
+<tr class="separator:a681c2379294a4430e32cdf0dea978444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f3dec09398621dc8b4542507fc3538" id="r_ae3f3dec09398621dc8b4542507fc3538"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3f3dec09398621dc8b4542507fc3538">WebSocketServer</a> (string url)</td></tr>
+<tr class="memdesc:ae3f3dec09398621dc8b4542507fc3538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified URL.  <br /></td></tr>
+<tr class="separator:ae3f3dec09398621dc8b4542507fc3538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77228b0c71a50ac07df968b7295a3651" id="r_a77228b0c71a50ac07df968b7295a3651"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77228b0c71a50ac07df968b7295a3651">WebSocketServer</a> (int port, bool secure)</td></tr>
+<tr class="memdesc:a77228b0c71a50ac07df968b7295a3651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified port and boolean if secure or not.  <br /></td></tr>
+<tr class="separator:a77228b0c71a50ac07df968b7295a3651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f58ef2616335f6837e945bcde12524" id="r_ae1f58ef2616335f6837e945bcde12524"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1f58ef2616335f6837e945bcde12524">WebSocketServer</a> (System.Net.IPAddress address, int port)</td></tr>
+<tr class="memdesc:ae1f58ef2616335f6837e945bcde12524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified IP address and port.  <br /></td></tr>
+<tr class="separator:ae1f58ef2616335f6837e945bcde12524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e483f66b347a98a2b11fe32c2078882" id="r_a0e483f66b347a98a2b11fe32c2078882"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e483f66b347a98a2b11fe32c2078882">WebSocketServer</a> (System.Net.IPAddress address, int port, bool secure)</td></tr>
+<tr class="memdesc:a0e483f66b347a98a2b11fe32c2078882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified IP address, port, and boolean if secure or not.  <br /></td></tr>
+<tr class="separator:a0e483f66b347a98a2b11fe32c2078882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ebb915142f649202303290a8693553" id="r_a69ebb915142f649202303290a8693553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69ebb915142f649202303290a8693553">AddWebSocketService&lt; TBehavior &gt;</a> (string path)</td></tr>
+<tr class="memdesc:a69ebb915142f649202303290a8693553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service with the specified behavior and path.  <br /></td></tr>
+<tr class="separator:a69ebb915142f649202303290a8693553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4793a99325be1361d8f095398ad6ef8" id="r_ab4793a99325be1361d8f095398ad6ef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4793a99325be1361d8f095398ad6ef8">AddWebSocketService&lt; TBehavior &gt;</a> (string path, Action&lt; TBehavior &gt; initializer)</td></tr>
+<tr class="memdesc:ab4793a99325be1361d8f095398ad6ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service with the specified behavior, path, and initializer.  <br /></td></tr>
+<tr class="separator:ab4793a99325be1361d8f095398ad6ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdf0aeee1143c60620f82a3914ad4f0" id="r_acbdf0aeee1143c60620f82a3914ad4f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbdf0aeee1143c60620f82a3914ad4f0">RemoveWebSocketService</a> (string path)</td></tr>
+<tr class="memdesc:acbdf0aeee1143c60620f82a3914ad4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service with the specified path.  <br /></td></tr>
+<tr class="separator:acbdf0aeee1143c60620f82a3914ad4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069ca555b0b947b41ed68735a1baa977" id="r_a069ca555b0b947b41ed68735a1baa977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a069ca555b0b947b41ed68735a1baa977">Start</a> ()</td></tr>
+<tr class="memdesc:a069ca555b0b947b41ed68735a1baa977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts receiving incoming handshake requests.  <br /></td></tr>
+<tr class="separator:a069ca555b0b947b41ed68735a1baa977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0977fb3ad05d5c0387cc6e2d90e88c5e" id="r_a0977fb3ad05d5c0387cc6e2d90e88c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0977fb3ad05d5c0387cc6e2d90e88c5e">Stop</a> ()</td></tr>
+<tr class="memdesc:a0977fb3ad05d5c0387cc6e2d90e88c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops receiving incoming handshake requests.  <br /></td></tr>
+<tr class="separator:a0977fb3ad05d5c0387cc6e2d90e88c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a87b2b351e14de3c986b4fa8f254a3398" id="r_a87b2b351e14de3c986b4fa8f254a3398"><td class="memItemLeft" align="right" valign="top">System.Net.IPAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87b2b351e14de3c986b4fa8f254a3398">Address</a><code> [get]</code></td></tr>
+<tr class="memdesc:a87b2b351e14de3c986b4fa8f254a3398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the IP address of the server.  <br /></td></tr>
+<tr class="separator:a87b2b351e14de3c986b4fa8f254a3398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca889a769ad2a88c93c96c435477696" id="r_a6ca889a769ad2a88c93c96c435477696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_web_socket_sharp_1_1_net.html#ac55d28dd3d89daf0257c802f84db36d8">AuthenticationSchemes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca889a769ad2a88c93c96c435477696">AuthenticationSchemes</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6ca889a769ad2a88c93c96c435477696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the scheme used to authenticate the clients.  <br /></td></tr>
+<tr class="separator:a6ca889a769ad2a88c93c96c435477696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56542076f2f0d73cb1cf844c0ae56758" id="r_a56542076f2f0d73cb1cf844c0ae56758"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56542076f2f0d73cb1cf844c0ae56758">IsListening</a><code> [get]</code></td></tr>
+<tr class="memdesc:a56542076f2f0d73cb1cf844c0ae56758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the server has started.  <br /></td></tr>
+<tr class="separator:a56542076f2f0d73cb1cf844c0ae56758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b02425f5626827c18ab546b2fdbbdc" id="r_a90b02425f5626827c18ab546b2fdbbdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90b02425f5626827c18ab546b2fdbbdc">IsSecure</a><code> [get]</code></td></tr>
+<tr class="memdesc:a90b02425f5626827c18ab546b2fdbbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the server provides secure connections.  <br /></td></tr>
+<tr class="separator:a90b02425f5626827c18ab546b2fdbbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe23bc7a03848165019b051048437176" id="r_afe23bc7a03848165019b051048437176"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe23bc7a03848165019b051048437176">KeepClean</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afe23bc7a03848165019b051048437176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the server cleans up the inactive sessions periodically.  <br /></td></tr>
+<tr class="separator:afe23bc7a03848165019b051048437176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cf9913517f846e43213025f101abe1" id="r_a25cf9913517f846e43213025f101abe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25cf9913517f846e43213025f101abe1">Log</a><code> [get]</code></td></tr>
+<tr class="memdesc:a25cf9913517f846e43213025f101abe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the logging function for the server.  <br /></td></tr>
+<tr class="separator:a25cf9913517f846e43213025f101abe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f5756e8be8b70eadb2fd9cc4154668" id="r_a94f5756e8be8b70eadb2fd9cc4154668"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f5756e8be8b70eadb2fd9cc4154668">Port</a><code> [get]</code></td></tr>
+<tr class="memdesc:a94f5756e8be8b70eadb2fd9cc4154668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the port of the server.  <br /></td></tr>
+<tr class="separator:a94f5756e8be8b70eadb2fd9cc4154668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b04dd72fc586ace31f06b354b30a71e" id="r_a1b04dd72fc586ace31f06b354b30a71e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b04dd72fc586ace31f06b354b30a71e">Realm</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1b04dd72fc586ace31f06b354b30a71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the realm associated with the server.  <br /></td></tr>
+<tr class="separator:a1b04dd72fc586ace31f06b354b30a71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcb100693dd7e04236cd65b5f1ccb08" id="r_a3fcb100693dd7e04236cd65b5f1ccb08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fcb100693dd7e04236cd65b5f1ccb08">ReuseAddress</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3fcb100693dd7e04236cd65b5f1ccb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the server is allowed to be bound to an address that is already in use.  <br /></td></tr>
+<tr class="separator:a3fcb100693dd7e04236cd65b5f1ccb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8796162e5bc665b67b9adcb52b6dcc1" id="r_ac8796162e5bc665b67b9adcb52b6dcc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_server_ssl_configuration.html">ServerSslConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8796162e5bc665b67b9adcb52b6dcc1">SslConfiguration</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac8796162e5bc665b67b9adcb52b6dcc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the configuration for secure connection.  <br /></td></tr>
+<tr class="separator:ac8796162e5bc665b67b9adcb52b6dcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6ba933ed4ab3c3d307124bc78485f2" id="r_a0a6ba933ed4ab3c3d307124bc78485f2"><td class="memItemLeft" align="right" valign="top">Func&lt; IIdentity, <a class="el" href="class_web_socket_sharp_1_1_net_1_1_network_credential.html">NetworkCredential</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6ba933ed4ab3c3d307124bc78485f2">UserCredentialsFinder</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0a6ba933ed4ab3c3d307124bc78485f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the delegate called to find the credentials for an identity used to authenticate a client.  <br /></td></tr>
+<tr class="separator:a0a6ba933ed4ab3c3d307124bc78485f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a19f38fe957eca09604b5c527d71005" id="r_a9a19f38fe957eca09604b5c527d71005"><td class="memItemLeft" align="right" valign="top">TimeSpan&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a19f38fe957eca09604b5c527d71005">WaitTime</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9a19f38fe957eca09604b5c527d71005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the time to wait for the response to the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> Ping or Close.  <br /></td></tr>
+<tr class="separator:a9a19f38fe957eca09604b5c527d71005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f93f5ffd09a71e7eb6105fc82777a4" id="r_ae8f93f5ffd09a71e7eb6105fc82777a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_service_manager.html">WebSocketServiceManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8f93f5ffd09a71e7eb6105fc82777a4">WebSocketServices</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae8f93f5ffd09a71e7eb6105fc82777a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the management function for the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> services provided by the server.  <br /></td></tr>
+<tr class="separator:ae8f93f5ffd09a71e7eb6105fc82777a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Provides a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> protocol server. </p>
+<p>This class can provide multiple <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> services. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a3a70719d3a8dc8536188bde24a0131f9" name="a3a70719d3a8dc8536188bde24a0131f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a70719d3a8dc8536188bde24a0131f9">&#9670;&#160;</a></span>WebSocketServer() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServer.WebSocketServer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class. </p>
+<p>The new instance listens for incoming handshake requests on System.Net.IPAddress.Any and port 80. </p>
+
+</div>
+</div>
+<a id="a681c2379294a4430e32cdf0dea978444" name="a681c2379294a4430e32cdf0dea978444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681c2379294a4430e32cdf0dea978444">&#9670;&#160;</a></span>WebSocketServer() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServer.WebSocketServer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified port. </p>
+<p>The new instance listens for incoming handshake requests on System.Net.IPAddress.Any and <em>port</em> . </p>
+<p>It provides secure connections if <em>port</em>  is 443. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>An int that specifies the number of the port on which to listen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>port</em>  is less than 1 or greater than 65535. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3f3dec09398621dc8b4542507fc3538" name="ae3f3dec09398621dc8b4542507fc3538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f3dec09398621dc8b4542507fc3538">&#9670;&#160;</a></span>WebSocketServer() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServer.WebSocketServer </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>url</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified URL. </p>
+<p>The new instance listens for incoming handshake requests on the IP address and port of <em>url</em> . </p>
+<p>Either port 80 or 443 is used if <em>url</em>  includes no port. Port 443 is used if the scheme of <em>url</em>  is wss; otherwise, port 80 is used. </p>
+<p>The new instance provides secure connections if the scheme of <em>url</em>  is wss. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>A string that specifies the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> URL of the server. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>url</em>  is an empty string. -or- <em>url</em>  is invalid. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>url</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a77228b0c71a50ac07df968b7295a3651" name="a77228b0c71a50ac07df968b7295a3651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77228b0c71a50ac07df968b7295a3651">&#9670;&#160;</a></span>WebSocketServer() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServer.WebSocketServer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>secure</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified port and boolean if secure or not. </p>
+<p>The new instance listens for incoming handshake requests on System.Net.IPAddress.Any and <em>port</em> . </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>An int that specifies the number of the port on which to listen. </td></tr>
+    <tr><td class="paramname">secure</td><td>A bool: <code>true</code> if the new instance provides secure connections; otherwise, <code>false</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>port</em>  is less than 1 or greater than 65535. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1f58ef2616335f6837e945bcde12524" name="ae1f58ef2616335f6837e945bcde12524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f58ef2616335f6837e945bcde12524">&#9670;&#160;</a></span>WebSocketServer() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServer.WebSocketServer </td>
+          <td>(</td>
+          <td class="paramtype">System.Net.IPAddress</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified IP address and port. </p>
+<p>The new instance listens for incoming handshake requests on <em>address</em>  and <em>port</em> . </p>
+<p>It provides secure connections if <em>port</em>  is 443. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>A System.Net.IPAddress that specifies the local IP address on which to listen. </td></tr>
+    <tr><td class="paramname">port</td><td>An int that specifies the number of the port on which to listen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>address</em>  is not a local IP address. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>address</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>port</em>  is less than 1 or greater than 65535. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e483f66b347a98a2b11fe32c2078882" name="a0e483f66b347a98a2b11fe32c2078882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e483f66b347a98a2b11fe32c2078882">&#9670;&#160;</a></span>WebSocketServer() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServer.WebSocketServer </td>
+          <td>(</td>
+          <td class="paramtype">System.Net.IPAddress</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>secure</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html" title="Provides a WebSocket protocol server.">WebSocketServer</a> class with the specified IP address, port, and boolean if secure or not. </p>
+<p>The new instance listens for incoming handshake requests on <em>address</em>  and <em>port</em> . </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>A System.Net.IPAddress that specifies the local IP address on which to listen. </td></tr>
+    <tr><td class="paramname">port</td><td>An int that specifies the number of the port on which to listen. </td></tr>
+    <tr><td class="paramname">secure</td><td>A bool: <code>true</code> if the new instance provides secure connections; otherwise, <code>false</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>address</em>  is not a local IP address. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>address</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>port</em>  is less than 1 or greater than 65535. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a69ebb915142f649202303290a8693553" name="a69ebb915142f649202303290a8693553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ebb915142f649202303290a8693553">&#9670;&#160;</a></span>AddWebSocketService&lt; TBehavior &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Server.WebSocketServer.AddWebSocketService&lt; TBehavior &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service with the specified behavior and path. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A string that specifies an absolute path to the service to add. / is trimmed from the end of the string if present. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TBehavior</td><td>The type of the behavior for the service. It must inherit the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_behavior.html" title="Exposes a set of methods and properties used to define the behavior of a WebSocket service provided b...">WebSocketBehavior</a> class. Also it must have a public parameterless constructor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>path</em>  is an empty string. -or- <em>path</em>  is not an absolute path. -or- <em>path</em>  includes either or both query and fragment components. -or- <em>path</em>  is already in use. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>path</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="typeconstraint">
+<dl><dt><b>型制約</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TBehavior</em></td><td>&#160;:</td><td valign="top"><em>WebSocketBehavior</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>TBehavior</em></td><td>&#160;:</td><td valign="top"><em>new</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a id="ab4793a99325be1361d8f095398ad6ef8" name="ab4793a99325be1361d8f095398ad6ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4793a99325be1361d8f095398ad6ef8">&#9670;&#160;</a></span>AddWebSocketService&lt; TBehavior &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Server.WebSocketServer.AddWebSocketService&lt; TBehavior &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; TBehavior &gt;</td>          <td class="paramname"><span class="paramname"><em>initializer</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service with the specified behavior, path, and initializer. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A string that specifies an absolute path to the service to add. / is trimmed from the end of the string if present. </td></tr>
+    <tr><td class="paramname">initializer</td><td>An T:System.Action&lt;TBehavior&gt; delegate. It specifies the delegate called when the service initializes a new session instance. <code>null</code> if not necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TBehavior</td><td>The type of the behavior for the service. It must inherit the <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_behavior.html" title="Exposes a set of methods and properties used to define the behavior of a WebSocket service provided b...">WebSocketBehavior</a> class. Also it must have a public parameterless constructor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>path</em>  is an empty string. -or- <em>path</em>  is not an absolute path. -or- <em>path</em>  includes either or both query and fragment components. -or- <em>path</em>  is already in use. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>path</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="typeconstraint">
+<dl><dt><b>型制約</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>TBehavior</em></td><td>&#160;:</td><td valign="top"><em>WebSocketBehavior</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>TBehavior</em></td><td>&#160;:</td><td valign="top"><em>new</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a id="acbdf0aeee1143c60620f82a3914ad4f0" name="acbdf0aeee1143c60620f82a3914ad4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbdf0aeee1143c60620f82a3914ad4f0">&#9670;&#160;</a></span>RemoveWebSocketService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Server.WebSocketServer.RemoveWebSocketService </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service with the specified path. </p>
+<p>The service is stopped with close status 1001 (going away) if the current state of the service is Start. </p>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if the service is successfully found and removed; otherwise, <code>false</code>. </dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A string that specifies an absolute path to the service to remove. / is trimmed from the end of the string if present. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>path</em>  is an empty string. -or- <em>path</em>  is not an absolute path. -or- <em>path</em>  includes either or both query and fragment components. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>path</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a069ca555b0b947b41ed68735a1baa977" name="a069ca555b0b947b41ed68735a1baa977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069ca555b0b947b41ed68735a1baa977">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Server.WebSocketServer.Start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts receiving incoming handshake requests. </p>
+<p>This method works if the current state of the server is Ready or Stop. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>There is no server certificate for secure connection. -or- The underlying TcpListener has failed to start. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0977fb3ad05d5c0387cc6e2d90e88c5e" name="a0977fb3ad05d5c0387cc6e2d90e88c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0977fb3ad05d5c0387cc6e2d90e88c5e">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Server.WebSocketServer.Stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops receiving incoming handshake requests. </p>
+<p>This method works if the current state of the server is Start. </p>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a87b2b351e14de3c986b4fa8f254a3398" name="a87b2b351e14de3c986b4fa8f254a3398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b2b351e14de3c986b4fa8f254a3398">&#9670;&#160;</a></span>Address</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Net.IPAddress WebSocketSharp.Server.WebSocketServer.Address</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the IP address of the server. </p>
+<p>A System.Net.IPAddress that represents the local IP address on which to listen for incoming handshake requests. </p>
+
+</div>
+</div>
+<a id="a6ca889a769ad2a88c93c96c435477696" name="a6ca889a769ad2a88c93c96c435477696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca889a769ad2a88c93c96c435477696">&#9670;&#160;</a></span>AuthenticationSchemes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_web_socket_sharp_1_1_net.html#ac55d28dd3d89daf0257c802f84db36d8">AuthenticationSchemes</a> WebSocketSharp.Server.WebSocketServer.AuthenticationSchemes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the scheme used to authenticate the clients. </p>
+<p>The set operation works if the current state of the server is Ready or Stop. </p>
+<p>One of the <a class="el" href="namespace_web_socket_sharp_1_1_net.html#ac55d28dd3d89daf0257c802f84db36d8" title="Specifies the scheme for authentication.">WebSocketSharp.Net.AuthenticationSchemes</a> enum values. </p>
+<p>It represents the scheme used to authenticate the clients. </p>
+<p>The default value is <a class="el" href="namespace_web_socket_sharp_1_1_net.html#ac55d28dd3d89daf0257c802f84db36d8a7079c72c21415131774625ba1d64f4b0" title="Specifies anonymous authentication.">WebSocketSharp.Net.AuthenticationSchemes.Anonymous</a>. </p>
+
+</div>
+</div>
+<a id="a56542076f2f0d73cb1cf844c0ae56758" name="a56542076f2f0d73cb1cf844c0ae56758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56542076f2f0d73cb1cf844c0ae56758">&#9670;&#160;</a></span>IsListening</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Server.WebSocketServer.IsListening</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the server has started. </p>
+<p><code>true</code> if the server has started; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a90b02425f5626827c18ab546b2fdbbdc" name="a90b02425f5626827c18ab546b2fdbbdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b02425f5626827c18ab546b2fdbbdc">&#9670;&#160;</a></span>IsSecure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Server.WebSocketServer.IsSecure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the server provides secure connections. </p>
+<p><code>true</code> if the server provides secure connections; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="afe23bc7a03848165019b051048437176" name="afe23bc7a03848165019b051048437176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe23bc7a03848165019b051048437176">&#9670;&#160;</a></span>KeepClean</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Server.WebSocketServer.KeepClean</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the server cleans up the inactive sessions periodically. </p>
+<p>The set operation works if the current state of the server is Ready or Stop. </p>
+<p><code>true</code> if the server cleans up the inactive sessions every 60 seconds; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a25cf9913517f846e43213025f101abe1" name="a25cf9913517f846e43213025f101abe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25cf9913517f846e43213025f101abe1">&#9670;&#160;</a></span>Log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a> WebSocketSharp.Server.WebSocketServer.Log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the logging function for the server. </p>
+<p>The default logging level is <a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84dba902b0d55fddef6f8d651fe1035b7d4bd" title="Specifies the 2nd logging level from the top.">LogLevel.Error</a>. </p>
+<p>A <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> that provides the logging function. </p>
+
+</div>
+</div>
+<a id="a94f5756e8be8b70eadb2fd9cc4154668" name="a94f5756e8be8b70eadb2fd9cc4154668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f5756e8be8b70eadb2fd9cc4154668">&#9670;&#160;</a></span>Port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WebSocketSharp.Server.WebSocketServer.Port</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the port of the server. </p>
+<p>An int that represents the number of the port on which to listen for incoming handshake requests. </p>
+
+</div>
+</div>
+<a id="a1b04dd72fc586ace31f06b354b30a71e" name="a1b04dd72fc586ace31f06b354b30a71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b04dd72fc586ace31f06b354b30a71e">&#9670;&#160;</a></span>Realm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Server.WebSocketServer.Realm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the name of the realm associated with the server. </p>
+<p>The set operation works if the current state of the server is Ready or Stop. </p>
+<p>A string that represents the name of the realm. </p>
+<p>"SECRET AREA" is used as the name of the realm if the value is <code>null</code> or an empty string. </p>
+<p>The default value is <code>null</code>. </p>
+
+</div>
+</div>
+<a id="a3fcb100693dd7e04236cd65b5f1ccb08" name="a3fcb100693dd7e04236cd65b5f1ccb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcb100693dd7e04236cd65b5f1ccb08">&#9670;&#160;</a></span>ReuseAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Server.WebSocketServer.ReuseAddress</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the server is allowed to be bound to an address that is already in use. </p>
+<p>You should set this property to <code>true</code> if you would like to resolve to wait for socket in TIME_WAIT state. </p>
+<p>The set operation works if the current state of the server is Ready or Stop. </p>
+<p><code>true</code> if the server is allowed to be bound to an address that is already in use; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="ac8796162e5bc665b67b9adcb52b6dcc1" name="ac8796162e5bc665b67b9adcb52b6dcc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8796162e5bc665b67b9adcb52b6dcc1">&#9670;&#160;</a></span>SslConfiguration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_server_ssl_configuration.html">ServerSslConfiguration</a> WebSocketSharp.Server.WebSocketServer.SslConfiguration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the configuration for secure connection. </p>
+<p>The configuration is used when the server attempts to start, so it must be configured before the start method is called. </p>
+<p>A ServerSslConfiguration that represents the configuration used to provide secure connections. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The server does not provide secure connections. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a6ba933ed4ab3c3d307124bc78485f2" name="a0a6ba933ed4ab3c3d307124bc78485f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6ba933ed4ab3c3d307124bc78485f2">&#9670;&#160;</a></span>UserCredentialsFinder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Func&lt;IIdentity, <a class="el" href="class_web_socket_sharp_1_1_net_1_1_network_credential.html">NetworkCredential</a>&gt; WebSocketSharp.Server.WebSocketServer.UserCredentialsFinder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the delegate called to find the credentials for an identity used to authenticate a client. </p>
+<p>The set operation works if the current state of the server is Ready or Stop. </p>
+<p>A T:System.Func&lt;IIdentity, NetworkCredential&gt; delegate. </p>
+<p>It represents the delegate called when the server finds the credentials used to authenticate a client. </p>
+<p>It must return <code>null</code> if the credentials are not found. </p>
+<p><code>null</code> if not necessary. </p>
+<p>The default value is <code>null</code>. </p>
+
+</div>
+</div>
+<a id="a9a19f38fe957eca09604b5c527d71005" name="a9a19f38fe957eca09604b5c527d71005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a19f38fe957eca09604b5c527d71005">&#9670;&#160;</a></span>WaitTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeSpan WebSocketSharp.Server.WebSocketServer.WaitTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the time to wait for the response to the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> Ping or Close. </p>
+<p>The set operation works if the current state of the server is Ready or Stop. </p>
+<p>A TimeSpan that represents the time to wait for the response. </p>
+<p>The default value is the same as 1 second. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The value specified for a set operation is zero or less. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8f93f5ffd09a71e7eb6105fc82777a4" name="ae8f93f5ffd09a71e7eb6105fc82777a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f93f5ffd09a71e7eb6105fc82777a4">&#9670;&#160;</a></span>WebSocketServices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_service_manager.html">WebSocketServiceManager</a> WebSocketSharp.Server.WebSocketServer.WebSocketServices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the management function for the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> services provided by the server. </p>
+<p>A <a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_service_manager.html" title="Provides the management function for the WebSocket services.">WebSocketServiceManager</a> that manages the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> services provided by the server. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SkyWayUnitySDK/Assets/SkyWay/Scripts/Deps/websocket-sharp/websocket-sharp/Server/<b>WebSocketServer.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a class="el" href="namespace_web_socket_sharp_1_1_server.html">Server</a></li><li class="navelem"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_server.html">WebSocketServer</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

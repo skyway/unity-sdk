@@ -1,0 +1,409 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp 名前空間</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespace_web_socket_sharp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp 名前空間</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_close_event_args.html">CloseEventArgs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the event data for the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html#a974fdf6d13561300388752ff5fcf697a" title="Occurs when the connection has been closed.">WebSocket.OnClose</a> event.  <a href="class_web_socket_sharp_1_1_close_event_args.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_error_event_args.html">ErrorEventArgs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the event data for the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html#ad67517b9fdd480f4f69d67f85944ca18" title="Occurs when the interface gets an error.">WebSocket.OnError</a> event.  <a href="class_web_socket_sharp_1_1_error_event_args.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_ext.html">Ext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a set of static methods for websocket-sharp.  <a href="class_web_socket_sharp_1_1_ext.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_log_data.html">LogData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a log data used by the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class.  <a href="class_web_socket_sharp_1_1_log_data.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a set of methods and properties for logging.  <a href="class_web_socket_sharp_1_1_logger.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_message_event_args.html">MessageEventArgs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the event data for the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html#a9acf3d15bd8d7daec52e29a5871dc652" title="Occurs when the interface receives a message.">WebSocket.OnMessage</a> event.  <a href="class_web_socket_sharp_1_1_message_event_args.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_web_socket.html">WebSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface.  <a href="class_web_socket_sharp_1_1_web_socket.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_web_socket_exception.html">WebSocketException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exception that is thrown when a fatal error occurs in the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> communication.  <a href="class_web_socket_sharp_1_1_web_socket_exception.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:aa1c9d89edcef3b8be8434c888d2bd3b7" id="r_aa1c9d89edcef3b8be8434c888d2bd3b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c9d89edcef3b8be8434c888d2bd3b7">ByteOrder</a> { <a class="el" href="#aa1c9d89edcef3b8be8434c888d2bd3b7a0f9197b3e286a7522984831949087332">Little</a>
+, <a class="el" href="#aa1c9d89edcef3b8be8434c888d2bd3b7ad491538da818a2ba11a3195ba035cfd3">Big</a>
+ }</td></tr>
+<tr class="memdesc:aa1c9d89edcef3b8be8434c888d2bd3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the byte order.  <a href="#aa1c9d89edcef3b8be8434c888d2bd3b7">[詳解]</a><br /></td></tr>
+<tr class="separator:aa1c9d89edcef3b8be8434c888d2bd3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30cb7538a7cd1d1d520cf1b1ecb5842c" id="r_a30cb7538a7cd1d1d520cf1b1ecb5842c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a> : ushort { <br />
+&#160;&#160;<a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca960b44c579bc2f6818d2daaf9e4c16f0">Normal</a> = 1000
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca312dc56ea9c386a6bc913f988a233791">Away</a> = 1001
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842caca3da8f495e4e628912a7798655da6c2">ProtocolError</a> = 1002
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842caa63d4c1207867216c93e257bfa05e818">UnsupportedData</a> = 1003
+, <br />
+&#160;&#160;<a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842caec0fc0100c4fc1ce4eea230c3dc10360">Undefined</a> = 1004
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca2c1303eeef311e5528208cf16767d135">NoStatus</a> = 1005
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca017de7df4f95842346dbc2edee37b9c7">Abnormal</a> = 1006
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca3c4b6828f5a12280debdb5a12e0e72ba">InvalidData</a> = 1007
+, <br />
+&#160;&#160;<a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842caaee43f65108573ca863298db0692a4f1">PolicyViolation</a> = 1008
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842cacf62b04bcfe3a8f8be1b68b0f897712f">TooBig</a> = 1009
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2">MandatoryExtension</a> = 1010
+, <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9">ServerError</a> = 1011
+, <br />
+&#160;&#160;<a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842ca8ff23aa17d14126bd0f822396e07bff8">TlsHandshakeFailure</a> = 1015
+<br />
+ }</td></tr>
+<tr class="memdesc:a30cb7538a7cd1d1d520cf1b1ecb5842c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the status code for the WebSocket connection close.  <a href="#a30cb7538a7cd1d1d520cf1b1ecb5842c">[詳解]</a><br /></td></tr>
+<tr class="separator:a30cb7538a7cd1d1d520cf1b1ecb5842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab331f7541737191a8f20131ee8fa37d0" id="r_ab331f7541737191a8f20131ee8fa37d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab331f7541737191a8f20131ee8fa37d0">CompressionMethod</a> : byte { <a class="el" href="#ab331f7541737191a8f20131ee8fa37d0a6adf97f83acf6453d4a6a4b1070f3754">None</a>
+, <a class="el" href="#ab331f7541737191a8f20131ee8fa37d0ae2430ff724c45c3d68893fb1a3584426">Deflate</a>
+ }</td></tr>
+<tr class="memdesc:ab331f7541737191a8f20131ee8fa37d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the method for compression.  <a href="#ab331f7541737191a8f20131ee8fa37d0">[詳解]</a><br /></td></tr>
+<tr class="separator:ab331f7541737191a8f20131ee8fa37d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7975f130c9b09a51ac5dd65eea7c84db" id="r_a7975f130c9b09a51ac5dd65eea7c84db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a> { <br />
+&#160;&#160;<a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dbadd4ec0ac4e58f7c32a01244ae91150b1">Trace</a>
+, <a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dbaa603905470e2a5b8c13e96b579ef0dba">Debug</a>
+, <a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dba4059b0251f66a18cb56f544728796875">Info</a>
+, <a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dba56525ae64d370c0b448ac0d60710ef17">Warn</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dba902b0d55fddef6f8d651fe1035b7d4bd">Error</a>
+, <a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dba882384ec38ce8d9582b57e70861730e4">Fatal</a>
+, <a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84dba6adf97f83acf6453d4a6a4b1070f3754">None</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7975f130c9b09a51ac5dd65eea7c84db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the logging level.  <a href="#a7975f130c9b09a51ac5dd65eea7c84db">[詳解]</a><br /></td></tr>
+<tr class="separator:a7975f130c9b09a51ac5dd65eea7c84db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a7a50f3383860d695305a031401296" id="r_ac9a7a50f3383860d695305a031401296"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a7a50f3383860d695305a031401296">WebSocketState</a> : ushort { <br />
+&#160;&#160;<a class="el" href="#ac9a7a50f3383860d695305a031401296a03c2e7e41ffc181a4e84080b4710e81e">New</a> = 0
+, <a class="el" href="#ac9a7a50f3383860d695305a031401296ae321c53b354930ba96f0243e652df458">Connecting</a> = 1
+, <a class="el" href="#ac9a7a50f3383860d695305a031401296ac3bf447eabe632720a3aa1a7ce401274">Open</a> = 2
+, <a class="el" href="#ac9a7a50f3383860d695305a031401296a5c8de6f894682fdb1786037b2040a26e">Closing</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#ac9a7a50f3383860d695305a031401296a03f4a47830f97377a35321051685071e">Closed</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ac9a7a50f3383860d695305a031401296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the state of the WebSocket interface.  <a href="#ac9a7a50f3383860d695305a031401296">[詳解]</a><br /></td></tr>
+<tr class="separator:ac9a7a50f3383860d695305a031401296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="aa1c9d89edcef3b8be8434c888d2bd3b7" name="aa1c9d89edcef3b8be8434c888d2bd3b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c9d89edcef3b8be8434c888d2bd3b7">&#9670;&#160;</a></span>ByteOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa1c9d89edcef3b8be8434c888d2bd3b7">WebSocketSharp.ByteOrder</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the byte order. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aa1c9d89edcef3b8be8434c888d2bd3b7a0f9197b3e286a7522984831949087332" name="aa1c9d89edcef3b8be8434c888d2bd3b7a0f9197b3e286a7522984831949087332"></a>Little&#160;</td><td class="fielddoc"><p>Specifies Little-endian. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa1c9d89edcef3b8be8434c888d2bd3b7ad491538da818a2ba11a3195ba035cfd3" name="aa1c9d89edcef3b8be8434c888d2bd3b7ad491538da818a2ba11a3195ba035cfd3"></a>Big&#160;</td><td class="fielddoc"><p>Specifies Big-endian. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a30cb7538a7cd1d1d520cf1b1ecb5842c" name="a30cb7538a7cd1d1d520cf1b1ecb5842c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30cb7538a7cd1d1d520cf1b1ecb5842c">&#9670;&#160;</a></span>CloseStatusCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a30cb7538a7cd1d1d520cf1b1ecb5842c">WebSocketSharp.CloseStatusCode</a> : ushort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the status code for the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> connection close. </p>
+<p>The values of this enumeration are defined in  Section 7.4</p>
+<p>of RFC 6455. </p>
+<p>"Reserved value" cannot be sent as a status code in closing handshake by an endpoint. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca960b44c579bc2f6818d2daaf9e4c16f0" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"><p>Equivalent to close status 1000. Indicates normal close. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca312dc56ea9c386a6bc913f988a233791" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca312dc56ea9c386a6bc913f988a233791"></a>Away&#160;</td><td class="fielddoc"><p>Equivalent to close status 1001. Indicates that an endpoint is going away. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842caca3da8f495e4e628912a7798655da6c2" name="a30cb7538a7cd1d1d520cf1b1ecb5842caca3da8f495e4e628912a7798655da6c2"></a>ProtocolError&#160;</td><td class="fielddoc"><p>Equivalent to close status 1002. Indicates that an endpoint is terminating the connection due to a protocol error. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842caa63d4c1207867216c93e257bfa05e818" name="a30cb7538a7cd1d1d520cf1b1ecb5842caa63d4c1207867216c93e257bfa05e818"></a>UnsupportedData&#160;</td><td class="fielddoc"><p>Equivalent to close status 1003. Indicates that an endpoint is terminating the connection because it has received a type of data that it cannot accept. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842caec0fc0100c4fc1ce4eea230c3dc10360" name="a30cb7538a7cd1d1d520cf1b1ecb5842caec0fc0100c4fc1ce4eea230c3dc10360"></a>Undefined&#160;</td><td class="fielddoc"><p>Equivalent to close status 1004. Still undefined. A Reserved value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca2c1303eeef311e5528208cf16767d135" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca2c1303eeef311e5528208cf16767d135"></a>NoStatus&#160;</td><td class="fielddoc"><p>Equivalent to close status 1005. Indicates that no status code was actually present. A Reserved value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca017de7df4f95842346dbc2edee37b9c7" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca017de7df4f95842346dbc2edee37b9c7"></a>Abnormal&#160;</td><td class="fielddoc"><p>Equivalent to close status 1006. Indicates that the connection was closed abnormally. A Reserved value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca3c4b6828f5a12280debdb5a12e0e72ba" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca3c4b6828f5a12280debdb5a12e0e72ba"></a>InvalidData&#160;</td><td class="fielddoc"><p>Equivalent to close status 1007. Indicates that an endpoint is terminating the connection because it has received a message that contains data that is not consistent with the type of the message. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842caaee43f65108573ca863298db0692a4f1" name="a30cb7538a7cd1d1d520cf1b1ecb5842caaee43f65108573ca863298db0692a4f1"></a>PolicyViolation&#160;</td><td class="fielddoc"><p>Equivalent to close status 1008. Indicates that an endpoint is terminating the connection because it has received a message that violates its policy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842cacf62b04bcfe3a8f8be1b68b0f897712f" name="a30cb7538a7cd1d1d520cf1b1ecb5842cacf62b04bcfe3a8f8be1b68b0f897712f"></a>TooBig&#160;</td><td class="fielddoc"><p>Equivalent to close status 1009. Indicates that an endpoint is terminating the connection because it has received a message that is too big to process. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2" name="a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2"></a>MandatoryExtension&#160;</td><td class="fielddoc"><p>Equivalent to close status 1010. Indicates that a client is terminating the connection because it has expected the server to negotiate one or more extension, but the server did not return them in the handshake response. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9"></a>ServerError&#160;</td><td class="fielddoc"><p>Equivalent to close status 1011. Indicates that a server is terminating the connection because it has encountered an unexpected condition that prevented it from fulfilling the request. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a30cb7538a7cd1d1d520cf1b1ecb5842ca8ff23aa17d14126bd0f822396e07bff8" name="a30cb7538a7cd1d1d520cf1b1ecb5842ca8ff23aa17d14126bd0f822396e07bff8"></a>TlsHandshakeFailure&#160;</td><td class="fielddoc"><p>Equivalent to close status 1015. Indicates that the connection was closed due to a failure to perform a TLS handshake. A Reserved value. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab331f7541737191a8f20131ee8fa37d0" name="ab331f7541737191a8f20131ee8fa37d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab331f7541737191a8f20131ee8fa37d0">&#9670;&#160;</a></span>CompressionMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ab331f7541737191a8f20131ee8fa37d0">WebSocketSharp.CompressionMethod</a> : byte</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the method for compression. </p>
+<p>The methods are defined in  Compression Extensions for <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a></p>
+<p>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ab331f7541737191a8f20131ee8fa37d0a6adf97f83acf6453d4a6a4b1070f3754" name="ab331f7541737191a8f20131ee8fa37d0a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>Specifies no compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab331f7541737191a8f20131ee8fa37d0ae2430ff724c45c3d68893fb1a3584426" name="ab331f7541737191a8f20131ee8fa37d0ae2430ff724c45c3d68893fb1a3584426"></a>Deflate&#160;</td><td class="fielddoc"><p>Specifies DEFLATE. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7975f130c9b09a51ac5dd65eea7c84db" name="a7975f130c9b09a51ac5dd65eea7c84db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7975f130c9b09a51ac5dd65eea7c84db">&#9670;&#160;</a></span>LogLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a7975f130c9b09a51ac5dd65eea7c84db">WebSocketSharp.LogLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the logging level. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dbadd4ec0ac4e58f7c32a01244ae91150b1" name="a7975f130c9b09a51ac5dd65eea7c84dbadd4ec0ac4e58f7c32a01244ae91150b1"></a>Trace&#160;</td><td class="fielddoc"><p>Specifies the bottom logging level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dbaa603905470e2a5b8c13e96b579ef0dba" name="a7975f130c9b09a51ac5dd65eea7c84dbaa603905470e2a5b8c13e96b579ef0dba"></a>Debug&#160;</td><td class="fielddoc"><p>Specifies the 2nd logging level from the bottom. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dba4059b0251f66a18cb56f544728796875" name="a7975f130c9b09a51ac5dd65eea7c84dba4059b0251f66a18cb56f544728796875"></a>Info&#160;</td><td class="fielddoc"><p>Specifies the 3rd logging level from the bottom. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dba56525ae64d370c0b448ac0d60710ef17" name="a7975f130c9b09a51ac5dd65eea7c84dba56525ae64d370c0b448ac0d60710ef17"></a>Warn&#160;</td><td class="fielddoc"><p>Specifies the 3rd logging level from the top. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dba902b0d55fddef6f8d651fe1035b7d4bd" name="a7975f130c9b09a51ac5dd65eea7c84dba902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc"><p>Specifies the 2nd logging level from the top. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dba882384ec38ce8d9582b57e70861730e4" name="a7975f130c9b09a51ac5dd65eea7c84dba882384ec38ce8d9582b57e70861730e4"></a>Fatal&#160;</td><td class="fielddoc"><p>Specifies the top logging level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7975f130c9b09a51ac5dd65eea7c84dba6adf97f83acf6453d4a6a4b1070f3754" name="a7975f130c9b09a51ac5dd65eea7c84dba6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>Specifies not to output logs. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac9a7a50f3383860d695305a031401296" name="ac9a7a50f3383860d695305a031401296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a7a50f3383860d695305a031401296">&#9670;&#160;</a></span>WebSocketState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac9a7a50f3383860d695305a031401296">WebSocketSharp.WebSocketState</a> : ushort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the state of the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ac9a7a50f3383860d695305a031401296a03c2e7e41ffc181a4e84080b4710e81e" name="ac9a7a50f3383860d695305a031401296a03c2e7e41ffc181a4e84080b4710e81e"></a>New&#160;</td><td class="fielddoc"><p>Equivalent to numeric value 0. Indicates that a new interface has been created. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9a7a50f3383860d695305a031401296ae321c53b354930ba96f0243e652df458" name="ac9a7a50f3383860d695305a031401296ae321c53b354930ba96f0243e652df458"></a>Connecting&#160;</td><td class="fielddoc"><p>Equivalent to numeric value 1. Indicates that the connect process is in progress. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9a7a50f3383860d695305a031401296ac3bf447eabe632720a3aa1a7ce401274" name="ac9a7a50f3383860d695305a031401296ac3bf447eabe632720a3aa1a7ce401274"></a>Open&#160;</td><td class="fielddoc"><p>Equivalent to numeric value 2. Indicates that the connection has been established and the communication is possible. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9a7a50f3383860d695305a031401296a5c8de6f894682fdb1786037b2040a26e" name="ac9a7a50f3383860d695305a031401296a5c8de6f894682fdb1786037b2040a26e"></a>Closing&#160;</td><td class="fielddoc"><p>Equivalent to numeric value 3. Indicates that the close process is in progress. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac9a7a50f3383860d695305a031401296a03f4a47830f97377a35321051685071e" name="ac9a7a50f3383860d695305a031401296a03f4a47830f97377a35321051685071e"></a>Closed&#160;</td><td class="fielddoc"><p>Equivalent to numeric value 4. Indicates that the connection has been closed or could not be established. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

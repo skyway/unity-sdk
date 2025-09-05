@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['find_0',['Find',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_p2_p_room.html#a1436708309323aea6dfa8633a0d01ab0',1,'Com.Ntt.SkyWay.Room.SWP2PRoom.Find()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_s_f_u_room.html#a02c11de1ab0b83a69019d9b7990ce3d1',1,'Com.Ntt.SkyWay.Room.SWSFURoom.Find()']]],
-  ['findorcreate_1',['FindOrCreate',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_p2_p_room.html#a4ca30a9ab0b63e80a275576dae7f564f',1,'Com.Ntt.SkyWay.Room.SWP2PRoom.FindOrCreate()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_s_f_u_room.html#a70c145712051b1fa17416824962f0598',1,'Com.Ntt.SkyWay.Room.SWSFURoom.FindOrCreate()']]]
+  ['debug_0',['Debug',['../class_web_socket_sharp_1_1_logger.html#ad1921a540cc99c610a0010e7916611b6',1,'WebSocketSharp::Logger']]],
+  ['disable_1',['Disable',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room_publication.html#a08a1df1960002197774b3c13654efa2f',1,'Com::Ntt::SkyWay::Room::SWRoomPublication']]],
+  ['dispose_2',['Dispose',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_video_source.html#a8d84c1765ba034230646d08d566d4b21',1,'Com.Ntt.SkyWay.Core.SWVideoSource.Dispose()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a67c8c13077c867eb51da6feb454799a1',1,'Com.Ntt.SkyWay.Core.SWContext.Dispose()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a044ac638f752350b792c9a0c275cee91',1,'Com.Ntt.SkyWay.Room.SWRoom.Dispose()']]]
 ];

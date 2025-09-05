@@ -1,0 +1,717 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.Net.Cookie クラス</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_web_socket_sharp_1_1_net_1_1_cookie.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="class_web_socket_sharp_1_1_net_1_1_cookie-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp.Net.Cookie クラス<span class="mlabels"><span class="mlabel">sealed</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Provides a set of methods and properties used to manage an HTTP cookie.  
+ <a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae44a66c95232c9568437177a6251fab3" id="r_ae44a66c95232c9568437177a6251fab3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae44a66c95232c9568437177a6251fab3">Cookie</a> (string name, string value)</td></tr>
+<tr class="memdesc:ae44a66c95232c9568437177a6251fab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class with the specified name and value.  <br /></td></tr>
+<tr class="separator:ae44a66c95232c9568437177a6251fab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131057f60b5821ec3507909657901878" id="r_a131057f60b5821ec3507909657901878"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a131057f60b5821ec3507909657901878">Cookie</a> (string name, string value, string path)</td></tr>
+<tr class="memdesc:a131057f60b5821ec3507909657901878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class with the specified name, value, and path.  <br /></td></tr>
+<tr class="separator:a131057f60b5821ec3507909657901878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05a38b67aaf5dbf5661052f794a48ad" id="r_ac05a38b67aaf5dbf5661052f794a48ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05a38b67aaf5dbf5661052f794a48ad">Cookie</a> (string name, string value, string path, string domain)</td></tr>
+<tr class="memdesc:ac05a38b67aaf5dbf5661052f794a48ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class with the specified name, value, path, and domain.  <br /></td></tr>
+<tr class="separator:ac05a38b67aaf5dbf5661052f794a48ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a3bc06964915af24b6efd5d8e8742f4fc" id="r_a3bc06964915af24b6efd5d8e8742f4fc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bc06964915af24b6efd5d8e8742f4fc">Comment</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3bc06964915af24b6efd5d8e8742f4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Comment attribute of the cookie.  <br /></td></tr>
+<tr class="separator:a3bc06964915af24b6efd5d8e8742f4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89923f961622754094f0a9dc680bcc00" id="r_a89923f961622754094f0a9dc680bcc00"><td class="memItemLeft" align="right" valign="top">Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89923f961622754094f0a9dc680bcc00">CommentUri</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a89923f961622754094f0a9dc680bcc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the CommentURL attribute of the cookie.  <br /></td></tr>
+<tr class="separator:a89923f961622754094f0a9dc680bcc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fa02d50842f2ecc3b2647fa0ddd482" id="r_ac4fa02d50842f2ecc3b2647fa0ddd482"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4fa02d50842f2ecc3b2647fa0ddd482">Discard</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac4fa02d50842f2ecc3b2647fa0ddd482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the client discards the cookie unconditionally when the client terminates.  <br /></td></tr>
+<tr class="separator:ac4fa02d50842f2ecc3b2647fa0ddd482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5b43d3f52f5ad689d81a056302e3e5" id="r_a3e5b43d3f52f5ad689d81a056302e3e5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e5b43d3f52f5ad689d81a056302e3e5">Domain</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3e5b43d3f52f5ad689d81a056302e3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of the Domain attribute of the cookie.  <br /></td></tr>
+<tr class="separator:a3e5b43d3f52f5ad689d81a056302e3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f5b567c34b56c16c67c05edced5036" id="r_a25f5b567c34b56c16c67c05edced5036"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f5b567c34b56c16c67c05edced5036">Expired</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a25f5b567c34b56c16c67c05edced5036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the cookie has expired.  <br /></td></tr>
+<tr class="separator:a25f5b567c34b56c16c67c05edced5036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59180aeb4150f3a874975b52315b8c79" id="r_a59180aeb4150f3a874975b52315b8c79"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59180aeb4150f3a874975b52315b8c79">Expires</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a59180aeb4150f3a874975b52315b8c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of the Expires attribute of the cookie.  <br /></td></tr>
+<tr class="separator:a59180aeb4150f3a874975b52315b8c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbe3716a5a40965f5698f1269e8741c" id="r_a7fbe3716a5a40965f5698f1269e8741c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fbe3716a5a40965f5698f1269e8741c">HttpOnly</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7fbe3716a5a40965f5698f1269e8741c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether non-HTTP APIs can access the cookie.  <br /></td></tr>
+<tr class="separator:a7fbe3716a5a40965f5698f1269e8741c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b512179dc1c6267d6751f8e0b2671e" id="r_a16b512179dc1c6267d6751f8e0b2671e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16b512179dc1c6267d6751f8e0b2671e">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a16b512179dc1c6267d6751f8e0b2671e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the cookie.  <br /></td></tr>
+<tr class="separator:a16b512179dc1c6267d6751f8e0b2671e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021923262108bf3452c2b73aed7596eb" id="r_a021923262108bf3452c2b73aed7596eb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a021923262108bf3452c2b73aed7596eb">Path</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a021923262108bf3452c2b73aed7596eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of the Path attribute of the cookie.  <br /></td></tr>
+<tr class="separator:a021923262108bf3452c2b73aed7596eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ff2e77728553bc7aae02c81a4b2248" id="r_a65ff2e77728553bc7aae02c81a4b2248"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65ff2e77728553bc7aae02c81a4b2248">Port</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a65ff2e77728553bc7aae02c81a4b2248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Port attribute of the cookie.  <br /></td></tr>
+<tr class="separator:a65ff2e77728553bc7aae02c81a4b2248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bc2ded6064d84d7e731ef41eb7a9c2" id="r_a51bc2ded6064d84d7e731ef41eb7a9c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51bc2ded6064d84d7e731ef41eb7a9c2">Secure</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a51bc2ded6064d84d7e731ef41eb7a9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the security level of the cookie is secure.  <br /></td></tr>
+<tr class="separator:a51bc2ded6064d84d7e731ef41eb7a9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74363a79287e4a94b0c77ff3aaef73da" id="r_a74363a79287e4a94b0c77ff3aaef73da"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74363a79287e4a94b0c77ff3aaef73da">TimeStamp</a><code> [get]</code></td></tr>
+<tr class="memdesc:a74363a79287e4a94b0c77ff3aaef73da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time when the cookie was issued.  <br /></td></tr>
+<tr class="separator:a74363a79287e4a94b0c77ff3aaef73da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Provides a set of methods and properties used to manage an HTTP cookie. </p>
+<p>This class refers to the following specifications: </p>
+<ul>
+<li>
+Netscape specification</li>
+</ul>
+<p>RFC 2109</p>
+<p>RFC 2965</p>
+<p>RFC 6265</p>
+<p>This class cannot be inherited. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="ae44a66c95232c9568437177a6251fab3" name="ae44a66c95232c9568437177a6251fab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44a66c95232c9568437177a6251fab3">&#9670;&#160;</a></span>Cookie() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Net.Cookie.Cookie </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class with the specified name and value. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>A string that specifies the name of the cookie. The name must be a token defined in  RFC 2616. </td></tr>
+    <tr><td class="paramname">value</td><td>A string that specifies the value of the cookie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>name</em>  is an empty string. -or- <em>name</em>  starts with a dollar sign. -or- <em>name</em>  contains an invalid character. -or- <em>value</em>  is a string not enclosed in double quotes although it contains a reserved character. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>name</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a131057f60b5821ec3507909657901878" name="a131057f60b5821ec3507909657901878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131057f60b5821ec3507909657901878">&#9670;&#160;</a></span>Cookie() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Net.Cookie.Cookie </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class with the specified name, value, and path. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>A string that specifies the name of the cookie. The name must be a token defined in  RFC 2616. </td></tr>
+    <tr><td class="paramname">value</td><td>A string that specifies the value of the cookie. </td></tr>
+    <tr><td class="paramname">path</td><td>A string that specifies the value of the Path attribute of the cookie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>name</em>  is an empty string. -or- <em>name</em>  starts with a dollar sign. -or- <em>name</em>  contains an invalid character. -or- <em>value</em>  is a string not enclosed in double quotes although it contains a reserved character. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>name</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac05a38b67aaf5dbf5661052f794a48ad" name="ac05a38b67aaf5dbf5661052f794a48ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05a38b67aaf5dbf5661052f794a48ad">&#9670;&#160;</a></span>Cookie() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Net.Cookie.Cookie </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>domain</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class with the specified name, value, path, and domain. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>A string that specifies the name of the cookie. The name must be a token defined in  RFC 2616. </td></tr>
+    <tr><td class="paramname">value</td><td>A string that specifies the value of the cookie. </td></tr>
+    <tr><td class="paramname">path</td><td>A string that specifies the value of the Path attribute of the cookie. </td></tr>
+    <tr><td class="paramname">domain</td><td>A string that specifies the value of the Domain attribute of the cookie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>name</em>  is an empty string. -or- <em>name</em>  starts with a dollar sign. -or- <em>name</em>  contains an invalid character. -or- <em>value</em>  is a string not enclosed in double quotes although it contains a reserved character. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>name</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a3bc06964915af24b6efd5d8e8742f4fc" name="a3bc06964915af24b6efd5d8e8742f4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc06964915af24b6efd5d8e8742f4fc">&#9670;&#160;</a></span>Comment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Net.Cookie.Comment</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the Comment attribute of the cookie. </p>
+<p>A string that represents the comment to document intended use of the cookie. </p>
+<p><code>null</code> if not present. </p>
+<p>The default value is <code>null</code>. </p>
+
+</div>
+</div>
+<a id="a89923f961622754094f0a9dc680bcc00" name="a89923f961622754094f0a9dc680bcc00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89923f961622754094f0a9dc680bcc00">&#9670;&#160;</a></span>CommentUri</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uri WebSocketSharp.Net.Cookie.CommentUri</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the CommentURL attribute of the cookie. </p>
+<p>A Uri that represents the URI that provides the comment to document intended use of the cookie. </p>
+<p><code>null</code> if not present. </p>
+<p>The default value is <code>null</code>. </p>
+
+</div>
+</div>
+<a id="ac4fa02d50842f2ecc3b2647fa0ddd482" name="ac4fa02d50842f2ecc3b2647fa0ddd482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fa02d50842f2ecc3b2647fa0ddd482">&#9670;&#160;</a></span>Discard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Net.Cookie.Discard</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the client discards the cookie unconditionally when the client terminates. </p>
+<p><code>true</code> if the client discards the cookie unconditionally when the client terminates; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a3e5b43d3f52f5ad689d81a056302e3e5" name="a3e5b43d3f52f5ad689d81a056302e3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5b43d3f52f5ad689d81a056302e3e5">&#9670;&#160;</a></span>Domain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Net.Cookie.Domain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the value of the Domain attribute of the cookie. </p>
+<p>A string that represents the domain name that the cookie is valid for. </p>
+<p>An empty string if not necessary. </p>
+
+</div>
+</div>
+<a id="a25f5b567c34b56c16c67c05edced5036" name="a25f5b567c34b56c16c67c05edced5036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f5b567c34b56c16c67c05edced5036">&#9670;&#160;</a></span>Expired</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Net.Cookie.Expired</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the cookie has expired. </p>
+<p><code>true</code> if the cookie has expired; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a59180aeb4150f3a874975b52315b8c79" name="a59180aeb4150f3a874975b52315b8c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59180aeb4150f3a874975b52315b8c79">&#9670;&#160;</a></span>Expires</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime WebSocketSharp.Net.Cookie.Expires</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the value of the Expires attribute of the cookie. </p>
+<p>A DateTime that represents the date and time that the cookie expires on. </p>
+<p>DateTime.MinValue if not necessary. </p>
+<p>The default value is DateTime.MinValue. </p>
+
+</div>
+</div>
+<a id="a7fbe3716a5a40965f5698f1269e8741c" name="a7fbe3716a5a40965f5698f1269e8741c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbe3716a5a40965f5698f1269e8741c">&#9670;&#160;</a></span>HttpOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Net.Cookie.HttpOnly</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether non-HTTP APIs can access the cookie. </p>
+<p><code>true</code> if non-HTTP APIs cannot access the cookie; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a16b512179dc1c6267d6751f8e0b2671e" name="a16b512179dc1c6267d6751f8e0b2671e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b512179dc1c6267d6751f8e0b2671e">&#9670;&#160;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Net.Cookie.Name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the name of the cookie. </p>
+<p>A string that represents the name of the cookie. </p>
+<p>The name must be a token defined in  RFC 2616</p>
+<p>. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>The value specified for a set operation is an empty string. -or- The value specified for a set operation starts with a dollar sign. -or- The value specified for a set operation contains an invalid character. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td>The value specified for a set operation is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a021923262108bf3452c2b73aed7596eb" name="a021923262108bf3452c2b73aed7596eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021923262108bf3452c2b73aed7596eb">&#9670;&#160;</a></span>Path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Net.Cookie.Path</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the value of the Path attribute of the cookie. </p>
+<p>A string that represents the subset of URI on the origin server that the cookie applies to. </p>
+
+</div>
+</div>
+<a id="a65ff2e77728553bc7aae02c81a4b2248" name="a65ff2e77728553bc7aae02c81a4b2248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ff2e77728553bc7aae02c81a4b2248">&#9670;&#160;</a></span>Port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Net.Cookie.Port</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the Port attribute of the cookie. </p>
+<p>A string that represents the list of TCP ports that the cookie applies to. </p>
+<p><code>null</code> if not present. </p>
+<p>The default value is <code>null</code>. </p>
+
+</div>
+</div>
+<a id="a51bc2ded6064d84d7e731ef41eb7a9c2" name="a51bc2ded6064d84d7e731ef41eb7a9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bc2ded6064d84d7e731ef41eb7a9c2">&#9670;&#160;</a></span>Secure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Net.Cookie.Secure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the security level of the cookie is secure. </p>
+<p>When this property is <code>true</code>, the cookie may be included in the request only if the request is transmitted over HTTPS. </p>
+<p><code>true</code> if the security level of the cookie is secure; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a74363a79287e4a94b0c77ff3aaef73da" name="a74363a79287e4a94b0c77ff3aaef73da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74363a79287e4a94b0c77ff3aaef73da">&#9670;&#160;</a></span>TimeStamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime WebSocketSharp.Net.Cookie.TimeStamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the time when the cookie was issued. </p>
+<p>A DateTime that represents the time when the cookie was issued. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SkyWayUnitySDK/Assets/SkyWay/Scripts/Deps/websocket-sharp/websocket-sharp/Net/<b>Cookie.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a class="el" href="namespace_web_socket_sharp_1_1_net.html">Net</a></li><li class="navelem"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html">Cookie</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

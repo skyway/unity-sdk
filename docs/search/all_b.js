@@ -1,26 +1,10 @@
 var searchData=
 [
-  ['onclosedhandler_0',['onClosedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#ad1f54f41005763eadecda5004f92a5a5',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['ondatahandler_1',['OnDataHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_remote_data_stream.html#a337bd908a0e0ecd340edf36302204449',1,'Com::Ntt::SkyWay::Core::SWRemoteDataStream']]],
-  ['onerrorhandler_2',['onErrorHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a6e7d1debc77d2a79b3ec28ed2900e93e',1,'Com.Ntt.SkyWay.Core.SWContext.onErrorHandler'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a5014bae1871e0b8eb247fa066f5b2a0a',1,'Com.Ntt.SkyWay.Room.SWRoom.onErrorHandler']]],
-  ['onframe_3',['OnFrame',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_video_source.html#aec26cca9f6ba5ee041130c071c7a51b4',1,'Com::Ntt::SkyWay::Core::SWVideoSource']]],
-  ['onmemberjoinedhandler_4',['onMemberJoinedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a8f5fde917d8f95e3f79ecf1009fb2e4c',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onmemberlefthandler_5',['onMemberLeftHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a79a8d7c37486890862876a5208f1843e',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onmemberlistchangedhandler_6',['onMemberListChangedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#aa6a1ad49374cb02119e54d41d5d78599',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onmembermetadataupdatedhandler_7',['onMemberMetadataUpdatedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a5f151d6ffc0714be23b9ecabf0778331',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onmetadataupdatedhandler_8',['onMetadataUpdatedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#aa25dbdde49a4ff7afbeba38ba9257157',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onpublicationdisabledhandler_9',['onPublicationDisabledHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a6413899af8ff5f07b4a5def489e6bd85',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onpublicationenabledhandler_10',['onPublicationEnabledHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a24fce9913a7c17612814ec1d732010fa',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onpublicationlistchangedhandler_11',['onPublicationListChangedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a931ea6323f9689709bff417d0dc530ac',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onpublicationmetadataupdatedhandler_12',['onPublicationMetadataUpdatedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#ad1eded5e63a782bbdba04bb15a1ed00a',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onpublicationsubscribedhandler_13',['onPublicationSubscribedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#ac737a3f490c14bae74393a95f8c84730',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onpublicationunsubscribedhandler_14',['onPublicationUnsubscribedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#a715f5fb5c093f964646889abc37805f4',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onreconnectstarthandler_15',['onReconnectStartHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#aa426da0f8bce41d5b52fa2e9074da117',1,'Com::Ntt::SkyWay::Core::SWContext']]],
-  ['onreconnectsuccesshandler_16',['onReconnectSuccessHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a87de5c6fe947290be940f7148decba0c',1,'Com::Ntt::SkyWay::Core::SWContext']]],
-  ['onstreampublishedhandler_17',['onStreamPublishedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#ae12913bdaffdce8277f6f1931e10d649',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onstreamunpublishedhandler_18',['onStreamUnpublishedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#ace23ae77581de627715052e083ea64a0',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['onsubscriptionlistchangedhandler_19',['onSubscriptionListChangedHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#abde3663971258487100ded2f73234eb3',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['ontexturehandler_20',['onTextureHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_remote_video_stream.html#ac5f3558e3bacf06beb41e83dd3297a2d',1,'Com::Ntt::SkyWay::Core::SWRemoteVideoStream']]],
-  ['ontokenexpiredhandler_21',['onTokenExpiredHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#abd7835b1caae609859f7f4033f11bb67',1,'Com::Ntt::SkyWay::Core::SWContext']]],
-  ['ontokenrefreshingneededhandler_22',['onTokenRefreshingNeededHandler',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a318edc1b111799551930e4855b46e0a8',1,'Com::Ntt::SkyWay::Core::SWContext']]]
+  ['fatal_0',['Fatal',['../class_web_socket_sharp_1_1_logger.html#a98e0e69a101b404d8cd9d67c712a61fc',1,'WebSocketSharp.Logger.Fatal()'],['../namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84dba882384ec38ce8d9582b57e70861730e4',1,'WebSocketSharp.Fatal']]],
+  ['file_1',['File',['../class_web_socket_sharp_1_1_logger.html#a7fdfa5d2b2256014e3f2c19b735c4967',1,'WebSocketSharp::Logger']]],
+  ['find_2',['Find',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_p2_p_room.html#a1436708309323aea6dfa8633a0d01ab0',1,'Com.Ntt.SkyWay.Room.SWP2PRoom.Find()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_s_f_u_room.html#a02c11de1ab0b83a69019d9b7990ce3d1',1,'Com.Ntt.SkyWay.Room.SWSFURoom.Find()']]],
+  ['findorcreate_3',['FindOrCreate',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_p2_p_room.html#a4ca30a9ab0b63e80a275576dae7f564f',1,'Com.Ntt.SkyWay.Room.SWP2PRoom.FindOrCreate()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_s_f_u_room.html#a70c145712051b1fa17416824962f0598',1,'Com.Ntt.SkyWay.Room.SWSFURoom.FindOrCreate()']]],
+  ['forbidden_4',['Forbidden',['../namespace_web_socket_sharp_1_1_net.html#ad5c4bafe62bb407057f0269f3a296f0ba722969577a96ca3953e84e3d949dee81',1,'WebSocketSharp::Net']]],
+  ['found_5',['Found',['../namespace_web_socket_sharp_1_1_net.html#ad5c4bafe62bb407057f0269f3a296f0ba5d695cc28c6a7ea955162fbdd0ae42b9',1,'WebSocketSharp::Net']]],
+  ['from_6',['From',['../namespace_web_socket_sharp_1_1_net.html#acebbae4ae512ea8ebc178679151796d7a5da618e8e4b89c66fe86e32cdafde142',1,'WebSocketSharp::Net']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enable_0',['Enable',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room_publication.html#a1bc065f71b0a4a790c63560872dea712',1,'Com::Ntt::SkyWay::Room::SWRoomPublication']]]
+  ['4_0',['4',['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md15',1,'Step 4'],['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md22',1,'Step 4']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['turnpolicy_0',['TurnPolicy',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_rtc_config.html#add9dde387a20eb375761f5e5e9410606',1,'Com::Ntt::SkyWay::Core::RtcConfig']]]
+  ['authenticationschemes_0',['AuthenticationSchemes',['../namespace_web_socket_sharp_1_1_net.html#ac55d28dd3d89daf0257c802f84db36d8',1,'WebSocketSharp::Net']]]
 ];

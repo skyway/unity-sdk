@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['find_0',['Find',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_p2_p_room.html#a1436708309323aea6dfa8633a0d01ab0',1,'Com.Ntt.SkyWay.Room.SWP2PRoom.Find()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_s_f_u_room.html#a02c11de1ab0b83a69019d9b7990ce3d1',1,'Com.Ntt.SkyWay.Room.SWSFURoom.Find()']]],
-  ['findorcreate_1',['FindOrCreate',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_p2_p_room.html#a4ca30a9ab0b63e80a275576dae7f564f',1,'Com.Ntt.SkyWay.Room.SWP2PRoom.FindOrCreate()'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_s_f_u_room.html#a70c145712051b1fa17416824962f0598',1,'Com.Ntt.SkyWay.Room.SWSFURoom.FindOrCreate()']]]
+  ['5_0',['5',['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md16',1,'Step 5'],['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md23',1,'Step 5']]]
 ];

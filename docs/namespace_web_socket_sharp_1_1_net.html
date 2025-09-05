@@ -1,0 +1,750 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.Net 名前空間</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespace_web_socket_sharp_1_1_net.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp.Net 名前空間</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_client_ssl_configuration.html">ClientSslConfiguration</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the parameters for an SslStream instance used by a client.  <a href="class_web_socket_sharp_1_1_net_1_1_client_ssl_configuration.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html">Cookie</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a set of methods and properties used to manage an HTTP cookie.  <a href="class_web_socket_sharp_1_1_net_1_1_cookie.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie_collection.html">CookieCollection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a collection of instances of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> class.  <a href="class_web_socket_sharp_1_1_net_1_1_cookie_collection.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie_exception.html">CookieException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exception that is thrown when a <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> gets an error.  <a href="class_web_socket_sharp_1_1_net_1_1_cookie_exception.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_basic_identity.html">HttpBasicIdentity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the username and password from an HTTP Basic authentication attempt.  <a href="class_web_socket_sharp_1_1_net_1_1_http_basic_identity.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_digest_identity.html">HttpDigestIdentity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the username and other parameters from an HTTP Digest authentication attempt.  <a href="class_web_socket_sharp_1_1_net_1_1_http_digest_identity.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html">HttpListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a simple, programmatically controlled HTTP listener.  <a href="class_web_socket_sharp_1_1_net_1_1_http_listener.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener_context.html">HttpListenerContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the access to the HTTP request and response objects used by the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html" title="Provides a simple, programmatically controlled HTTP listener.">HttpListener</a> class.  <a href="class_web_socket_sharp_1_1_net_1_1_http_listener_context.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener_exception.html">HttpListenerException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exception that is thrown when an error occurs processing an HTTP request.  <a href="class_web_socket_sharp_1_1_net_1_1_http_listener_exception.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener_prefix_collection.html">HttpListenerPrefixCollection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a collection used to store the URI prefixes for a instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html" title="Provides a simple, programmatically controlled HTTP listener.">HttpListener</a> class.  <a href="class_web_socket_sharp_1_1_net_1_1_http_listener_prefix_collection.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener_request.html">HttpListenerRequest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an incoming HTTP request to a <a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html" title="Provides a simple, programmatically controlled HTTP listener.">HttpListener</a> instance.  <a href="class_web_socket_sharp_1_1_net_1_1_http_listener_request.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener_response.html">HttpListenerResponse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an HTTP response to an HTTP request received by a <a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html" title="Provides a simple, programmatically controlled HTTP listener.">HttpListener</a> instance.  <a href="class_web_socket_sharp_1_1_net_1_1_http_listener_response.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_version.html">HttpVersion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the HTTP version numbers.  <a href="class_web_socket_sharp_1_1_net_1_1_http_version.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_network_credential.html">NetworkCredential</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the credentials for the password-based authentication.  <a href="class_web_socket_sharp_1_1_net_1_1_network_credential.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_server_ssl_configuration.html">ServerSslConfiguration</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the parameters for SslStream instances used by a server.  <a href="class_web_socket_sharp_1_1_net_1_1_server_ssl_configuration.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_header_collection.html">WebHeaderCollection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a collection of the HTTP headers associated with a request or response.  <a href="class_web_socket_sharp_1_1_net_1_1_web_header_collection.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:ac55d28dd3d89daf0257c802f84db36d8" id="r_ac55d28dd3d89daf0257c802f84db36d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55d28dd3d89daf0257c802f84db36d8">AuthenticationSchemes</a> { <a class="el" href="#ac55d28dd3d89daf0257c802f84db36d8a6adf97f83acf6453d4a6a4b1070f3754">None</a>
+, <a class="el" href="#ac55d28dd3d89daf0257c802f84db36d8ae5cfc515f312c9e85f367e9854d9963e">Digest</a> = 1
+, <a class="el" href="#ac55d28dd3d89daf0257c802f84db36d8a972e73b7a882d0802a4e3a16946a2f94">Basic</a> = 8
+, <a class="el" href="#ac55d28dd3d89daf0257c802f84db36d8a7079c72c21415131774625ba1d64f4b0">Anonymous</a> = 0x8000
+ }</td></tr>
+<tr class="memdesc:ac55d28dd3d89daf0257c802f84db36d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the scheme for authentication.  <a href="#ac55d28dd3d89daf0257c802f84db36d8">[詳解]</a><br /></td></tr>
+<tr class="separator:ac55d28dd3d89daf0257c802f84db36d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebbae4ae512ea8ebc178679151796d7" id="r_acebbae4ae512ea8ebc178679151796d7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acebbae4ae512ea8ebc178679151796d7">HttpRequestHeader</a> { <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7a9499572d046f5c2faebd1050147d7a68">CacheControl</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ac2cc7082a89c1ad6631a2f66af5f00c0">Connection</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a44749712dbec183e983dcd78a7736c41">Date</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a17229586d3c63a13bfdc6c71c569c867">KeepAlive</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7af607fdcea4127aad4f0cdae948a4f3f7">Pragma</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a7777d162b1fa729345ddb7de48654012">Trailer</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a5a34a26799128ce8229982506e8f7398">TransferEncoding</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7af683581d3e75f05f9d9215f9b4696cef">Upgrade</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7ad794d3f7b3a0a8fdbd7582f6cacb5de0">Via</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a0eaadb4fcb48a0a0ed7bc9868be9fbaa">Warning</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a45f0fb72a0defdfdb01de4b5a5a6876b">Allow</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a132d1f967127cbce22710ae8939b0ad3">ContentLength</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7ab8178dd7819d7531e93b9d8112c16e11">ContentType</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a94b393cfdfb356ba5e95a9f0f552e5f4">ContentEncoding</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a89605743f4f361ed80572f7e6b552886">ContentLanguage</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ab26f70c88f76ea0bb0e43d77189e04bc">ContentLocation</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7ac9308c879667d69ca537833f88608b9a">ContentMd5</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a93d83df6cb26cf9359ef1b111c2d3de9">ContentRange</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7acfc36842a01da69c484ffdcc6782f437">Expires</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ae262f42297bdd5776f68bd3b43868a16">LastModified</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7ac4408d335012a56ff58937d78050efad">Accept</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7aeb5379f6a18ebd4bb7e8b8308fe7a635">AcceptCharset</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a47fd783476889265dd4b92dee87225a6">AcceptEncoding</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7aaba45ed0d8bc2eda624f56caad3abf40">AcceptLanguage</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7a9cd8a2455b1839ff98ef70c05b9b5983">Authorization</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a706f10887bbeb729378c706eee126fa7">Cookie</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a7f036407d75c774176a7effbe959366b">Expect</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a5da618e8e4b89c66fe86e32cdafde142">From</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7ac2ca16d048ec66e04bca283eab048ec2">Host</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ac518519c3fc8af1cb7cc73111419feab">IfMatch</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a9bfede32ce846ff11527e145f6e9d12b">IfModifiedSince</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a6947efa30b7a4b701974f68105e333e5">IfNoneMatch</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7a568c1c30703cbe23863f072b7a58d4ad">IfRange</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a7ab474ae484d7d38c978ab3b46584baa">IfUnmodifiedSince</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ad382272d35e62a3d9d96d3e14b8368b1">MaxForwards</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ab1d325fe085c6078662aeeb18c98b3ee">ProxyAuthorization</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7a6144bb91c094de745cab7863f75f7ba6">Referer</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a87ba2ecc8b6915e8bd6f5089918229fd">Range</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a2408730ad248ad4e4aa36fb14f5e0631">Te</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7adeccbe4e9083c3b5f7cd2632722765bb">Translate</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7a7a1c9344ffcbe2316169f2cbbc867973">UserAgent</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7ad512bae79a0b897af2bc354b42c62ce0">SecWebSocketKey</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7af421f299cfbfb33d74f94aed7b7dbbb9">SecWebSocketExtensions</a>
+, <a class="el" href="#acebbae4ae512ea8ebc178679151796d7a7283351273fe1675716791b5b408e029">SecWebSocketProtocol</a>
+, <br />
+&#160;&#160;<a class="el" href="#acebbae4ae512ea8ebc178679151796d7a217304a3d4d91a9b03de9d58a5d313cb">SecWebSocketVersion</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:acebbae4ae512ea8ebc178679151796d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the HTTP header that may be specified in a client request.  <a href="#acebbae4ae512ea8ebc178679151796d7">[詳解]</a><br /></td></tr>
+<tr class="separator:acebbae4ae512ea8ebc178679151796d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ffb1de9fe1f80e9653126ec0df9222" id="r_a25ffb1de9fe1f80e9653126ec0df9222"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222">HttpResponseHeader</a> { <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a9499572d046f5c2faebd1050147d7a68">CacheControl</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ac2cc7082a89c1ad6631a2f66af5f00c0">Connection</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a44749712dbec183e983dcd78a7736c41">Date</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a17229586d3c63a13bfdc6c71c569c867">KeepAlive</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222af607fdcea4127aad4f0cdae948a4f3f7">Pragma</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a7777d162b1fa729345ddb7de48654012">Trailer</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a5a34a26799128ce8229982506e8f7398">TransferEncoding</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222af683581d3e75f05f9d9215f9b4696cef">Upgrade</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ad794d3f7b3a0a8fdbd7582f6cacb5de0">Via</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a0eaadb4fcb48a0a0ed7bc9868be9fbaa">Warning</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a45f0fb72a0defdfdb01de4b5a5a6876b">Allow</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a132d1f967127cbce22710ae8939b0ad3">ContentLength</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ab8178dd7819d7531e93b9d8112c16e11">ContentType</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a94b393cfdfb356ba5e95a9f0f552e5f4">ContentEncoding</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a89605743f4f361ed80572f7e6b552886">ContentLanguage</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ab26f70c88f76ea0bb0e43d77189e04bc">ContentLocation</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ac9308c879667d69ca537833f88608b9a">ContentMd5</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a93d83df6cb26cf9359ef1b111c2d3de9">ContentRange</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222acfc36842a01da69c484ffdcc6782f437">Expires</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ae262f42297bdd5776f68bd3b43868a16">LastModified</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a2a0f9c5ce0ab16d6359fe86bc8c5c1fe">AcceptRanges</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a9d8d2d5ab12b515182a505f54db7f538">Age</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a611a2b5dcde004cf68ffd56345584d40">ETag</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ace5bf551379459c1c61d2a204061c455">Location</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a5896637b3d6078393671d65439530c24">ProxyAuthenticate</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222afe8b9b68b9708454a8b46f8a5b7457bd">RetryAfter</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a9aa1b03934893d7134a660af4204f2a9">Server</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a2b6a91a2252e822b24c4aca7c30af865">SetCookie</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ad82a834165b99c4ea0969316296a2bc2">Vary</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222ad69ac558d8cb68dcc1dfc571069ca1c3">WwwAuthenticate</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222af421f299cfbfb33d74f94aed7b7dbbb9">SecWebSocketExtensions</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a784ff14b71fcfdfef87a049439666544">SecWebSocketAccept</a>
+, <br />
+&#160;&#160;<a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a7283351273fe1675716791b5b408e029">SecWebSocketProtocol</a>
+, <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222a217304a3d4d91a9b03de9d58a5d313cb">SecWebSocketVersion</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a25ffb1de9fe1f80e9653126ec0df9222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the HTTP header that can be specified in a server response.  <a href="#a25ffb1de9fe1f80e9653126ec0df9222">[詳解]</a><br /></td></tr>
+<tr class="separator:a25ffb1de9fe1f80e9653126ec0df9222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c4bafe62bb407057f0269f3a296f0b" id="r_ad5c4bafe62bb407057f0269f3a296f0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0b">HttpStatusCode</a> { <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0baa0bfb8e59e6c13fc8d990781f77694fe">Continue</a> = 100
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba548c5a637eddf65132b21411aeafc6a1">SwitchingProtocols</a> = 101
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0bae0aa021e21dddbd6d8cecec71e9cf564">OK</a> = 200
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba0eceeb45861f9585dd7a97a3e36f85c6">Created</a> = 201
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba382ab522931673c11e398ead1b7b1678">Accepted</a> = 202
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba2d0ea43e788b779c0aec92366b711c2f">NonAuthoritativeInformation</a> = 203
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0bacd447f1ec89f564ebac583d60087df12">NoContent</a> = 204
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba4e9202c31896211f63be5b7345a897ed">ResetContent</a> = 205
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba750de7eda10d780b3bbaefb57128c24b">PartialContent</a> = 206
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0baa589749d075c3423333bdc93e3b4e774">MultipleChoices</a> = 300
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba02266588dfd4e565cc42949d0c73f28c">Ambiguous</a> = 300
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba32638c25f4c913fce6214c2c4afff9dc">MovedPermanently</a> = 301
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba95bfdefaaf01553cbf21ccd942855c69">Moved</a> = 301
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba5d695cc28c6a7ea955162fbdd0ae42b9">Found</a> = 302
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba4202ef115ebede37eb22297113f5fb32">Redirect</a> = 302
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba7843649eb3841f496a79303fd815029e">SeeOther</a> = 303
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba3d006d7cd9a99992b94bc01e54a067fc">RedirectMethod</a> = 303
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0bac169e6d9a1b9442001384de8dcf49ab9">NotModified</a> = 304
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba0a272f25fd5e8a06065ef8ee41a88bea">UseProxy</a> = 305
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba92e592d90b9548016776a6fb68dccded">Unused</a> = 306
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba1b73a351faf2b550d06fae9cc6e0a894">TemporaryRedirect</a> = 307
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba5642a16c0f0774fec98ad5241b68f531">RedirectKeepVerb</a> = 307
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba9edf8fbf00a57d95a0af4923c9a1ec6f">BadRequest</a> = 400
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0bae06d1ba70f1331e9f9a113cc2f887d3f">Unauthorized</a> = 401
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba4c99006c75b53fe48865cdfa0ac065ba">PaymentRequired</a> = 402
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba722969577a96ca3953e84e3d949dee81">Forbidden</a> = 403
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba38c300f4fc9ce8a77aad4a30de05cad8">NotFound</a> = 404
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba8ba68fee5542f5fd071aed140c39bd8e">MethodNotAllowed</a> = 405
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0baf83a928e6a3f3b502ffadd2a414ce48c">NotAcceptable</a> = 406
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba59a2898a8bf9da75a5855e76110f06f2">ProxyAuthenticationRequired</a> = 407
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba3632c2e4e6225d4d9fcd2a6fd2c65048">RequestTimeout</a> = 408
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0baf1d4ac54357cc0932f385d56814ba7e4">Conflict</a> = 409
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba0b497b33b1a05057bc1634e607170bf6">Gone</a> = 410
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba8282fb93cb1cf45b135ea191668ca583">LengthRequired</a> = 411
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba3542a02d18f11f46d53990d91752a6d4">PreconditionFailed</a> = 412
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba1d2dd18ee1a925e5887cbc2f9202e779">RequestEntityTooLarge</a> = 413
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba08ad854bbc441f4edb6828769f8d3399">RequestUriTooLong</a> = 414
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0baa3219a6843adbb23de79b4df9c307f5d">UnsupportedMediaType</a> = 415
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba7779e53fc887ac0429f4ebde5fc0b59f">RequestedRangeNotSatisfiable</a> = 416
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba6af78095a2be4a230ba87f03dd131830">ExpectationFailed</a> = 417
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0baecbf01325f1c744e9d7bb586ac2eb5ed">InternalServerError</a> = 500
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba997ca4ce119685f40f03a9a8a6c5346e">NotImplemented</a> = 501
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba0e7c9ad08be0653518bf456c9994ace5">BadGateway</a> = 502
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba2a4581043d849bcb0e4747970ef1489b">ServiceUnavailable</a> = 503
+, <br />
+&#160;&#160;<a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0bada405cbc74723dfdda615e3f679ef2be">GatewayTimeout</a> = 504
+, <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0ba56a7a02e415f5bf106088218f646c04f">HttpVersionNotSupported</a> = 505
+<br />
+ }</td></tr>
+<tr class="memdesc:ad5c4bafe62bb407057f0269f3a296f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the HTTP status code that can be specified in a server response.  <a href="#ad5c4bafe62bb407057f0269f3a296f0b">[詳解]</a><br /></td></tr>
+<tr class="separator:ad5c4bafe62bb407057f0269f3a296f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="ac55d28dd3d89daf0257c802f84db36d8" name="ac55d28dd3d89daf0257c802f84db36d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55d28dd3d89daf0257c802f84db36d8">&#9670;&#160;</a></span>AuthenticationSchemes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac55d28dd3d89daf0257c802f84db36d8">WebSocketSharp.Net.AuthenticationSchemes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the scheme for authentication. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ac55d28dd3d89daf0257c802f84db36d8a6adf97f83acf6453d4a6a4b1070f3754" name="ac55d28dd3d89daf0257c802f84db36d8a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>No authentication is allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac55d28dd3d89daf0257c802f84db36d8ae5cfc515f312c9e85f367e9854d9963e" name="ac55d28dd3d89daf0257c802f84db36d8ae5cfc515f312c9e85f367e9854d9963e"></a>Digest&#160;</td><td class="fielddoc"><p>Specifies digest authentication. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac55d28dd3d89daf0257c802f84db36d8a972e73b7a882d0802a4e3a16946a2f94" name="ac55d28dd3d89daf0257c802f84db36d8a972e73b7a882d0802a4e3a16946a2f94"></a>Basic&#160;</td><td class="fielddoc"><p>Specifies basic authentication. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac55d28dd3d89daf0257c802f84db36d8a7079c72c21415131774625ba1d64f4b0" name="ac55d28dd3d89daf0257c802f84db36d8a7079c72c21415131774625ba1d64f4b0"></a>Anonymous&#160;</td><td class="fielddoc"><p>Specifies anonymous authentication. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="acebbae4ae512ea8ebc178679151796d7" name="acebbae4ae512ea8ebc178679151796d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebbae4ae512ea8ebc178679151796d7">&#9670;&#160;</a></span>HttpRequestHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#acebbae4ae512ea8ebc178679151796d7">WebSocketSharp.Net.HttpRequestHeader</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the HTTP header that may be specified in a client request. </p>
+<p>The headers of this enumeration are defined in RFC 2616</p>
+<p>or RFC 6455</p>
+<p>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a9499572d046f5c2faebd1050147d7a68" name="acebbae4ae512ea8ebc178679151796d7a9499572d046f5c2faebd1050147d7a68"></a>CacheControl&#160;</td><td class="fielddoc"><p>Indicates the Cache-Control header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ac2cc7082a89c1ad6631a2f66af5f00c0" name="acebbae4ae512ea8ebc178679151796d7ac2cc7082a89c1ad6631a2f66af5f00c0"></a>Connection&#160;</td><td class="fielddoc"><p>Indicates the Connection header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a44749712dbec183e983dcd78a7736c41" name="acebbae4ae512ea8ebc178679151796d7a44749712dbec183e983dcd78a7736c41"></a>Date&#160;</td><td class="fielddoc"><p>Indicates the Date header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a17229586d3c63a13bfdc6c71c569c867" name="acebbae4ae512ea8ebc178679151796d7a17229586d3c63a13bfdc6c71c569c867"></a>KeepAlive&#160;</td><td class="fielddoc"><p>Indicates the Keep-Alive header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7af607fdcea4127aad4f0cdae948a4f3f7" name="acebbae4ae512ea8ebc178679151796d7af607fdcea4127aad4f0cdae948a4f3f7"></a>Pragma&#160;</td><td class="fielddoc"><p>Indicates the Pragma header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a7777d162b1fa729345ddb7de48654012" name="acebbae4ae512ea8ebc178679151796d7a7777d162b1fa729345ddb7de48654012"></a>Trailer&#160;</td><td class="fielddoc"><p>Indicates the Trailer header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a5a34a26799128ce8229982506e8f7398" name="acebbae4ae512ea8ebc178679151796d7a5a34a26799128ce8229982506e8f7398"></a>TransferEncoding&#160;</td><td class="fielddoc"><p>Indicates the Transfer-Encoding header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7af683581d3e75f05f9d9215f9b4696cef" name="acebbae4ae512ea8ebc178679151796d7af683581d3e75f05f9d9215f9b4696cef"></a>Upgrade&#160;</td><td class="fielddoc"><p>Indicates the Upgrade header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ad794d3f7b3a0a8fdbd7582f6cacb5de0" name="acebbae4ae512ea8ebc178679151796d7ad794d3f7b3a0a8fdbd7582f6cacb5de0"></a>Via&#160;</td><td class="fielddoc"><p>Indicates the Via header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a0eaadb4fcb48a0a0ed7bc9868be9fbaa" name="acebbae4ae512ea8ebc178679151796d7a0eaadb4fcb48a0a0ed7bc9868be9fbaa"></a>Warning&#160;</td><td class="fielddoc"><p>Indicates the Warning header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a45f0fb72a0defdfdb01de4b5a5a6876b" name="acebbae4ae512ea8ebc178679151796d7a45f0fb72a0defdfdb01de4b5a5a6876b"></a>Allow&#160;</td><td class="fielddoc"><p>Indicates the Allow header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a132d1f967127cbce22710ae8939b0ad3" name="acebbae4ae512ea8ebc178679151796d7a132d1f967127cbce22710ae8939b0ad3"></a>ContentLength&#160;</td><td class="fielddoc"><p>Indicates the Content-Length header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ab8178dd7819d7531e93b9d8112c16e11" name="acebbae4ae512ea8ebc178679151796d7ab8178dd7819d7531e93b9d8112c16e11"></a>ContentType&#160;</td><td class="fielddoc"><p>Indicates the Content-Type header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a94b393cfdfb356ba5e95a9f0f552e5f4" name="acebbae4ae512ea8ebc178679151796d7a94b393cfdfb356ba5e95a9f0f552e5f4"></a>ContentEncoding&#160;</td><td class="fielddoc"><p>Indicates the Content-Encoding header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a89605743f4f361ed80572f7e6b552886" name="acebbae4ae512ea8ebc178679151796d7a89605743f4f361ed80572f7e6b552886"></a>ContentLanguage&#160;</td><td class="fielddoc"><p>Indicates the Content-Language header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ab26f70c88f76ea0bb0e43d77189e04bc" name="acebbae4ae512ea8ebc178679151796d7ab26f70c88f76ea0bb0e43d77189e04bc"></a>ContentLocation&#160;</td><td class="fielddoc"><p>Indicates the Content-Location header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ac9308c879667d69ca537833f88608b9a" name="acebbae4ae512ea8ebc178679151796d7ac9308c879667d69ca537833f88608b9a"></a>ContentMd5&#160;</td><td class="fielddoc"><p>Indicates the Content-MD5 header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a93d83df6cb26cf9359ef1b111c2d3de9" name="acebbae4ae512ea8ebc178679151796d7a93d83df6cb26cf9359ef1b111c2d3de9"></a>ContentRange&#160;</td><td class="fielddoc"><p>Indicates the Content-Range header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7acfc36842a01da69c484ffdcc6782f437" name="acebbae4ae512ea8ebc178679151796d7acfc36842a01da69c484ffdcc6782f437"></a>Expires&#160;</td><td class="fielddoc"><p>Indicates the Expires header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ae262f42297bdd5776f68bd3b43868a16" name="acebbae4ae512ea8ebc178679151796d7ae262f42297bdd5776f68bd3b43868a16"></a>LastModified&#160;</td><td class="fielddoc"><p>Indicates the Last-Modified header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ac4408d335012a56ff58937d78050efad" name="acebbae4ae512ea8ebc178679151796d7ac4408d335012a56ff58937d78050efad"></a>Accept&#160;</td><td class="fielddoc"><p>Indicates the Accept header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7aeb5379f6a18ebd4bb7e8b8308fe7a635" name="acebbae4ae512ea8ebc178679151796d7aeb5379f6a18ebd4bb7e8b8308fe7a635"></a>AcceptCharset&#160;</td><td class="fielddoc"><p>Indicates the Accept-Charset header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a47fd783476889265dd4b92dee87225a6" name="acebbae4ae512ea8ebc178679151796d7a47fd783476889265dd4b92dee87225a6"></a>AcceptEncoding&#160;</td><td class="fielddoc"><p>Indicates the Accept-Encoding header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7aaba45ed0d8bc2eda624f56caad3abf40" name="acebbae4ae512ea8ebc178679151796d7aaba45ed0d8bc2eda624f56caad3abf40"></a>AcceptLanguage&#160;</td><td class="fielddoc"><p>Indicates the Accept-Language header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a9cd8a2455b1839ff98ef70c05b9b5983" name="acebbae4ae512ea8ebc178679151796d7a9cd8a2455b1839ff98ef70c05b9b5983"></a>Authorization&#160;</td><td class="fielddoc"><p>Indicates the Authorization header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a706f10887bbeb729378c706eee126fa7" name="acebbae4ae512ea8ebc178679151796d7a706f10887bbeb729378c706eee126fa7"></a>Cookie&#160;</td><td class="fielddoc"><p>Indicates the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html" title="Provides a set of methods and properties used to manage an HTTP cookie.">Cookie</a> header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a7f036407d75c774176a7effbe959366b" name="acebbae4ae512ea8ebc178679151796d7a7f036407d75c774176a7effbe959366b"></a>Expect&#160;</td><td class="fielddoc"><p>Indicates the Expect header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a5da618e8e4b89c66fe86e32cdafde142" name="acebbae4ae512ea8ebc178679151796d7a5da618e8e4b89c66fe86e32cdafde142"></a>From&#160;</td><td class="fielddoc"><p>Indicates the From header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ac2ca16d048ec66e04bca283eab048ec2" name="acebbae4ae512ea8ebc178679151796d7ac2ca16d048ec66e04bca283eab048ec2"></a>Host&#160;</td><td class="fielddoc"><p>Indicates the Host header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ac518519c3fc8af1cb7cc73111419feab" name="acebbae4ae512ea8ebc178679151796d7ac518519c3fc8af1cb7cc73111419feab"></a>IfMatch&#160;</td><td class="fielddoc"><p>Indicates the If-Match header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a9bfede32ce846ff11527e145f6e9d12b" name="acebbae4ae512ea8ebc178679151796d7a9bfede32ce846ff11527e145f6e9d12b"></a>IfModifiedSince&#160;</td><td class="fielddoc"><p>Indicates the If-Modified-Since header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a6947efa30b7a4b701974f68105e333e5" name="acebbae4ae512ea8ebc178679151796d7a6947efa30b7a4b701974f68105e333e5"></a>IfNoneMatch&#160;</td><td class="fielddoc"><p>Indicates the If-None-Match header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a568c1c30703cbe23863f072b7a58d4ad" name="acebbae4ae512ea8ebc178679151796d7a568c1c30703cbe23863f072b7a58d4ad"></a>IfRange&#160;</td><td class="fielddoc"><p>Indicates the If-Range header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a7ab474ae484d7d38c978ab3b46584baa" name="acebbae4ae512ea8ebc178679151796d7a7ab474ae484d7d38c978ab3b46584baa"></a>IfUnmodifiedSince&#160;</td><td class="fielddoc"><p>Indicates the If-Unmodified-Since header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ad382272d35e62a3d9d96d3e14b8368b1" name="acebbae4ae512ea8ebc178679151796d7ad382272d35e62a3d9d96d3e14b8368b1"></a>MaxForwards&#160;</td><td class="fielddoc"><p>Indicates the Max-Forwards header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ab1d325fe085c6078662aeeb18c98b3ee" name="acebbae4ae512ea8ebc178679151796d7ab1d325fe085c6078662aeeb18c98b3ee"></a>ProxyAuthorization&#160;</td><td class="fielddoc"><p>Indicates the Proxy-Authorization header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a6144bb91c094de745cab7863f75f7ba6" name="acebbae4ae512ea8ebc178679151796d7a6144bb91c094de745cab7863f75f7ba6"></a>Referer&#160;</td><td class="fielddoc"><p>Indicates the Referer header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a87ba2ecc8b6915e8bd6f5089918229fd" name="acebbae4ae512ea8ebc178679151796d7a87ba2ecc8b6915e8bd6f5089918229fd"></a>Range&#160;</td><td class="fielddoc"><p>Indicates the Range header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a2408730ad248ad4e4aa36fb14f5e0631" name="acebbae4ae512ea8ebc178679151796d7a2408730ad248ad4e4aa36fb14f5e0631"></a>Te&#160;</td><td class="fielddoc"><p>Indicates the TE header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7adeccbe4e9083c3b5f7cd2632722765bb" name="acebbae4ae512ea8ebc178679151796d7adeccbe4e9083c3b5f7cd2632722765bb"></a>Translate&#160;</td><td class="fielddoc"><p>Indicates the Translate header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a7a1c9344ffcbe2316169f2cbbc867973" name="acebbae4ae512ea8ebc178679151796d7a7a1c9344ffcbe2316169f2cbbc867973"></a>UserAgent&#160;</td><td class="fielddoc"><p>Indicates the User-Agent header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7ad512bae79a0b897af2bc354b42c62ce0" name="acebbae4ae512ea8ebc178679151796d7ad512bae79a0b897af2bc354b42c62ce0"></a>SecWebSocketKey&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Key header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7af421f299cfbfb33d74f94aed7b7dbbb9" name="acebbae4ae512ea8ebc178679151796d7af421f299cfbfb33d74f94aed7b7dbbb9"></a>SecWebSocketExtensions&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Extensions header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a7283351273fe1675716791b5b408e029" name="acebbae4ae512ea8ebc178679151796d7a7283351273fe1675716791b5b408e029"></a>SecWebSocketProtocol&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Protocol header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acebbae4ae512ea8ebc178679151796d7a217304a3d4d91a9b03de9d58a5d313cb" name="acebbae4ae512ea8ebc178679151796d7a217304a3d4d91a9b03de9d58a5d313cb"></a>SecWebSocketVersion&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Version header. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a25ffb1de9fe1f80e9653126ec0df9222" name="a25ffb1de9fe1f80e9653126ec0df9222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ffb1de9fe1f80e9653126ec0df9222">&#9670;&#160;</a></span>HttpResponseHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a25ffb1de9fe1f80e9653126ec0df9222">WebSocketSharp.Net.HttpResponseHeader</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the HTTP header that can be specified in a server response. </p>
+<p>The headers of this enumeration are defined in RFC 2616</p>
+<p>or RFC 6455</p>
+<p>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a9499572d046f5c2faebd1050147d7a68" name="a25ffb1de9fe1f80e9653126ec0df9222a9499572d046f5c2faebd1050147d7a68"></a>CacheControl&#160;</td><td class="fielddoc"><p>Indicates the Cache-Control header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ac2cc7082a89c1ad6631a2f66af5f00c0" name="a25ffb1de9fe1f80e9653126ec0df9222ac2cc7082a89c1ad6631a2f66af5f00c0"></a>Connection&#160;</td><td class="fielddoc"><p>Indicates the Connection header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a44749712dbec183e983dcd78a7736c41" name="a25ffb1de9fe1f80e9653126ec0df9222a44749712dbec183e983dcd78a7736c41"></a>Date&#160;</td><td class="fielddoc"><p>Indicates the Date header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a17229586d3c63a13bfdc6c71c569c867" name="a25ffb1de9fe1f80e9653126ec0df9222a17229586d3c63a13bfdc6c71c569c867"></a>KeepAlive&#160;</td><td class="fielddoc"><p>Indicates the Keep-Alive header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222af607fdcea4127aad4f0cdae948a4f3f7" name="a25ffb1de9fe1f80e9653126ec0df9222af607fdcea4127aad4f0cdae948a4f3f7"></a>Pragma&#160;</td><td class="fielddoc"><p>Indicates the Pragma header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a7777d162b1fa729345ddb7de48654012" name="a25ffb1de9fe1f80e9653126ec0df9222a7777d162b1fa729345ddb7de48654012"></a>Trailer&#160;</td><td class="fielddoc"><p>Indicates the Trailer header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a5a34a26799128ce8229982506e8f7398" name="a25ffb1de9fe1f80e9653126ec0df9222a5a34a26799128ce8229982506e8f7398"></a>TransferEncoding&#160;</td><td class="fielddoc"><p>Indicates the Transfer-Encoding header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222af683581d3e75f05f9d9215f9b4696cef" name="a25ffb1de9fe1f80e9653126ec0df9222af683581d3e75f05f9d9215f9b4696cef"></a>Upgrade&#160;</td><td class="fielddoc"><p>Indicates the Upgrade header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ad794d3f7b3a0a8fdbd7582f6cacb5de0" name="a25ffb1de9fe1f80e9653126ec0df9222ad794d3f7b3a0a8fdbd7582f6cacb5de0"></a>Via&#160;</td><td class="fielddoc"><p>Indicates the Via header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a0eaadb4fcb48a0a0ed7bc9868be9fbaa" name="a25ffb1de9fe1f80e9653126ec0df9222a0eaadb4fcb48a0a0ed7bc9868be9fbaa"></a>Warning&#160;</td><td class="fielddoc"><p>Indicates the Warning header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a45f0fb72a0defdfdb01de4b5a5a6876b" name="a25ffb1de9fe1f80e9653126ec0df9222a45f0fb72a0defdfdb01de4b5a5a6876b"></a>Allow&#160;</td><td class="fielddoc"><p>Indicates the Allow header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a132d1f967127cbce22710ae8939b0ad3" name="a25ffb1de9fe1f80e9653126ec0df9222a132d1f967127cbce22710ae8939b0ad3"></a>ContentLength&#160;</td><td class="fielddoc"><p>Indicates the Content-Length header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ab8178dd7819d7531e93b9d8112c16e11" name="a25ffb1de9fe1f80e9653126ec0df9222ab8178dd7819d7531e93b9d8112c16e11"></a>ContentType&#160;</td><td class="fielddoc"><p>Indicates the Content-Type header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a94b393cfdfb356ba5e95a9f0f552e5f4" name="a25ffb1de9fe1f80e9653126ec0df9222a94b393cfdfb356ba5e95a9f0f552e5f4"></a>ContentEncoding&#160;</td><td class="fielddoc"><p>Indicates the Content-Encoding header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a89605743f4f361ed80572f7e6b552886" name="a25ffb1de9fe1f80e9653126ec0df9222a89605743f4f361ed80572f7e6b552886"></a>ContentLanguage&#160;</td><td class="fielddoc"><p>Indicates the Content-Language header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ab26f70c88f76ea0bb0e43d77189e04bc" name="a25ffb1de9fe1f80e9653126ec0df9222ab26f70c88f76ea0bb0e43d77189e04bc"></a>ContentLocation&#160;</td><td class="fielddoc"><p>Indicates the Content-Location header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ac9308c879667d69ca537833f88608b9a" name="a25ffb1de9fe1f80e9653126ec0df9222ac9308c879667d69ca537833f88608b9a"></a>ContentMd5&#160;</td><td class="fielddoc"><p>Indicates the Content-MD5 header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a93d83df6cb26cf9359ef1b111c2d3de9" name="a25ffb1de9fe1f80e9653126ec0df9222a93d83df6cb26cf9359ef1b111c2d3de9"></a>ContentRange&#160;</td><td class="fielddoc"><p>Indicates the Content-Range header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222acfc36842a01da69c484ffdcc6782f437" name="a25ffb1de9fe1f80e9653126ec0df9222acfc36842a01da69c484ffdcc6782f437"></a>Expires&#160;</td><td class="fielddoc"><p>Indicates the Expires header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ae262f42297bdd5776f68bd3b43868a16" name="a25ffb1de9fe1f80e9653126ec0df9222ae262f42297bdd5776f68bd3b43868a16"></a>LastModified&#160;</td><td class="fielddoc"><p>Indicates the Last-Modified header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a2a0f9c5ce0ab16d6359fe86bc8c5c1fe" name="a25ffb1de9fe1f80e9653126ec0df9222a2a0f9c5ce0ab16d6359fe86bc8c5c1fe"></a>AcceptRanges&#160;</td><td class="fielddoc"><p>Indicates the Accept-Ranges header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a9d8d2d5ab12b515182a505f54db7f538" name="a25ffb1de9fe1f80e9653126ec0df9222a9d8d2d5ab12b515182a505f54db7f538"></a>Age&#160;</td><td class="fielddoc"><p>Indicates the Age header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a611a2b5dcde004cf68ffd56345584d40" name="a25ffb1de9fe1f80e9653126ec0df9222a611a2b5dcde004cf68ffd56345584d40"></a>ETag&#160;</td><td class="fielddoc"><p>Indicates the ETag header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ace5bf551379459c1c61d2a204061c455" name="a25ffb1de9fe1f80e9653126ec0df9222ace5bf551379459c1c61d2a204061c455"></a>Location&#160;</td><td class="fielddoc"><p>Indicates the Location header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a5896637b3d6078393671d65439530c24" name="a25ffb1de9fe1f80e9653126ec0df9222a5896637b3d6078393671d65439530c24"></a>ProxyAuthenticate&#160;</td><td class="fielddoc"><p>Indicates the Proxy-Authenticate header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222afe8b9b68b9708454a8b46f8a5b7457bd" name="a25ffb1de9fe1f80e9653126ec0df9222afe8b9b68b9708454a8b46f8a5b7457bd"></a>RetryAfter&#160;</td><td class="fielddoc"><p>Indicates the Retry-After header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a9aa1b03934893d7134a660af4204f2a9" name="a25ffb1de9fe1f80e9653126ec0df9222a9aa1b03934893d7134a660af4204f2a9"></a>Server&#160;</td><td class="fielddoc"><p>Indicates the <a class="el" href="namespace_web_socket_sharp_1_1_server.html">Server</a> header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a2b6a91a2252e822b24c4aca7c30af865" name="a25ffb1de9fe1f80e9653126ec0df9222a2b6a91a2252e822b24c4aca7c30af865"></a>SetCookie&#160;</td><td class="fielddoc"><p>Indicates the Set-Cookie header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ad82a834165b99c4ea0969316296a2bc2" name="a25ffb1de9fe1f80e9653126ec0df9222ad82a834165b99c4ea0969316296a2bc2"></a>Vary&#160;</td><td class="fielddoc"><p>Indicates the Vary header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222ad69ac558d8cb68dcc1dfc571069ca1c3" name="a25ffb1de9fe1f80e9653126ec0df9222ad69ac558d8cb68dcc1dfc571069ca1c3"></a>WwwAuthenticate&#160;</td><td class="fielddoc"><p>Indicates the WWW-Authenticate header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222af421f299cfbfb33d74f94aed7b7dbbb9" name="a25ffb1de9fe1f80e9653126ec0df9222af421f299cfbfb33d74f94aed7b7dbbb9"></a>SecWebSocketExtensions&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Extensions header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a784ff14b71fcfdfef87a049439666544" name="a25ffb1de9fe1f80e9653126ec0df9222a784ff14b71fcfdfef87a049439666544"></a>SecWebSocketAccept&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Accept header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a7283351273fe1675716791b5b408e029" name="a25ffb1de9fe1f80e9653126ec0df9222a7283351273fe1675716791b5b408e029"></a>SecWebSocketProtocol&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Protocol header. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25ffb1de9fe1f80e9653126ec0df9222a217304a3d4d91a9b03de9d58a5d313cb" name="a25ffb1de9fe1f80e9653126ec0df9222a217304a3d4d91a9b03de9d58a5d313cb"></a>SecWebSocketVersion&#160;</td><td class="fielddoc"><p>Indicates the Sec-WebSocket-Version header. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad5c4bafe62bb407057f0269f3a296f0b" name="ad5c4bafe62bb407057f0269f3a296f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c4bafe62bb407057f0269f3a296f0b">&#9670;&#160;</a></span>HttpStatusCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad5c4bafe62bb407057f0269f3a296f0b">WebSocketSharp.Net.HttpStatusCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the HTTP status code that can be specified in a server response. </p>
+<p>The values of this enumeration are defined in RFC 2616</p>
+<p>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0baa0bfb8e59e6c13fc8d990781f77694fe" name="ad5c4bafe62bb407057f0269f3a296f0baa0bfb8e59e6c13fc8d990781f77694fe"></a>Continue&#160;</td><td class="fielddoc"><p>Equivalent to status code 100. Indicates that the client should continue with its request. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba548c5a637eddf65132b21411aeafc6a1" name="ad5c4bafe62bb407057f0269f3a296f0ba548c5a637eddf65132b21411aeafc6a1"></a>SwitchingProtocols&#160;</td><td class="fielddoc"><p>Equivalent to status code 101. Indicates that the server is switching the HTTP version or protocol on the connection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0bae0aa021e21dddbd6d8cecec71e9cf564" name="ad5c4bafe62bb407057f0269f3a296f0bae0aa021e21dddbd6d8cecec71e9cf564"></a>OK&#160;</td><td class="fielddoc"><p>Equivalent to status code 200. Indicates that the client's request has succeeded. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba0eceeb45861f9585dd7a97a3e36f85c6" name="ad5c4bafe62bb407057f0269f3a296f0ba0eceeb45861f9585dd7a97a3e36f85c6"></a>Created&#160;</td><td class="fielddoc"><p>Equivalent to status code 201. Indicates that the client's request has been fulfilled and resulted in a new resource being created. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba382ab522931673c11e398ead1b7b1678" name="ad5c4bafe62bb407057f0269f3a296f0ba382ab522931673c11e398ead1b7b1678"></a>Accepted&#160;</td><td class="fielddoc"><p>Equivalent to status code 202. Indicates that the client's request has been accepted for processing, but the processing has not been completed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba2d0ea43e788b779c0aec92366b711c2f" name="ad5c4bafe62bb407057f0269f3a296f0ba2d0ea43e788b779c0aec92366b711c2f"></a>NonAuthoritativeInformation&#160;</td><td class="fielddoc"><p>Equivalent to status code 203. Indicates that the returned metainformation is from a local or a third-party copy instead of the origin server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0bacd447f1ec89f564ebac583d60087df12" name="ad5c4bafe62bb407057f0269f3a296f0bacd447f1ec89f564ebac583d60087df12"></a>NoContent&#160;</td><td class="fielddoc"><p>Equivalent to status code 204. Indicates that the server has fulfilled the client's request but does not need to return an entity-body. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba4e9202c31896211f63be5b7345a897ed" name="ad5c4bafe62bb407057f0269f3a296f0ba4e9202c31896211f63be5b7345a897ed"></a>ResetContent&#160;</td><td class="fielddoc"><p>Equivalent to status code 205. Indicates that the server has fulfilled the client's request, and the user agent should reset the document view which caused the request to be sent. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba750de7eda10d780b3bbaefb57128c24b" name="ad5c4bafe62bb407057f0269f3a296f0ba750de7eda10d780b3bbaefb57128c24b"></a>PartialContent&#160;</td><td class="fielddoc"><p>Equivalent to status code 206. Indicates that the server has fulfilled the partial GET request for the resource. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0baa589749d075c3423333bdc93e3b4e774" name="ad5c4bafe62bb407057f0269f3a296f0baa589749d075c3423333bdc93e3b4e774"></a>MultipleChoices&#160;</td><td class="fielddoc"><p>Equivalent to status code 300. Indicates that the requested resource corresponds to any of multiple representations. </p>
+<p>MultipleChoices is a synonym for Ambiguous. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba02266588dfd4e565cc42949d0c73f28c" name="ad5c4bafe62bb407057f0269f3a296f0ba02266588dfd4e565cc42949d0c73f28c"></a>Ambiguous&#160;</td><td class="fielddoc"><p>Equivalent to status code 300. Indicates that the requested resource corresponds to any of multiple representations. </p>
+<p>Ambiguous is a synonym for MultipleChoices. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba32638c25f4c913fce6214c2c4afff9dc" name="ad5c4bafe62bb407057f0269f3a296f0ba32638c25f4c913fce6214c2c4afff9dc"></a>MovedPermanently&#160;</td><td class="fielddoc"><p>Equivalent to status code 301. Indicates that the requested resource has been assigned a new permanent URI and any future references to this resource should use one of the returned URIs. </p>
+<p>MovedPermanently is a synonym for Moved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba95bfdefaaf01553cbf21ccd942855c69" name="ad5c4bafe62bb407057f0269f3a296f0ba95bfdefaaf01553cbf21ccd942855c69"></a>Moved&#160;</td><td class="fielddoc"><p>Equivalent to status code 301. Indicates that the requested resource has been assigned a new permanent URI and any future references to this resource should use one of the returned URIs. </p>
+<p>Moved is a synonym for MovedPermanently. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba5d695cc28c6a7ea955162fbdd0ae42b9" name="ad5c4bafe62bb407057f0269f3a296f0ba5d695cc28c6a7ea955162fbdd0ae42b9"></a>Found&#160;</td><td class="fielddoc"><p>Equivalent to status code 302. Indicates that the requested resource is located temporarily under a different URI. </p>
+<p>Found is a synonym for Redirect. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba4202ef115ebede37eb22297113f5fb32" name="ad5c4bafe62bb407057f0269f3a296f0ba4202ef115ebede37eb22297113f5fb32"></a>Redirect&#160;</td><td class="fielddoc"><p>Equivalent to status code 302. Indicates that the requested resource is located temporarily under a different URI. </p>
+<p>Redirect is a synonym for Found. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba7843649eb3841f496a79303fd815029e" name="ad5c4bafe62bb407057f0269f3a296f0ba7843649eb3841f496a79303fd815029e"></a>SeeOther&#160;</td><td class="fielddoc"><p>Equivalent to status code 303. Indicates that the response to the request can be found under a different URI and should be retrieved using a GET method on that resource. </p>
+<p>SeeOther is a synonym for RedirectMethod. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba3d006d7cd9a99992b94bc01e54a067fc" name="ad5c4bafe62bb407057f0269f3a296f0ba3d006d7cd9a99992b94bc01e54a067fc"></a>RedirectMethod&#160;</td><td class="fielddoc"><p>Equivalent to status code 303. Indicates that the response to the request can be found under a different URI and should be retrieved using a GET method on that resource. </p>
+<p>RedirectMethod is a synonym for SeeOther. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0bac169e6d9a1b9442001384de8dcf49ab9" name="ad5c4bafe62bb407057f0269f3a296f0bac169e6d9a1b9442001384de8dcf49ab9"></a>NotModified&#160;</td><td class="fielddoc"><p>Equivalent to status code 304. Indicates that the client has performed a conditional GET request and access is allowed, but the document has not been modified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba0a272f25fd5e8a06065ef8ee41a88bea" name="ad5c4bafe62bb407057f0269f3a296f0ba0a272f25fd5e8a06065ef8ee41a88bea"></a>UseProxy&#160;</td><td class="fielddoc"><p>Equivalent to status code 305. Indicates that the requested resource must be accessed through the proxy given by the Location field. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba92e592d90b9548016776a6fb68dccded" name="ad5c4bafe62bb407057f0269f3a296f0ba92e592d90b9548016776a6fb68dccded"></a>Unused&#160;</td><td class="fielddoc"><p>Equivalent to status code 306. This status code was used in a previous version of the specification, is no longer used, and is reserved for future use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba1b73a351faf2b550d06fae9cc6e0a894" name="ad5c4bafe62bb407057f0269f3a296f0ba1b73a351faf2b550d06fae9cc6e0a894"></a>TemporaryRedirect&#160;</td><td class="fielddoc"><p>Equivalent to status code 307. Indicates that the requested resource is located temporarily under a different URI. </p>
+<p>TemporaryRedirect is a synonym for RedirectKeepVerb. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba5642a16c0f0774fec98ad5241b68f531" name="ad5c4bafe62bb407057f0269f3a296f0ba5642a16c0f0774fec98ad5241b68f531"></a>RedirectKeepVerb&#160;</td><td class="fielddoc"><p>Equivalent to status code 307. Indicates that the requested resource is located temporarily under a different URI. </p>
+<p>RedirectKeepVerb is a synonym for TemporaryRedirect. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba9edf8fbf00a57d95a0af4923c9a1ec6f" name="ad5c4bafe62bb407057f0269f3a296f0ba9edf8fbf00a57d95a0af4923c9a1ec6f"></a>BadRequest&#160;</td><td class="fielddoc"><p>Equivalent to status code 400. Indicates that the client's request could not be understood by the server due to malformed syntax. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0bae06d1ba70f1331e9f9a113cc2f887d3f" name="ad5c4bafe62bb407057f0269f3a296f0bae06d1ba70f1331e9f9a113cc2f887d3f"></a>Unauthorized&#160;</td><td class="fielddoc"><p>Equivalent to status code 401. Indicates that the client's request requires user authentication. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba4c99006c75b53fe48865cdfa0ac065ba" name="ad5c4bafe62bb407057f0269f3a296f0ba4c99006c75b53fe48865cdfa0ac065ba"></a>PaymentRequired&#160;</td><td class="fielddoc"><p>Equivalent to status code 402. This status code is reserved for future use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba722969577a96ca3953e84e3d949dee81" name="ad5c4bafe62bb407057f0269f3a296f0ba722969577a96ca3953e84e3d949dee81"></a>Forbidden&#160;</td><td class="fielddoc"><p>Equivalent to status code 403. Indicates that the server understood the client's request but is refusing to fulfill it. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba38c300f4fc9ce8a77aad4a30de05cad8" name="ad5c4bafe62bb407057f0269f3a296f0ba38c300f4fc9ce8a77aad4a30de05cad8"></a>NotFound&#160;</td><td class="fielddoc"><p>Equivalent to status code 404. Indicates that the server has not found anything matching the request URI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba8ba68fee5542f5fd071aed140c39bd8e" name="ad5c4bafe62bb407057f0269f3a296f0ba8ba68fee5542f5fd071aed140c39bd8e"></a>MethodNotAllowed&#160;</td><td class="fielddoc"><p>Equivalent to status code 405. Indicates that the method specified in the request line is not allowed for the resource identified by the request URI. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0baf83a928e6a3f3b502ffadd2a414ce48c" name="ad5c4bafe62bb407057f0269f3a296f0baf83a928e6a3f3b502ffadd2a414ce48c"></a>NotAcceptable&#160;</td><td class="fielddoc"><p>Equivalent to status code 406. Indicates that the server does not have the appropriate resource to respond to the Accept headers in the client's request. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba59a2898a8bf9da75a5855e76110f06f2" name="ad5c4bafe62bb407057f0269f3a296f0ba59a2898a8bf9da75a5855e76110f06f2"></a>ProxyAuthenticationRequired&#160;</td><td class="fielddoc"><p>Equivalent to status code 407. Indicates that the client must first authenticate itself with the proxy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba3632c2e4e6225d4d9fcd2a6fd2c65048" name="ad5c4bafe62bb407057f0269f3a296f0ba3632c2e4e6225d4d9fcd2a6fd2c65048"></a>RequestTimeout&#160;</td><td class="fielddoc"><p>Equivalent to status code 408. Indicates that the client did not produce a request within the time that the server was prepared to wait. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0baf1d4ac54357cc0932f385d56814ba7e4" name="ad5c4bafe62bb407057f0269f3a296f0baf1d4ac54357cc0932f385d56814ba7e4"></a>Conflict&#160;</td><td class="fielddoc"><p>Equivalent to status code 409. Indicates that the client's request could not be completed due to a conflict on the server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba0b497b33b1a05057bc1634e607170bf6" name="ad5c4bafe62bb407057f0269f3a296f0ba0b497b33b1a05057bc1634e607170bf6"></a>Gone&#160;</td><td class="fielddoc"><p>Equivalent to status code 410. Indicates that the requested resource is no longer available at the server and no forwarding address is known. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba8282fb93cb1cf45b135ea191668ca583" name="ad5c4bafe62bb407057f0269f3a296f0ba8282fb93cb1cf45b135ea191668ca583"></a>LengthRequired&#160;</td><td class="fielddoc"><p>Equivalent to status code 411. Indicates that the server refuses to accept the client's request without a defined Content-Length. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba3542a02d18f11f46d53990d91752a6d4" name="ad5c4bafe62bb407057f0269f3a296f0ba3542a02d18f11f46d53990d91752a6d4"></a>PreconditionFailed&#160;</td><td class="fielddoc"><p>Equivalent to status code 412. Indicates that the precondition given in one or more of the request headers evaluated to false when it was tested on the server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba1d2dd18ee1a925e5887cbc2f9202e779" name="ad5c4bafe62bb407057f0269f3a296f0ba1d2dd18ee1a925e5887cbc2f9202e779"></a>RequestEntityTooLarge&#160;</td><td class="fielddoc"><p>Equivalent to status code 413. Indicates that the entity of the client's request is larger than the server is willing or able to process. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba08ad854bbc441f4edb6828769f8d3399" name="ad5c4bafe62bb407057f0269f3a296f0ba08ad854bbc441f4edb6828769f8d3399"></a>RequestUriTooLong&#160;</td><td class="fielddoc"><p>Equivalent to status code 414. Indicates that the request URI is longer than the server is willing to interpret. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0baa3219a6843adbb23de79b4df9c307f5d" name="ad5c4bafe62bb407057f0269f3a296f0baa3219a6843adbb23de79b4df9c307f5d"></a>UnsupportedMediaType&#160;</td><td class="fielddoc"><p>Equivalent to status code 415. Indicates that the entity of the client's request is in a format not supported by the requested resource for the requested method. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba7779e53fc887ac0429f4ebde5fc0b59f" name="ad5c4bafe62bb407057f0269f3a296f0ba7779e53fc887ac0429f4ebde5fc0b59f"></a>RequestedRangeNotSatisfiable&#160;</td><td class="fielddoc"><p>Equivalent to status code 416. Indicates that none of the range specifier values in a Range request header overlap the current extent of the selected resource. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba6af78095a2be4a230ba87f03dd131830" name="ad5c4bafe62bb407057f0269f3a296f0ba6af78095a2be4a230ba87f03dd131830"></a>ExpectationFailed&#160;</td><td class="fielddoc"><p>Equivalent to status code 417. Indicates that the expectation given in an Expect request header could not be met by the server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0baecbf01325f1c744e9d7bb586ac2eb5ed" name="ad5c4bafe62bb407057f0269f3a296f0baecbf01325f1c744e9d7bb586ac2eb5ed"></a>InternalServerError&#160;</td><td class="fielddoc"><p>Equivalent to status code 500. Indicates that the server encountered an unexpected condition which prevented it from fulfilling the client's request. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba997ca4ce119685f40f03a9a8a6c5346e" name="ad5c4bafe62bb407057f0269f3a296f0ba997ca4ce119685f40f03a9a8a6c5346e"></a>NotImplemented&#160;</td><td class="fielddoc"><p>Equivalent to status code 501. Indicates that the server does not support the functionality required to fulfill the client's request. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba0e7c9ad08be0653518bf456c9994ace5" name="ad5c4bafe62bb407057f0269f3a296f0ba0e7c9ad08be0653518bf456c9994ace5"></a>BadGateway&#160;</td><td class="fielddoc"><p>Equivalent to status code 502. Indicates that a gateway or proxy server received an invalid response from the upstream server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba2a4581043d849bcb0e4747970ef1489b" name="ad5c4bafe62bb407057f0269f3a296f0ba2a4581043d849bcb0e4747970ef1489b"></a>ServiceUnavailable&#160;</td><td class="fielddoc"><p>Equivalent to status code 503. Indicates that the server is currently unable to handle the client's request due to a temporary overloading or maintenance of the server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0bada405cbc74723dfdda615e3f679ef2be" name="ad5c4bafe62bb407057f0269f3a296f0bada405cbc74723dfdda615e3f679ef2be"></a>GatewayTimeout&#160;</td><td class="fielddoc"><p>Equivalent to status code 504. Indicates that a gateway or proxy server did not receive a timely response from the upstream server or some other auxiliary server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5c4bafe62bb407057f0269f3a296f0ba56a7a02e415f5bf106088218f646c04f" name="ad5c4bafe62bb407057f0269f3a296f0ba56a7a02e415f5bf106088218f646c04f"></a>HttpVersionNotSupported&#160;</td><td class="fielddoc"><p>Equivalent to status code 505. Indicates that the server does not support the HTTP version used in the client's request. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a class="el" href="namespace_web_socket_sharp_1_1_net.html">Net</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

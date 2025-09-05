@@ -1,0 +1,1990 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.WebSocket クラス</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_web_socket_sharp_1_1_web_socket.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#events">イベント</a> &#124;
+<a href="class_web_socket_sharp_1_1_web_socket-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp.WebSocket クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implements the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface.  
+ <a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa05a011a3a77adeb9d331f9e7cafd667" id="r_aa05a011a3a77adeb9d331f9e7cafd667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05a011a3a77adeb9d331f9e7cafd667">WebSocket</a> (string url, Dictionary&lt; string, string &gt; customHeaders, params string[] protocols)</td></tr>
+<tr class="memdesc:aa05a011a3a77adeb9d331f9e7cafd667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> class with the specified URL and optionally subprotocols.  <br /></td></tr>
+<tr class="separator:aa05a011a3a77adeb9d331f9e7cafd667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074f26983b7c7691a3a28f438af1056e" id="r_a074f26983b7c7691a3a28f438af1056e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074f26983b7c7691a3a28f438af1056e">Close</a> ()</td></tr>
+<tr class="memdesc:a074f26983b7c7691a3a28f438af1056e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection.  <br /></td></tr>
+<tr class="separator:a074f26983b7c7691a3a28f438af1056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d315f9e8660e620f382b6469857961" id="r_a50d315f9e8660e620f382b6469857961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50d315f9e8660e620f382b6469857961">Close</a> (ushort code)</td></tr>
+<tr class="memdesc:a50d315f9e8660e620f382b6469857961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection with the specified status code.  <br /></td></tr>
+<tr class="separator:a50d315f9e8660e620f382b6469857961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6658a38a5e728d30dec1e96c50a0dd7c" id="r_a6658a38a5e728d30dec1e96c50a0dd7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6658a38a5e728d30dec1e96c50a0dd7c">Close</a> (<a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a> code)</td></tr>
+<tr class="memdesc:a6658a38a5e728d30dec1e96c50a0dd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection with the specified status code.  <br /></td></tr>
+<tr class="separator:a6658a38a5e728d30dec1e96c50a0dd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2805d57cc09196b72dab6f8a2c4795f" id="r_ac2805d57cc09196b72dab6f8a2c4795f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2805d57cc09196b72dab6f8a2c4795f">Close</a> (ushort code, string reason)</td></tr>
+<tr class="memdesc:ac2805d57cc09196b72dab6f8a2c4795f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection with the specified status code and reason.  <br /></td></tr>
+<tr class="separator:ac2805d57cc09196b72dab6f8a2c4795f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215e13e43f6b13847c8fc4e41a52a142" id="r_a215e13e43f6b13847c8fc4e41a52a142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a215e13e43f6b13847c8fc4e41a52a142">Close</a> (<a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a> code, string reason)</td></tr>
+<tr class="memdesc:a215e13e43f6b13847c8fc4e41a52a142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection with the specified status code and reason.  <br /></td></tr>
+<tr class="separator:a215e13e43f6b13847c8fc4e41a52a142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2475d7041fec7874d4a14f95d089cd50" id="r_a2475d7041fec7874d4a14f95d089cd50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2475d7041fec7874d4a14f95d089cd50">CloseAsync</a> ()</td></tr>
+<tr class="memdesc:a2475d7041fec7874d4a14f95d089cd50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection asynchronously.  <br /></td></tr>
+<tr class="separator:a2475d7041fec7874d4a14f95d089cd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1493f88ce42b8c32c0f3222be6d1d92e" id="r_a1493f88ce42b8c32c0f3222be6d1d92e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1493f88ce42b8c32c0f3222be6d1d92e">CloseAsync</a> (ushort code)</td></tr>
+<tr class="memdesc:a1493f88ce42b8c32c0f3222be6d1d92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection asynchronously with the specified status code.  <br /></td></tr>
+<tr class="separator:a1493f88ce42b8c32c0f3222be6d1d92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8632458934cf62b96146bdcb5b971191" id="r_a8632458934cf62b96146bdcb5b971191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8632458934cf62b96146bdcb5b971191">CloseAsync</a> (<a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a> code)</td></tr>
+<tr class="memdesc:a8632458934cf62b96146bdcb5b971191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection asynchronously with the specified status code.  <br /></td></tr>
+<tr class="separator:a8632458934cf62b96146bdcb5b971191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6adff843659041078762b3b445da6a" id="r_a3e6adff843659041078762b3b445da6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e6adff843659041078762b3b445da6a">CloseAsync</a> (ushort code, string reason)</td></tr>
+<tr class="memdesc:a3e6adff843659041078762b3b445da6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection asynchronously with the specified status code and reason.  <br /></td></tr>
+<tr class="separator:a3e6adff843659041078762b3b445da6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9176abad281d5ced10f71397f33555e" id="r_ac9176abad281d5ced10f71397f33555e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9176abad281d5ced10f71397f33555e">CloseAsync</a> (<a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a> code, string reason)</td></tr>
+<tr class="memdesc:ac9176abad281d5ced10f71397f33555e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection asynchronously with the specified status code and reason.  <br /></td></tr>
+<tr class="separator:ac9176abad281d5ced10f71397f33555e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18295e4652292e228bccb7629dc8bf56" id="r_a18295e4652292e228bccb7629dc8bf56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18295e4652292e228bccb7629dc8bf56">Connect</a> ()</td></tr>
+<tr class="memdesc:a18295e4652292e228bccb7629dc8bf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a connection.  <br /></td></tr>
+<tr class="separator:a18295e4652292e228bccb7629dc8bf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f711bb0294341ffe7dcb6611f69259" id="r_a32f711bb0294341ffe7dcb6611f69259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f711bb0294341ffe7dcb6611f69259">ConnectAsync</a> ()</td></tr>
+<tr class="memdesc:a32f711bb0294341ffe7dcb6611f69259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a connection asynchronously.  <br /></td></tr>
+<tr class="separator:a32f711bb0294341ffe7dcb6611f69259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419d974577b9b6af0a957109a7987788" id="r_a419d974577b9b6af0a957109a7987788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a419d974577b9b6af0a957109a7987788">Ping</a> ()</td></tr>
+<tr class="memdesc:a419d974577b9b6af0a957109a7987788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a ping to the remote endpoint.  <br /></td></tr>
+<tr class="separator:a419d974577b9b6af0a957109a7987788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55098f3488d964f500199505bedbf5a" id="r_ac55098f3488d964f500199505bedbf5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55098f3488d964f500199505bedbf5a">Ping</a> (string message)</td></tr>
+<tr class="memdesc:ac55098f3488d964f500199505bedbf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a ping with the specified message to the remote endpoint.  <br /></td></tr>
+<tr class="separator:ac55098f3488d964f500199505bedbf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42c9f8ab0db0855376860da06f92bf1" id="r_ab42c9f8ab0db0855376860da06f92bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab42c9f8ab0db0855376860da06f92bf1">Send</a> (byte[] data)</td></tr>
+<tr class="memdesc:ab42c9f8ab0db0855376860da06f92bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified data to the remote endpoint.  <br /></td></tr>
+<tr class="separator:ab42c9f8ab0db0855376860da06f92bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b3d897ac33fba6a5fb76b0db3fd1c6" id="r_a61b3d897ac33fba6a5fb76b0db3fd1c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61b3d897ac33fba6a5fb76b0db3fd1c6">Send</a> (FileInfo fileInfo)</td></tr>
+<tr class="memdesc:a61b3d897ac33fba6a5fb76b0db3fd1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified file to the remote endpoint.  <br /></td></tr>
+<tr class="separator:a61b3d897ac33fba6a5fb76b0db3fd1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120f7a46e97ebb64e8ac7803fbb91ec5" id="r_a120f7a46e97ebb64e8ac7803fbb91ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a120f7a46e97ebb64e8ac7803fbb91ec5">Send</a> (string data)</td></tr>
+<tr class="memdesc:a120f7a46e97ebb64e8ac7803fbb91ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified data to the remote endpoint.  <br /></td></tr>
+<tr class="separator:a120f7a46e97ebb64e8ac7803fbb91ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7863db525f7b387151bb42a8238e583" id="r_ac7863db525f7b387151bb42a8238e583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7863db525f7b387151bb42a8238e583">Send</a> (Stream stream, int length)</td></tr>
+<tr class="memdesc:ac7863db525f7b387151bb42a8238e583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the data from the specified stream instance to the remote endpoint.  <br /></td></tr>
+<tr class="separator:ac7863db525f7b387151bb42a8238e583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbd8b41985c995fd46f4d4c6d1db897" id="r_a1bbd8b41985c995fd46f4d4c6d1db897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bbd8b41985c995fd46f4d4c6d1db897">SendAsync</a> (byte[] data, Action&lt; bool &gt; completed)</td></tr>
+<tr class="memdesc:a1bbd8b41985c995fd46f4d4c6d1db897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified data to the remote endpoint asynchronously.  <br /></td></tr>
+<tr class="separator:a1bbd8b41985c995fd46f4d4c6d1db897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09399bc7517166a9ecbb97bf5193712e" id="r_a09399bc7517166a9ecbb97bf5193712e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09399bc7517166a9ecbb97bf5193712e">SendAsync</a> (FileInfo fileInfo, Action&lt; bool &gt; completed)</td></tr>
+<tr class="memdesc:a09399bc7517166a9ecbb97bf5193712e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified file to the remote endpoint asynchronously.  <br /></td></tr>
+<tr class="separator:a09399bc7517166a9ecbb97bf5193712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb04fff851ccfccef3b3388f01b55d18" id="r_adb04fff851ccfccef3b3388f01b55d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb04fff851ccfccef3b3388f01b55d18">SendAsync</a> (string data, Action&lt; bool &gt; completed)</td></tr>
+<tr class="memdesc:adb04fff851ccfccef3b3388f01b55d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the specified data to the remote endpoint asynchronously.  <br /></td></tr>
+<tr class="separator:adb04fff851ccfccef3b3388f01b55d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07567d217047e9abf28f39b1a9c455e0" id="r_a07567d217047e9abf28f39b1a9c455e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07567d217047e9abf28f39b1a9c455e0">SendAsync</a> (Stream stream, int length, Action&lt; bool &gt; completed)</td></tr>
+<tr class="memdesc:a07567d217047e9abf28f39b1a9c455e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the data from the specified stream instance to the remote endpoint asynchronously.  <br /></td></tr>
+<tr class="separator:a07567d217047e9abf28f39b1a9c455e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac992c8e23c0ada297107a73e2020dec8" id="r_ac992c8e23c0ada297107a73e2020dec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac992c8e23c0ada297107a73e2020dec8">SetCookie</a> (<a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html">Cookie</a> cookie)</td></tr>
+<tr class="memdesc:ac992c8e23c0ada297107a73e2020dec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an HTTP cookie to send with the handshake request or response.  <br /></td></tr>
+<tr class="separator:ac992c8e23c0ada297107a73e2020dec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04baa4b31f72b9c4b246e2889ff4b02a" id="r_a04baa4b31f72b9c4b246e2889ff4b02a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04baa4b31f72b9c4b246e2889ff4b02a">SetCredentials</a> (string username, string password, bool preAuth)</td></tr>
+<tr class="memdesc:a04baa4b31f72b9c4b246e2889ff4b02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the credentials for the HTTP authentication (Basic/Digest).  <br /></td></tr>
+<tr class="separator:a04baa4b31f72b9c4b246e2889ff4b02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadf7a0ca615290fce3bb1e9b696d83f" id="r_afadf7a0ca615290fce3bb1e9b696d83f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afadf7a0ca615290fce3bb1e9b696d83f">SetProxy</a> (string url, string username, string password)</td></tr>
+<tr class="memdesc:afadf7a0ca615290fce3bb1e9b696d83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the URL of the HTTP proxy server through which to connect and the credentials for the HTTP proxy authentication (Basic/Digest).  <br /></td></tr>
+<tr class="separator:afadf7a0ca615290fce3bb1e9b696d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4e9d7568e676c4ec434a9cb861e6fc" id="r_aaa4e9d7568e676c4ec434a9cb861e6fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa4e9d7568e676c4ec434a9cb861e6fc">SetUserHeader</a> (string name, string value)</td></tr>
+<tr class="memdesc:aaa4e9d7568e676c4ec434a9cb861e6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a user header to send with the handshake request or response.  <br /></td></tr>
+<tr class="separator:aaa4e9d7568e676c4ec434a9cb861e6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a7f62f5f6449a6723e92eb10e16ef4c33" id="r_a7f62f5f6449a6723e92eb10e16ef4c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_web_socket_sharp.html#ab331f7541737191a8f20131ee8fa37d0">CompressionMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f62f5f6449a6723e92eb10e16ef4c33">Compression</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7f62f5f6449a6723e92eb10e16ef4c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the compression method used to compress a message.  <br /></td></tr>
+<tr class="separator:a7f62f5f6449a6723e92eb10e16ef4c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81df3c4204e98b181183d49cdaf7f2d" id="r_aa81df3c4204e98b181183d49cdaf7f2d"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html">Cookie</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa81df3c4204e98b181183d49cdaf7f2d">Cookies</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa81df3c4204e98b181183d49cdaf7f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HTTP cookies included in the handshake request/response.  <br /></td></tr>
+<tr class="separator:aa81df3c4204e98b181183d49cdaf7f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac27a36d12249ee40760b03d3f7a426e" id="r_aac27a36d12249ee40760b03d3f7a426e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_network_credential.html">NetworkCredential</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac27a36d12249ee40760b03d3f7a426e">Credentials</a><code> [get]</code></td></tr>
+<tr class="memdesc:aac27a36d12249ee40760b03d3f7a426e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the credentials for the HTTP authentication (Basic/Digest).  <br /></td></tr>
+<tr class="separator:aac27a36d12249ee40760b03d3f7a426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83c913af333c6b82dd236304463769c" id="r_ac83c913af333c6b82dd236304463769c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac83c913af333c6b82dd236304463769c">EmitOnPing</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac83c913af333c6b82dd236304463769c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the interface emits the message event when it receives a ping.  <br /></td></tr>
+<tr class="separator:ac83c913af333c6b82dd236304463769c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe90a9dffb1d21c0dab596d47b9c9ef4" id="r_afe90a9dffb1d21c0dab596d47b9c9ef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe90a9dffb1d21c0dab596d47b9c9ef4">EnableRedirection</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afe90a9dffb1d21c0dab596d47b9c9ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the URL redirection for the handshake request is allowed.  <br /></td></tr>
+<tr class="separator:afe90a9dffb1d21c0dab596d47b9c9ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65343392278b0fbaabe9b87b6eff9eef" id="r_a65343392278b0fbaabe9b87b6eff9eef"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65343392278b0fbaabe9b87b6eff9eef">Extensions</a><code> [get]</code></td></tr>
+<tr class="memdesc:a65343392278b0fbaabe9b87b6eff9eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the extensions selected by the server.  <br /></td></tr>
+<tr class="separator:a65343392278b0fbaabe9b87b6eff9eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e599a91f508d16a70961ccf8e88d92b" id="r_a2e599a91f508d16a70961ccf8e88d92b"><td class="memItemLeft" align="right" valign="top">NameValueCollection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e599a91f508d16a70961ccf8e88d92b">HandshakeResponseHeaders</a><code> [get]</code></td></tr>
+<tr class="memdesc:a2e599a91f508d16a70961ccf8e88d92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HTTP headers included in the handshake response.  <br /></td></tr>
+<tr class="separator:a2e599a91f508d16a70961ccf8e88d92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e90fcaf0324cda61143cb46ddf42a8" id="r_a82e90fcaf0324cda61143cb46ddf42a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e90fcaf0324cda61143cb46ddf42a8">IsAlive</a><code> [get]</code></td></tr>
+<tr class="memdesc:a82e90fcaf0324cda61143cb46ddf42a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the communication is possible.  <br /></td></tr>
+<tr class="separator:a82e90fcaf0324cda61143cb46ddf42a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec34f8033aeea821f9fbdf517e9a85f" id="r_aaec34f8033aeea821f9fbdf517e9a85f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaec34f8033aeea821f9fbdf517e9a85f">IsSecure</a><code> [get]</code></td></tr>
+<tr class="memdesc:aaec34f8033aeea821f9fbdf517e9a85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the connection is secure.  <br /></td></tr>
+<tr class="separator:aaec34f8033aeea821f9fbdf517e9a85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a621826f88498ae90d8b90db49626a" id="r_a85a621826f88498ae90d8b90db49626a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85a621826f88498ae90d8b90db49626a">Log</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a85a621826f88498ae90d8b90db49626a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the logging function.  <br /></td></tr>
+<tr class="separator:a85a621826f88498ae90d8b90db49626a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0b57f8b9ce26f4a005e9d29383cf26" id="r_a9f0b57f8b9ce26f4a005e9d29383cf26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f0b57f8b9ce26f4a005e9d29383cf26">NoDelay</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9f0b57f8b9ce26f4a005e9d29383cf26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the underlying TCP socket disables a delay when send or receive buffer is not full.  <br /></td></tr>
+<tr class="separator:a9f0b57f8b9ce26f4a005e9d29383cf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c35e3f040a1bd81bf095635af6383f" id="r_a32c35e3f040a1bd81bf095635af6383f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32c35e3f040a1bd81bf095635af6383f">Origin</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a32c35e3f040a1bd81bf095635af6383f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of the HTTP Origin header to send with the handshake request.  <br /></td></tr>
+<tr class="separator:a32c35e3f040a1bd81bf095635af6383f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f3cc97d65cb9716fe13ad4d6b7b53b" id="r_a61f3cc97d65cb9716fe13ad4d6b7b53b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61f3cc97d65cb9716fe13ad4d6b7b53b">Protocol</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a61f3cc97d65cb9716fe13ad4d6b7b53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of subprotocol selected by the server.  <br /></td></tr>
+<tr class="separator:a61f3cc97d65cb9716fe13ad4d6b7b53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7ae8e3a5ef28606a2b4e3c8090c8b5" id="r_a0f7ae8e3a5ef28606a2b4e3c8090c8b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_web_socket_sharp.html#ac9a7a50f3383860d695305a031401296">WebSocketState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7ae8e3a5ef28606a2b4e3c8090c8b5">ReadyState</a><code> [get]</code></td></tr>
+<tr class="memdesc:a0f7ae8e3a5ef28606a2b4e3c8090c8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current state of the interface.  <br /></td></tr>
+<tr class="separator:a0f7ae8e3a5ef28606a2b4e3c8090c8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c65204cfeda4c507a1459e2012aecd0" id="r_a9c65204cfeda4c507a1459e2012aecd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_client_ssl_configuration.html">ClientSslConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c65204cfeda4c507a1459e2012aecd0">SslConfiguration</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9c65204cfeda4c507a1459e2012aecd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the configuration for secure connection.  <br /></td></tr>
+<tr class="separator:a9c65204cfeda4c507a1459e2012aecd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bb064e50191adb93b77cf35181bb02" id="r_ac4bb064e50191adb93b77cf35181bb02"><td class="memItemLeft" align="right" valign="top">Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4bb064e50191adb93b77cf35181bb02">Url</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac4bb064e50191adb93b77cf35181bb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the URL to which to connect.  <br /></td></tr>
+<tr class="separator:ac4bb064e50191adb93b77cf35181bb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b2f96c2c9a99516793aa3ae84fd495" id="r_af7b2f96c2c9a99516793aa3ae84fd495"><td class="memItemLeft" align="right" valign="top">TimeSpan&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7b2f96c2c9a99516793aa3ae84fd495">WaitTime</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af7b2f96c2c9a99516793aa3ae84fd495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the time to wait for the response to the ping or close.  <br /></td></tr>
+<tr class="separator:af7b2f96c2c9a99516793aa3ae84fd495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
+イベント</h2></td></tr>
+<tr class="memitem:a974fdf6d13561300388752ff5fcf697a" id="r_a974fdf6d13561300388752ff5fcf697a"><td class="memItemLeft" align="right" valign="top"><a id="a974fdf6d13561300388752ff5fcf697a" name="a974fdf6d13561300388752ff5fcf697a"></a>
+EventHandler&lt; <a class="el" href="class_web_socket_sharp_1_1_close_event_args.html">CloseEventArgs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnClose</b></td></tr>
+<tr class="memdesc:a974fdf6d13561300388752ff5fcf697a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Occurs when the connection has been closed. <br /></td></tr>
+<tr class="separator:a974fdf6d13561300388752ff5fcf697a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67517b9fdd480f4f69d67f85944ca18" id="r_ad67517b9fdd480f4f69d67f85944ca18"><td class="memItemLeft" align="right" valign="top"><a id="ad67517b9fdd480f4f69d67f85944ca18" name="ad67517b9fdd480f4f69d67f85944ca18"></a>
+EventHandler&lt; <a class="el" href="class_web_socket_sharp_1_1_error_event_args.html">ErrorEventArgs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnError</b></td></tr>
+<tr class="memdesc:ad67517b9fdd480f4f69d67f85944ca18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Occurs when the interface gets an error. <br /></td></tr>
+<tr class="separator:ad67517b9fdd480f4f69d67f85944ca18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acf3d15bd8d7daec52e29a5871dc652" id="r_a9acf3d15bd8d7daec52e29a5871dc652"><td class="memItemLeft" align="right" valign="top"><a id="a9acf3d15bd8d7daec52e29a5871dc652" name="a9acf3d15bd8d7daec52e29a5871dc652"></a>
+EventHandler&lt; <a class="el" href="class_web_socket_sharp_1_1_message_event_args.html">MessageEventArgs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnMessage</b></td></tr>
+<tr class="memdesc:a9acf3d15bd8d7daec52e29a5871dc652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Occurs when the interface receives a message. <br /></td></tr>
+<tr class="separator:a9acf3d15bd8d7daec52e29a5871dc652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9190a8bf0bfdadd5154a8d94799486" id="r_a3f9190a8bf0bfdadd5154a8d94799486"><td class="memItemLeft" align="right" valign="top"><a id="a3f9190a8bf0bfdadd5154a8d94799486" name="a3f9190a8bf0bfdadd5154a8d94799486"></a>
+EventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>OnOpen</b></td></tr>
+<tr class="memdesc:a3f9190a8bf0bfdadd5154a8d94799486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Occurs when the connection has been established. <br /></td></tr>
+<tr class="separator:a3f9190a8bf0bfdadd5154a8d94799486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Implements the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface. </p>
+<p>This class provides a set of methods and properties for two-way communication using the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> protocol. </p>
+<p>The <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> protocol is defined in RFC 6455</p>
+<p>. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aa05a011a3a77adeb9d331f9e7cafd667" name="aa05a011a3a77adeb9d331f9e7cafd667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05a011a3a77adeb9d331f9e7cafd667">&#9670;&#160;</a></span>WebSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.WebSocket.WebSocket </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>url</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Dictionary&lt; string, string &gt;</td>          <td class="paramname"><span class="paramname"><em>customHeaders</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string[]</td>          <td class="paramname"><span class="paramname"><em>protocols</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> class with the specified URL and optionally subprotocols. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>A string that specifies the URL to which to connect. The scheme of the URL must be ws or wss. The new instance uses a secure connection if the scheme is wss. </td></tr>
+    <tr><td class="paramname">protocols</td><td>An array of string that specifies the names of the subprotocols if necessary. Each value of the array must be a token defined in  RFC 2616. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>url</em>  is an empty string. -or- <em>url</em>  is an invalid <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> URL string. -or- <em>protocols</em>  contains a value that is not a token. -or- <em>protocols</em>  contains a value twice. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>url</em>  is <code>null</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a074f26983b7c7691a3a28f438af1056e" name="a074f26983b7c7691a3a28f438af1056e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074f26983b7c7691a3a28f438af1056e">&#9670;&#160;</a></span>Close() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+
+</div>
+</div>
+<a id="a6658a38a5e728d30dec1e96c50a0dd7c" name="a6658a38a5e728d30dec1e96c50a0dd7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6658a38a5e728d30dec1e96c50a0dd7c">&#9670;&#160;</a></span>Close() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a></td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection with the specified status code. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>One of the <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c" title="Indicates the status code for the WebSocket connection close.">CloseStatusCode</a> enum values. It specifies the status code indicating the reason for the close. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is an undefined enum value. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9" title="Equivalent to close status 1011. Indicates that a server is terminating the connection because it has...">CloseStatusCode.ServerError</a>. It cannot be used by a client. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2" title="Equivalent to close status 1010. Indicates that a client is terminating the connection because it has...">CloseStatusCode.MandatoryExtension</a>. It cannot be used by a server. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a215e13e43f6b13847c8fc4e41a52a142" name="a215e13e43f6b13847c8fc4e41a52a142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215e13e43f6b13847c8fc4e41a52a142">&#9670;&#160;</a></span>Close() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a></td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection with the specified status code and reason. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>One of the <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c" title="Indicates the status code for the WebSocket connection close.">CloseStatusCode</a> enum values. It specifies the status code indicating the reason for the close. </td></tr>
+    <tr><td class="paramname">reason</td><td>A string that specifies the reason for the close. Its size must be 123 bytes or less in UTF-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is an undefined enum value. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9" title="Equivalent to close status 1011. Indicates that a server is terminating the connection because it has...">CloseStatusCode.ServerError</a>. It cannot be used by a client. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2" title="Equivalent to close status 1010. Indicates that a client is terminating the connection because it has...">CloseStatusCode.MandatoryExtension</a>. It cannot be used by a server. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842ca2c1303eeef311e5528208cf16767d135" title="Equivalent to close status 1005. Indicates that no status code was actually present....">CloseStatusCode.NoStatus</a> and <em>reason</em>  is specified. -or- <em>reason</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The size of <em>reason</em>  is greater than 123 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50d315f9e8660e620f382b6469857961" name="a50d315f9e8660e620f382b6469857961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d315f9e8660e620f382b6469857961">&#9670;&#160;</a></span>Close() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Close </td>
+          <td>(</td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection with the specified status code. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>A ushort that specifies the status code indicating the reason for the close. The status codes are defined in  Section 7.4of RFC 6455. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is 1011 (server error). It cannot be used by a client. -or- <em>code</em>  is 1010 (mandatory extension). It cannot be used by a server. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>code</em>  is less than 1000 or greater than 4999. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2805d57cc09196b72dab6f8a2c4795f" name="ac2805d57cc09196b72dab6f8a2c4795f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2805d57cc09196b72dab6f8a2c4795f">&#9670;&#160;</a></span>Close() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Close </td>
+          <td>(</td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection with the specified status code and reason. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>A ushort that specifies the status code indicating the reason for the close. The status codes are defined in  Section 7.4of RFC 6455. </td></tr>
+    <tr><td class="paramname">reason</td><td>A string that specifies the reason for the close. Its size must be 123 bytes or less in UTF-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is 1011 (server error). It cannot be used by a client. -or- <em>code</em>  is 1010 (mandatory extension). It cannot be used by a server. -or- <em>code</em>  is 1005 (no status) and <em>reason</em>  is specified. -or- <em>reason</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>code</em>  is less than 1000 or greater than 4999. -or- The size of <em>reason</em>  is greater than 123 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2475d7041fec7874d4a14f95d089cd50" name="a2475d7041fec7874d4a14f95d089cd50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2475d7041fec7874d4a14f95d089cd50">&#9670;&#160;</a></span>CloseAsync() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.CloseAsync </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection asynchronously. </p>
+<p>This method does not wait for the close to be complete. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+
+</div>
+</div>
+<a id="a8632458934cf62b96146bdcb5b971191" name="a8632458934cf62b96146bdcb5b971191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8632458934cf62b96146bdcb5b971191">&#9670;&#160;</a></span>CloseAsync() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.CloseAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a></td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection asynchronously with the specified status code. </p>
+<p>This method does not wait for the close to be complete. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>One of the <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c" title="Indicates the status code for the WebSocket connection close.">CloseStatusCode</a> enum values. It specifies the status code indicating the reason for the close. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is an undefined enum value. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9" title="Equivalent to close status 1011. Indicates that a server is terminating the connection because it has...">CloseStatusCode.ServerError</a>. It cannot be used by a client. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2" title="Equivalent to close status 1010. Indicates that a client is terminating the connection because it has...">CloseStatusCode.MandatoryExtension</a>. It cannot be used by a server. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9176abad281d5ced10f71397f33555e" name="ac9176abad281d5ced10f71397f33555e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9176abad281d5ced10f71397f33555e">&#9670;&#160;</a></span>CloseAsync() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.CloseAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c">CloseStatusCode</a></td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection asynchronously with the specified status code and reason. </p>
+<p>This method does not wait for the close to be complete. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>One of the <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842c" title="Indicates the status code for the WebSocket connection close.">CloseStatusCode</a> enum values. It specifies the status code indicating the reason for the close. </td></tr>
+    <tr><td class="paramname">reason</td><td>A string that specifies the reason for the close. Its size must be 123 bytes or less in UTF-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is an undefined enum value. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842ca7d65c64901711bc2cd2a33ff2641fbe9" title="Equivalent to close status 1011. Indicates that a server is terminating the connection because it has...">CloseStatusCode.ServerError</a>. It cannot be used by a client. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842caaf38a9408a29ec3eadae4509ae54ccb2" title="Equivalent to close status 1010. Indicates that a client is terminating the connection because it has...">CloseStatusCode.MandatoryExtension</a>. It cannot be used by a server. -or- <em>code</em>  is <a class="el" href="namespace_web_socket_sharp.html#a30cb7538a7cd1d1d520cf1b1ecb5842ca2c1303eeef311e5528208cf16767d135" title="Equivalent to close status 1005. Indicates that no status code was actually present....">CloseStatusCode.NoStatus</a> and <em>reason</em>  is specified. -or- <em>reason</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The size of <em>reason</em>  is greater than 123 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1493f88ce42b8c32c0f3222be6d1d92e" name="a1493f88ce42b8c32c0f3222be6d1d92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1493f88ce42b8c32c0f3222be6d1d92e">&#9670;&#160;</a></span>CloseAsync() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.CloseAsync </td>
+          <td>(</td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection asynchronously with the specified status code. </p>
+<p>This method does not wait for the close to be complete. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>A ushort that specifies the status code indicating the reason for the close. The status codes are defined in  Section 7.4of RFC 6455. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is 1011 (server error). It cannot be used by a client. -or- <em>code</em>  is 1010 (mandatory extension). It cannot be used by a server. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>code</em>  is less than 1000 or greater than 4999. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e6adff843659041078762b3b445da6a" name="a3e6adff843659041078762b3b445da6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6adff843659041078762b3b445da6a">&#9670;&#160;</a></span>CloseAsync() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.CloseAsync </td>
+          <td>(</td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes the connection asynchronously with the specified status code and reason. </p>
+<p>This method does not wait for the close to be complete. </p>
+<p>This method does nothing if the current state of the interface is Closing or Closed. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>A ushort that specifies the status code indicating the reason for the close. The status codes are defined in  Section 7.4of RFC 6455. </td></tr>
+    <tr><td class="paramname">reason</td><td>A string that specifies the reason for the close. Its size must be 123 bytes or less in UTF-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>code</em>  is 1011 (server error). It cannot be used by a client. -or- <em>code</em>  is 1010 (mandatory extension). It cannot be used by a server. -or- <em>code</em>  is 1005 (no status) and <em>reason</em>  is specified. -or- <em>reason</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td><em>code</em>  is less than 1000 or greater than 4999. -or- The size of <em>reason</em>  is greater than 123 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a18295e4652292e228bccb7629dc8bf56" name="a18295e4652292e228bccb7629dc8bf56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18295e4652292e228bccb7629dc8bf56">&#9670;&#160;</a></span>Connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Connect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Establishes a connection. </p>
+<p>This method does nothing when the current state of the interface is Connecting or Open. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The Connect method is not available if the interface is not for the client. -or- The Connect method is not available if a series of reconnecting has failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32f711bb0294341ffe7dcb6611f69259" name="a32f711bb0294341ffe7dcb6611f69259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f711bb0294341ffe7dcb6611f69259">&#9670;&#160;</a></span>ConnectAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.ConnectAsync </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Establishes a connection asynchronously. </p>
+<p>This method does not wait for the connect process to be complete. </p>
+<p>This method does nothing when the current state of the interface is Connecting or Open. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The ConnectAsync method is not available if the interface is not for the client. -or- The ConnectAsync method is not available if a series of reconnecting has failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a419d974577b9b6af0a957109a7987788" name="a419d974577b9b6af0a957109a7987788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419d974577b9b6af0a957109a7987788">&#9670;&#160;</a></span>Ping() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.Ping </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a ping to the remote endpoint. </p>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if the send has successfully done and a pong has been received within a time; otherwise, <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ac55098f3488d964f500199505bedbf5a" name="ac55098f3488d964f500199505bedbf5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55098f3488d964f500199505bedbf5a">&#9670;&#160;</a></span>Ping() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.Ping </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a ping with the specified message to the remote endpoint. </p>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if the send has successfully done and a pong has been received within a time; otherwise, <code>false</code>. </dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to send. Its size must be 125 bytes or less in UTF-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>message</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The size of <em>message</em>  is greater than 125 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab42c9f8ab0db0855376860da06f92bf1" name="ab42c9f8ab0db0855376860da06f92bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42c9f8ab0db0855376860da06f92bf1">&#9670;&#160;</a></span>Send() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Send </td>
+          <td>(</td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the specified data to the remote endpoint. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>An array of byte that specifies the binary data to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td><em>data</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The Send method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61b3d897ac33fba6a5fb76b0db3fd1c6" name="a61b3d897ac33fba6a5fb76b0db3fd1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b3d897ac33fba6a5fb76b0db3fd1c6">&#9670;&#160;</a></span>Send() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Send </td>
+          <td>(</td>
+          <td class="paramtype">FileInfo</td>          <td class="paramname"><span class="paramname"><em>fileInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the specified file to the remote endpoint. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileInfo</td><td>A FileInfo that specifies the file to send. The file is sent as the binary data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>The file does not exist. -or- The file could not be opened. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>fileInfo</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The Send method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7863db525f7b387151bb42a8238e583" name="ac7863db525f7b387151bb42a8238e583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7863db525f7b387151bb42a8238e583">&#9670;&#160;</a></span>Send() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Send </td>
+          <td>(</td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the data from the specified stream instance to the remote endpoint. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>A Stream instance from which to read the data to send. The data is sent as the binary data. </td></tr>
+    <tr><td class="paramname">length</td><td>An int that specifies the number of bytes to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>stream</em>  cannot be read. -or- <em>length</em>  is less than 1. -or- No data could be read from <em>stream</em> . </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>stream</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The Send method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a120f7a46e97ebb64e8ac7803fbb91ec5" name="a120f7a46e97ebb64e8ac7803fbb91ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120f7a46e97ebb64e8ac7803fbb91ec5">&#9670;&#160;</a></span>Send() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.Send </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the specified data to the remote endpoint. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A string that specifies the text data to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>data</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>data</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The Send method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bbd8b41985c995fd46f4d4c6d1db897" name="a1bbd8b41985c995fd46f4d4c6d1db897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bbd8b41985c995fd46f4d4c6d1db897">&#9670;&#160;</a></span>SendAsync() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SendAsync </td>
+          <td>(</td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>completed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the specified data to the remote endpoint asynchronously. </p>
+<p>This method does not wait for the send to be complete. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>An array of byte that specifies the binary data to send. </td></tr>
+    <tr><td class="paramname">completed</td><td>An T:System.Action&lt;bool&gt; delegate. It specifies the delegate called when the send is complete. The bool parameter passed to the delegate is <code>true</code> if the send has successfully done; otherwise, <code>false</code>. <code>null</code> if not necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td><em>data</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SendAsync method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09399bc7517166a9ecbb97bf5193712e" name="a09399bc7517166a9ecbb97bf5193712e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09399bc7517166a9ecbb97bf5193712e">&#9670;&#160;</a></span>SendAsync() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SendAsync </td>
+          <td>(</td>
+          <td class="paramtype">FileInfo</td>          <td class="paramname"><span class="paramname"><em>fileInfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>completed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the specified file to the remote endpoint asynchronously. </p>
+<p>This method does not wait for the send to be complete. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileInfo</td><td>A FileInfo that specifies the file to send. The file is sent as the binary data. </td></tr>
+    <tr><td class="paramname">completed</td><td>An T:System.Action&lt;bool&gt; delegate. It specifies the delegate called when the send is complete. The bool parameter passed to the delegate is <code>true</code> if the send has successfully done; otherwise, <code>false</code>. <code>null</code> if not necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>The file does not exist. -or- The file could not be opened. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>fileInfo</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SendAsync method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07567d217047e9abf28f39b1a9c455e0" name="a07567d217047e9abf28f39b1a9c455e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07567d217047e9abf28f39b1a9c455e0">&#9670;&#160;</a></span>SendAsync() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SendAsync </td>
+          <td>(</td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>completed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the data from the specified stream instance to the remote endpoint asynchronously. </p>
+<p>This method does not wait for the send to be complete. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>A Stream instance from which to read the data to send. The data is sent as the binary data. </td></tr>
+    <tr><td class="paramname">length</td><td>An int that specifies the number of bytes to send. </td></tr>
+    <tr><td class="paramname">completed</td><td>An T:System.Action&lt;bool&gt; delegate. It specifies the delegate called when the send is complete. The bool parameter passed to the delegate is <code>true</code> if the send has successfully done; otherwise, <code>false</code>. <code>null</code> if not necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>stream</em>  cannot be read. -or- <em>length</em>  is less than 1. -or- No data could be read from <em>stream</em> . </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>stream</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SendAsync method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb04fff851ccfccef3b3388f01b55d18" name="adb04fff851ccfccef3b3388f01b55d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb04fff851ccfccef3b3388f01b55d18">&#9670;&#160;</a></span>SendAsync() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SendAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>completed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the specified data to the remote endpoint asynchronously. </p>
+<p>This method does not wait for the send to be complete. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A string that specifies the text data to send. </td></tr>
+    <tr><td class="paramname">completed</td><td>An T:System.Action&lt;bool&gt; delegate. It specifies the delegate called when the send is complete. The bool parameter passed to the delegate is <code>true</code> if the send has successfully done; otherwise, <code>false</code>. <code>null</code> if not necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>data</em>  could not be UTF-8-encoded. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>data</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SendAsync method is not available when the current state of the interface is not Open. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac992c8e23c0ada297107a73e2020dec8" name="ac992c8e23c0ada297107a73e2020dec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac992c8e23c0ada297107a73e2020dec8">&#9670;&#160;</a></span>SetCookie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SetCookie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html">Cookie</a></td>          <td class="paramname"><span class="paramname"><em>cookie</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets an HTTP cookie to send with the handshake request or response. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cookie</td><td>A Cookie that specifies the cookie to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td><em>cookie</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SetCookie method is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04baa4b31f72b9c4b246e2889ff4b02a" name="a04baa4b31f72b9c4b246e2889ff4b02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04baa4b31f72b9c4b246e2889ff4b02a">&#9670;&#160;</a></span>SetCredentials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SetCredentials </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>username</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>password</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>preAuth</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the credentials for the HTTP authentication (Basic/Digest). </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>A string that specifies the username associated with the credentials. <code>null</code> or an empty string if initializes the credentials. </td></tr>
+    <tr><td class="paramname">password</td><td>A string that specifies the password for the username associated with the credentials. <code>null</code> or an empty string if not necessary. </td></tr>
+    <tr><td class="paramname">preAuth</td><td>A bool: <code>true</code> if sends the credentials for the Basic authentication in advance with the first handshake request; otherwise, <code>false</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>username</em>  contains an invalid character. -or- <em>password</em>  contains an invalid character. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SetCredentials method is not available if the interface is not for the client. -or- The SetCredentials method is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afadf7a0ca615290fce3bb1e9b696d83f" name="afadf7a0ca615290fce3bb1e9b696d83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afadf7a0ca615290fce3bb1e9b696d83f">&#9670;&#160;</a></span>SetProxy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SetProxy </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>url</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>username</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the URL of the HTTP proxy server through which to connect and the credentials for the HTTP proxy authentication (Basic/Digest). </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>A string that specifies the URL of the proxy server through which to connect. The syntax is <a href="http://&lt;host&gt;">http://&amp;lt;host&amp;gt;</a>[:&lt;port&gt;]. <code>null</code> or an empty string if initializes the URL and the credentials. </td></tr>
+    <tr><td class="paramname">username</td><td>A string that specifies the username associated with the credentials. <code>null</code> or an empty string if the credentials are not necessary. </td></tr>
+    <tr><td class="paramname">password</td><td>A string that specifies the password for the username associated with the credentials. <code>null</code> or an empty string if not necessary. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>url</em>  is not an absolute URI string. -or- The scheme of <em>url</em>  is not http. -or- <em>url</em>  includes the path segments. -or- <em>username</em>  contains an invalid character. -or- <em>password</em>  contains an invalid character. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SetProxy method is not available if the interface is not for the client. -or- The SetProxy method is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa4e9d7568e676c4ec434a9cb861e6fc" name="aaa4e9d7568e676c4ec434a9cb861e6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4e9d7568e676c4ec434a9cb861e6fc">&#9670;&#160;</a></span>SetUserHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.WebSocket.SetUserHeader </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a user header to send with the handshake request or response. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>A string that specifies the name of the header to set. </td></tr>
+    <tr><td class="paramname">value</td><td>A string that specifies the value of the header to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td><em>name</em>  is an empty string. -or- <em>name</em>  is a string of spaces. -or- <em>name</em>  contains an invalid character. -or- <em>value</em>  contains an invalid character. -or- <em>name</em>  is a restricted header name. </td></tr>
+    <tr><td class="paramname">ArgumentNullException</td><td><em>name</em>  is <code>null</code>. </td></tr>
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The length of <em>value</em>  is greater than 65,535 characters. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The SetUserHeader method is not available when the current state of the interface is neither New nor Closed. -or- The SetUserHeader method is not available if the interface does not allow the header type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a7f62f5f6449a6723e92eb10e16ef4c33" name="a7f62f5f6449a6723e92eb10e16ef4c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f62f5f6449a6723e92eb10e16ef4c33">&#9670;&#160;</a></span>Compression</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_web_socket_sharp.html#ab331f7541737191a8f20131ee8fa37d0">CompressionMethod</a> WebSocketSharp.WebSocket.Compression</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the compression method used to compress a message. </p>
+<p>One of the <a class="el" href="namespace_web_socket_sharp.html#ab331f7541737191a8f20131ee8fa37d0" title="Specifies the method for compression.">CompressionMethod</a> enum values. </p>
+<p>It indicates the compression method used to compress a message. </p>
+<p>The default value is <a class="el" href="namespace_web_socket_sharp.html#ab331f7541737191a8f20131ee8fa37d0a6adf97f83acf6453d4a6a4b1070f3754" title="Specifies no compression.">CompressionMethod.None</a>. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The set operation is not available if the interface is not for the client. -or- The set operation is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa81df3c4204e98b181183d49cdaf7f2d" name="aa81df3c4204e98b181183d49cdaf7f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81df3c4204e98b181183d49cdaf7f2d">&#9670;&#160;</a></span>Cookies</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerable&lt;<a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie.html">Cookie</a>&gt; WebSocketSharp.WebSocket.Cookies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the HTTP cookies included in the handshake request/response. </p>
+<p>An T:System.Collections.Generic.IEnumerable&lt;WebSocketSharp.Net.Cookie&gt; instance. </p>
+<p>It provides an enumerator which supports the iteration over the collection of the cookies. </p>
+
+</div>
+</div>
+<a id="aac27a36d12249ee40760b03d3f7a426e" name="aac27a36d12249ee40760b03d3f7a426e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac27a36d12249ee40760b03d3f7a426e">&#9670;&#160;</a></span>Credentials</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_network_credential.html">NetworkCredential</a> WebSocketSharp.WebSocket.Credentials</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the credentials for the HTTP authentication (Basic/Digest). </p>
+<p>A NetworkCredential that represents the credentials used to authenticate the client. </p>
+<p>The default value is <code>null</code>. </p>
+
+</div>
+</div>
+<a id="ac83c913af333c6b82dd236304463769c" name="ac83c913af333c6b82dd236304463769c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83c913af333c6b82dd236304463769c">&#9670;&#160;</a></span>EmitOnPing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.EmitOnPing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the interface emits the message event when it receives a ping. </p>
+<p><code>true</code> if the interface emits the message event when it receives a ping; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The set operation is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afe90a9dffb1d21c0dab596d47b9c9ef4" name="afe90a9dffb1d21c0dab596d47b9c9ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe90a9dffb1d21c0dab596d47b9c9ef4">&#9670;&#160;</a></span>EnableRedirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.EnableRedirection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the URL redirection for the handshake request is allowed. </p>
+<p><code>true</code> if the interface allows the URL redirection for the handshake request; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The set operation is not available if the interface is not for the client. -or- The set operation is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a65343392278b0fbaabe9b87b6eff9eef" name="a65343392278b0fbaabe9b87b6eff9eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65343392278b0fbaabe9b87b6eff9eef">&#9670;&#160;</a></span>Extensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.WebSocket.Extensions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the extensions selected by the server. </p>
+<p>A string that represents a list of the extensions negotiated between the client and server. </p>
+<p>An empty string if not specified or selected. </p>
+
+</div>
+</div>
+<a id="a2e599a91f508d16a70961ccf8e88d92b" name="a2e599a91f508d16a70961ccf8e88d92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e599a91f508d16a70961ccf8e88d92b">&#9670;&#160;</a></span>HandshakeResponseHeaders</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NameValueCollection WebSocketSharp.WebSocket.HandshakeResponseHeaders</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the HTTP headers included in the handshake response. </p>
+<p>A NameValueCollection that contains the headers included in the handshake response. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The get operation is not available if the interface is not for the client. -or- The get operation is not available when the current state of the interface is New or Connecting. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82e90fcaf0324cda61143cb46ddf42a8" name="a82e90fcaf0324cda61143cb46ddf42a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e90fcaf0324cda61143cb46ddf42a8">&#9670;&#160;</a></span>IsAlive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.IsAlive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the communication is possible. </p>
+<p><code>true</code> if the communication is possible; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="aaec34f8033aeea821f9fbdf517e9a85f" name="aaec34f8033aeea821f9fbdf517e9a85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec34f8033aeea821f9fbdf517e9a85f">&#9670;&#160;</a></span>IsSecure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.IsSecure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the connection is secure. </p>
+<p><code>true</code> if the connection is secure; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a85a621826f88498ae90d8b90db49626a" name="a85a621826f88498ae90d8b90db49626a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85a621826f88498ae90d8b90db49626a">&#9670;&#160;</a></span>Log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a> WebSocketSharp.WebSocket.Log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the logging function. </p>
+<p>The default logging level is <a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84dba902b0d55fddef6f8d651fe1035b7d4bd" title="Specifies the 2nd logging level from the top.">LogLevel.Error</a>. </p>
+<p>A <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> that provides the logging function. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The get operation is not available if the interface is not for the client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f0b57f8b9ce26f4a005e9d29383cf26" name="a9f0b57f8b9ce26f4a005e9d29383cf26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f0b57f8b9ce26f4a005e9d29383cf26">&#9670;&#160;</a></span>NoDelay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.WebSocket.NoDelay</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the underlying TCP socket disables a delay when send or receive buffer is not full. </p>
+<p><code>true</code> if the delay is disabled; otherwise, <code>false</code>. </p>
+<p>The default value is <code>false</code>. </p>
+<dl class="section see"><dt>参照</dt><dd>Socket.NoDelay</dd></dl>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The set operation is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32c35e3f040a1bd81bf095635af6383f" name="a32c35e3f040a1bd81bf095635af6383f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c35e3f040a1bd81bf095635af6383f">&#9670;&#160;</a></span>Origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.WebSocket.Origin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the value of the HTTP Origin header to send with the handshake request. </p>
+<p>The HTTP Origin header is defined in  Section 7 of RFC 6454</p>
+<p>. </p>
+<p>The interface sends the Origin header if this property has any. </p>
+<p>A string that represents the value of the Origin header to send. </p>
+<p>The syntax is &lt;scheme&gt;://&lt;host&gt;[:&lt;port&gt;]. </p>
+<p>The default value is <code>null</code>. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>The value specified for a set operation is not an absolute URI string. -or- The value specified for a set operation includes the path segments. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The set operation is not available if the interface is not for the client. -or- The set operation is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61f3cc97d65cb9716fe13ad4d6b7b53b" name="a61f3cc97d65cb9716fe13ad4d6b7b53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f3cc97d65cb9716fe13ad4d6b7b53b">&#9670;&#160;</a></span>Protocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.WebSocket.Protocol</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of subprotocol selected by the server. </p>
+<p>A string that will be one of the names of subprotocols specified by client. </p>
+<p>An empty string if not specified or selected. </p>
+
+</div>
+</div>
+<a id="a0f7ae8e3a5ef28606a2b4e3c8090c8b5" name="a0f7ae8e3a5ef28606a2b4e3c8090c8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7ae8e3a5ef28606a2b4e3c8090c8b5">&#9670;&#160;</a></span>ReadyState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_web_socket_sharp.html#ac9a7a50f3383860d695305a031401296">WebSocketState</a> WebSocketSharp.WebSocket.ReadyState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current state of the interface. </p>
+<p>One of the <a class="el" href="namespace_web_socket_sharp.html#ac9a7a50f3383860d695305a031401296" title="Indicates the state of the WebSocket interface.">WebSocketState</a> enum values. </p>
+<p>It indicates the current state of the interface. </p>
+<p>The default value is <a class="el" href="namespace_web_socket_sharp.html#ac9a7a50f3383860d695305a031401296a03c2e7e41ffc181a4e84080b4710e81e" title="Equivalent to numeric value 0. Indicates that a new interface has been created.">WebSocketState.New</a>. </p>
+
+</div>
+</div>
+<a id="a9c65204cfeda4c507a1459e2012aecd0" name="a9c65204cfeda4c507a1459e2012aecd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c65204cfeda4c507a1459e2012aecd0">&#9670;&#160;</a></span>SslConfiguration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_client_ssl_configuration.html">ClientSslConfiguration</a> WebSocketSharp.WebSocket.SslConfiguration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the configuration for secure connection. </p>
+<p>The configuration is used when the interface attempts to connect, so it must be configured before any connect method is called. </p>
+<p>A ClientSslConfiguration that represents the configuration used to establish a secure connection. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">InvalidOperationException</td><td>The get operation is not available if the interface is not for the client. -or- The get operation is not available if the interface does not use a secure connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4bb064e50191adb93b77cf35181bb02" name="ac4bb064e50191adb93b77cf35181bb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bb064e50191adb93b77cf35181bb02">&#9670;&#160;</a></span>Url</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uri WebSocketSharp.WebSocket.Url</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the URL to which to connect. </p>
+<p>A Uri that represents the URL to which to connect. </p>
+<p>Also it represents the URL requested by the client if the interface is for the server. </p>
+
+</div>
+</div>
+<a id="af7b2f96c2c9a99516793aa3ae84fd495" name="af7b2f96c2c9a99516793aa3ae84fd495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b2f96c2c9a99516793aa3ae84fd495">&#9670;&#160;</a></span>WaitTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeSpan WebSocketSharp.WebSocket.WaitTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the time to wait for the response to the ping or close. </p>
+<p>A TimeSpan that represents the time to wait for the response. </p>
+<p>The default value is the same as 5 seconds if the interface is for the client. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The value specified for a set operation is zero or less. </td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>The set operation is not available when the current state of the interface is neither New nor Closed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SkyWayUnitySDK/Assets/SkyWay/Scripts/Deps/websocket-sharp/websocket-sharp/<b>WebSocket.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a class="el" href="class_web_socket_sharp_1_1_web_socket.html">WebSocket</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,4 +1,14 @@
 var searchData=
 [
-  ['keepaliveintervalsec_0',['keepAliveIntervalSec',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room_member_options.html#a74117cc3f5f008019cff50553d3a1daa',1,'Com::Ntt::SkyWay::Room::SWRoomMemberOptions']]]
+  ['badgateway_0',['BadGateway',['../namespace_web_socket_sharp_1_1_net.html#ad5c4bafe62bb407057f0269f3a296f0ba0e7c9ad08be0653518bf456c9994ace5',1,'WebSocketSharp::Net']]],
+  ['badrequest_1',['BadRequest',['../namespace_web_socket_sharp_1_1_net.html#ad5c4bafe62bb407057f0269f3a296f0ba9edf8fbf00a57d95a0af4923c9a1ec6f',1,'WebSocketSharp::Net']]],
+  ['basic_2',['Basic',['../namespace_web_socket_sharp_1_1_net.html#ac55d28dd3d89daf0257c802f84db36d8a972e73b7a882d0802a4e3a16946a2f94',1,'WebSocketSharp::Net']]],
+  ['begingetclientcertificate_3',['BeginGetClientCertificate',['../class_web_socket_sharp_1_1_net_1_1_http_listener_request.html#a6dfc1f7fc126c55082e807abcbb90b45',1,'WebSocketSharp::Net::HttpListenerRequest']]],
+  ['begingetcontext_4',['BeginGetContext',['../class_web_socket_sharp_1_1_net_1_1_http_listener.html#a7bb3430c1ed3a4b2fd668492f760bd68',1,'WebSocketSharp::Net::HttpListener']]],
+  ['big_5',['Big',['../namespace_web_socket_sharp.html#aa1c9d89edcef3b8be8434c888d2bd3b7ad491538da818a2ba11a3195ba035cfd3',1,'WebSocketSharp']]],
+  ['branches_6',['Branches',['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['broadcast_7',['Broadcast',['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#ab664112816b54dd17df7b828a628a15e',1,'WebSocketSharp.Server.WebSocketSessionManager.Broadcast(byte[] data)'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#a87247a0cdf78a4d18888aaf1b1ccc5c8',1,'WebSocketSharp.Server.WebSocketSessionManager.Broadcast(string data)'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#a175c4c1f20353233b970908151368ea8',1,'WebSocketSharp.Server.WebSocketSessionManager.Broadcast(Stream stream, int length)']]],
+  ['broadcastasync_8',['BroadcastAsync',['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#aabf049793924a980638d53624c9a29eb',1,'WebSocketSharp.Server.WebSocketSessionManager.BroadcastAsync(byte[] data, Action completed)'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#a918e1187ae6240ebd0d1a51722864b35',1,'WebSocketSharp.Server.WebSocketSessionManager.BroadcastAsync(string data, Action completed)'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#a98f3dc8a63c5360c13a98aa558e02ef6',1,'WebSocketSharp.Server.WebSocketSessionManager.BroadcastAsync(Stream stream, int length, Action completed)']]],
+  ['build_9',['Build',['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md2',1,'Build'],['../md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html#autotoc_md4',1,'Self Build']]],
+  ['byteorder_10',['ByteOrder',['../namespace_web_socket_sharp.html#aa1c9d89edcef3b8be8434c888d2bd3b7',1,'WebSocketSharp']]]
 ];

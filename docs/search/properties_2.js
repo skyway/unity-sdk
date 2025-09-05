@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['maxbitrate_0',['MaxBitrate',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_encoding.html#add0b94994669686fa54d06b4514af26c',1,'Com::Ntt::SkyWay::Core::SWEncoding']]],
-  ['maxframerate_1',['MaxFramerate',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_encoding.html#a092e42a876d2c282ef2ba4a2505ab9ef',1,'Com::Ntt::SkyWay::Core::SWEncoding']]],
-  ['members_2',['Members',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#aec640b6f54eb5d2c2ba39087d24d720f',1,'Com::Ntt::SkyWay::Room::SWRoom']]],
-  ['metadata_3',['Metadata',['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room.html#ab68cfac0fe9ba7f4040690c537578dbb',1,'Com.Ntt.SkyWay.Room.SWRoom.Metadata'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room_member.html#a235e30df3b4794b04bb6b893b1e9effc',1,'Com.Ntt.SkyWay.Room.SWRoomMember.Metadata'],['../class_com_1_1_ntt_1_1_sky_way_1_1_room_1_1_s_w_room_publication.html#a7129fb03dc824d5b020998016f13cba0',1,'Com.Ntt.SkyWay.Room.SWRoomPublication.Metadata']]]
+  ['data_0',['Data',['../class_web_socket_sharp_1_1_message_event_args.html#a403d0654f59a504858b2cfb276ddeee4',1,'WebSocketSharp::MessageEventArgs']]],
+  ['date_1',['Date',['../class_web_socket_sharp_1_1_log_data.html#a79f3b7ee4580a088f28052b553fc1d52',1,'WebSocketSharp::LogData']]],
+  ['discard_2',['Discard',['../class_web_socket_sharp_1_1_net_1_1_cookie.html#ac4fa02d50842f2ecc3b2647fa0ddd482',1,'WebSocketSharp::Net::Cookie']]],
+  ['documentrootpath_3',['DocumentRootPath',['../class_web_socket_sharp_1_1_server_1_1_http_server.html#ac8d2232355d7cccb6d3b2a9abe62187e',1,'WebSocketSharp::Server::HttpServer']]],
+  ['domain_4',['Domain',['../class_web_socket_sharp_1_1_net_1_1_cookie.html#a3e5b43d3f52f5ad689d81a056302e3e5',1,'WebSocketSharp.Net.Cookie.Domain'],['../class_web_socket_sharp_1_1_net_1_1_network_credential.html#a43d6e79a4d501eb8b10ff9d1f1f1b186',1,'WebSocketSharp.Net.NetworkCredential.Domain']]]
 ];

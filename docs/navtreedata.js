@@ -25,53 +25,59 @@
 var NAVTREE =
 [
   [ "SkyWay Unity SDK", "index.html", [
-    [ "インストール方法", "index.html#autotoc_md1", null ],
-    [ "用語の解説", "index.html#autotoc_md2", [
-      [ "Room", "index.html#autotoc_md3", null ],
-      [ "Member", "index.html#autotoc_md4", null ],
-      [ "Stream", "index.html#autotoc_md5", null ],
-      [ "Publish", "index.html#autotoc_md6", null ],
-      [ "Subscribe", "index.html#autotoc_md7", null ]
+    [ "インストール方法", "index.html#autotoc_md40", null ],
+    [ "用語の解説", "index.html#autotoc_md41", [
+      [ "Room", "index.html#autotoc_md42", null ],
+      [ "Member", "index.html#autotoc_md43", null ],
+      [ "Stream", "index.html#autotoc_md44", null ],
+      [ "Publish", "index.html#autotoc_md45", null ],
+      [ "Subscribe", "index.html#autotoc_md46", null ]
     ] ],
-    [ "基本機能の解説", "index.html#autotoc_md8", [
-      [ "SWContext", "index.html#autotoc_md9", [
-        [ "SkyWay利用の開始", "index.html#autotoc_md10", null ],
-        [ "Auth Tokenの更新", "index.html#autotoc_md11", null ],
-        [ "SkyWay利用の終了", "index.html#autotoc_md12", null ]
+    [ "基本機能の解説", "index.html#autotoc_md47", [
+      [ "SWContext", "index.html#autotoc_md48", [
+        [ "SkyWay利用の開始", "index.html#autotoc_md49", null ],
+        [ "Auth Tokenの更新", "index.html#autotoc_md50", null ],
+        [ "SkyWay利用の終了", "index.html#autotoc_md51", null ]
       ] ],
-      [ "Room", "index.html#autotoc_md13", [
-        [ "Roomの作成・取得", "index.html#autotoc_md14", null ],
-        [ "Metadata の更新", "index.html#autotoc_md15", null ],
-        [ "Member の Room への参加", "index.html#autotoc_md16", null ]
+      [ "Room", "index.html#autotoc_md52", [
+        [ "Roomの作成・取得", "index.html#autotoc_md53", null ],
+        [ "Metadata の更新", "index.html#autotoc_md54", null ],
+        [ "Member の Room への参加", "index.html#autotoc_md55", null ]
       ] ],
-      [ "LocalRoomMember", "index.html#autotoc_md17", [
-        [ "Metadata の更新", "index.html#autotoc_md18", null ],
-        [ "Stream の Publish", "index.html#autotoc_md19", null ],
-        [ "Publication の Subscribe", "index.html#autotoc_md20", null ]
+      [ "LocalRoomMember", "index.html#autotoc_md56", [
+        [ "Metadata の更新", "index.html#autotoc_md57", null ],
+        [ "Stream の Publish", "index.html#autotoc_md58", null ],
+        [ "Publication の Subscribe", "index.html#autotoc_md59", null ]
       ] ],
-      [ "Source/Stream", "index.html#autotoc_md21", [
-        [ "SourceからStreamの作成", "index.html#autotoc_md22", null ],
-        [ "AudioStreamの再生", "index.html#autotoc_md23", null ],
-        [ "VideoStreamの再生", "index.html#autotoc_md24", null ],
-        [ "DataStreamによるデータの送受信", "index.html#autotoc_md25", null ]
+      [ "Source/Stream", "index.html#autotoc_md60", [
+        [ "SourceからStreamの作成", "index.html#autotoc_md61", null ],
+        [ "AudioStreamの再生", "index.html#autotoc_md62", null ],
+        [ "VideoStreamの再生", "index.html#autotoc_md63", null ],
+        [ "DataStreamによるデータの送受信", "index.html#autotoc_md64", null ]
       ] ],
-      [ "RoomPublication", "index.html#autotoc_md26", [
-        [ "Metadata の取得・更新", "index.html#autotoc_md27", null ],
-        [ "ミュート", "index.html#autotoc_md28", null ]
+      [ "RoomPublication", "index.html#autotoc_md65", [
+        [ "Metadata の取得・更新", "index.html#autotoc_md66", null ],
+        [ "ミュート", "index.html#autotoc_md67", null ]
       ] ],
-      [ "RoomSubscription", "index.html#autotoc_md29", [
-        [ "Stream の参照", "index.html#autotoc_md30", null ]
+      [ "RoomSubscription", "index.html#autotoc_md68", [
+        [ "Stream の参照", "index.html#autotoc_md69", null ]
       ] ]
+    ] ],
+    [ "README", "md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html", null ],
+    [ "名前空間メンバ", "namespacemembers.html", [
+      [ "全て", "namespacemembers.html", null ],
+      [ "列挙型", "namespacemembers_enum.html", null ]
     ] ],
     [ "クラス", "annotated.html", [
       [ "クラス一覧", "annotated.html", "annotated_dup" ],
       [ "クラス階層", "hierarchy.html", "hierarchy" ],
       [ "クラスメンバ", "functions.html", [
-        [ "全て", "functions.html", null ],
-        [ "関数", "functions_func.html", null ],
+        [ "全て", "functions.html", "functions_dup" ],
+        [ "関数", "functions_func.html", "functions_func" ],
         [ "変数", "functions_vars.html", null ],
         [ "列挙型", "functions_enum.html", null ],
-        [ "プロパティ", "functions_prop.html", null ]
+        [ "プロパティ", "functions_prop.html", "functions_prop" ],
+        [ "イベント", "functions_evnt.html", null ]
       ] ]
     ] ]
   ] ]
@@ -79,7 +85,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_web_socket_sharp_1_1_net_1_1_http_listener.html#aee6368852331a3ab228acda1b19d3402",
+"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0e483f66b347a98a2b11fe32c2078882"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

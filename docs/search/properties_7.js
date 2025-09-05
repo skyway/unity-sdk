@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['keepalive_0',['KeepAlive',['../class_web_socket_sharp_1_1_net_1_1_http_listener_request.html#ae4b710c9ad51abbd3e7cfe34be6b4736',1,'WebSocketSharp.Net.HttpListenerRequest.KeepAlive'],['../class_web_socket_sharp_1_1_net_1_1_http_listener_response.html#acfb3f27dc0de5af3db5b976c3d43a75b',1,'WebSocketSharp.Net.HttpListenerResponse.KeepAlive']]],
+  ['keepclean_1',['KeepClean',['../class_web_socket_sharp_1_1_server_1_1_http_server.html#a7d5226f3f84f6432f2b96ad6950cfbb9',1,'WebSocketSharp.Server.HttpServer.KeepClean'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#afe23bc7a03848165019b051048437176',1,'WebSocketSharp.Server.WebSocketServer.KeepClean'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_service_manager.html#a2625a6ca4cda8536ec62898a48a06e6f',1,'WebSocketSharp.Server.WebSocketServiceManager.KeepClean'],['../class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html#a914d2665c872306b75e1c2d3edf92119',1,'WebSocketSharp.Server.WebSocketSessionManager.KeepClean']]],
+  ['keys_2',['Keys',['../class_web_socket_sharp_1_1_net_1_1_web_header_collection.html#ae7d02a69839af03d5fe5c24c460c8bb5',1,'WebSocketSharp::Net::WebHeaderCollection']]]
+];
