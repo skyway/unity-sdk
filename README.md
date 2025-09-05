@@ -1,4 +1,4 @@
-# unity-sdk-beta
+# unity-sdk
 
 このリポジトリは公開用のリポジトリであり、こちらで開発は行いません。
 
@@ -26,4 +26,3 @@ Enterprise プランをご契約のお客様はテクニカルサポートをご
 
 以下をご覧ください。
 - [Room ライブラリ](https://unity-sdk.api-reference.skyway.ntt.com/)
-
