@@ -1,0 +1,615 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.Logger クラス</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_web_socket_sharp_1_1_logger.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="class_web_socket_sharp_1_1_logger-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp.Logger クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Provides a set of methods and properties for logging.  
+ <a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa57229a382a7c22bc10ef8f386989e25" id="r_aa57229a382a7c22bc10ef8f386989e25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa57229a382a7c22bc10ef8f386989e25">Logger</a> ()</td></tr>
+<tr class="memdesc:aa57229a382a7c22bc10ef8f386989e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class.  <br /></td></tr>
+<tr class="separator:aa57229a382a7c22bc10ef8f386989e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762250388de7e7a849436a12677568f4" id="r_a762250388de7e7a849436a12677568f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a762250388de7e7a849436a12677568f4">Logger</a> (<a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a> level)</td></tr>
+<tr class="memdesc:a762250388de7e7a849436a12677568f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class with the specified logging level.  <br /></td></tr>
+<tr class="separator:a762250388de7e7a849436a12677568f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad224e7b984f9f120d54ac8ac4c653f16" id="r_ad224e7b984f9f120d54ac8ac4c653f16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad224e7b984f9f120d54ac8ac4c653f16">Logger</a> (<a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a> level, string file, Action&lt; <a class="el" href="class_web_socket_sharp_1_1_log_data.html">LogData</a>, string &gt; output)</td></tr>
+<tr class="memdesc:ad224e7b984f9f120d54ac8ac4c653f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class with the specified logging level, path to the log file, and delegate used to output a log.  <br /></td></tr>
+<tr class="separator:ad224e7b984f9f120d54ac8ac4c653f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1921a540cc99c610a0010e7916611b6" id="r_ad1921a540cc99c610a0010e7916611b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1921a540cc99c610a0010e7916611b6">Debug</a> (string message)</td></tr>
+<tr class="memdesc:ad1921a540cc99c610a0010e7916611b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the specified message as a log with the Debug level.  <br /></td></tr>
+<tr class="separator:ad1921a540cc99c610a0010e7916611b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891667593d18e5c210a6bc6c5a89afe8" id="r_a891667593d18e5c210a6bc6c5a89afe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a891667593d18e5c210a6bc6c5a89afe8">Error</a> (string message)</td></tr>
+<tr class="memdesc:a891667593d18e5c210a6bc6c5a89afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the specified message as a log with the Error level.  <br /></td></tr>
+<tr class="separator:a891667593d18e5c210a6bc6c5a89afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e0e69a101b404d8cd9d67c712a61fc" id="r_a98e0e69a101b404d8cd9d67c712a61fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98e0e69a101b404d8cd9d67c712a61fc">Fatal</a> (string message)</td></tr>
+<tr class="memdesc:a98e0e69a101b404d8cd9d67c712a61fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the specified message as a log with the Fatal level.  <br /></td></tr>
+<tr class="separator:a98e0e69a101b404d8cd9d67c712a61fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2f19e917f9f1e6bb8da88de76d32e9" id="r_aaa2f19e917f9f1e6bb8da88de76d32e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2f19e917f9f1e6bb8da88de76d32e9">Info</a> (string message)</td></tr>
+<tr class="memdesc:aaa2f19e917f9f1e6bb8da88de76d32e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the specified message as a log with the Info level.  <br /></td></tr>
+<tr class="separator:aaa2f19e917f9f1e6bb8da88de76d32e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2a0801003482519f0d251f3fe71399" id="r_a1b2a0801003482519f0d251f3fe71399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2a0801003482519f0d251f3fe71399">Trace</a> (string message)</td></tr>
+<tr class="memdesc:a1b2a0801003482519f0d251f3fe71399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the specified message as a log with the Trace level.  <br /></td></tr>
+<tr class="separator:a1b2a0801003482519f0d251f3fe71399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea145d825fbe4ba83521a1a6b09327f" id="r_a1ea145d825fbe4ba83521a1a6b09327f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ea145d825fbe4ba83521a1a6b09327f">Warn</a> (string message)</td></tr>
+<tr class="memdesc:a1ea145d825fbe4ba83521a1a6b09327f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the specified message as a log with the Warn level.  <br /></td></tr>
+<tr class="separator:a1ea145d825fbe4ba83521a1a6b09327f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a7fdfa5d2b2256014e3f2c19b735c4967" id="r_a7fdfa5d2b2256014e3f2c19b735c4967"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fdfa5d2b2256014e3f2c19b735c4967">File</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7fdfa5d2b2256014e3f2c19b735c4967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the path to the log file.  <br /></td></tr>
+<tr class="separator:a7fdfa5d2b2256014e3f2c19b735c4967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d626621d736a09f0b6f726e643eb21" id="r_af0d626621d736a09f0b6f726e643eb21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d626621d736a09f0b6f726e643eb21">Level</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af0d626621d736a09f0b6f726e643eb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the current logging level.  <br /></td></tr>
+<tr class="separator:af0d626621d736a09f0b6f726e643eb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377498f52fd6e95c07e7aa80c5b91fb5" id="r_a377498f52fd6e95c07e7aa80c5b91fb5"><td class="memItemLeft" align="right" valign="top">Action&lt; <a class="el" href="class_web_socket_sharp_1_1_log_data.html">LogData</a>, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a377498f52fd6e95c07e7aa80c5b91fb5">Output</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a377498f52fd6e95c07e7aa80c5b91fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the delegate used to output a log.  <br /></td></tr>
+<tr class="separator:a377498f52fd6e95c07e7aa80c5b91fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Provides a set of methods and properties for logging. </p>
+<p>If you output a log with lower than the current logging level, it cannot be outputted. </p>
+<p>The default output method writes a log to the standard output stream and the text file if it has a valid path. </p>
+<p>If you would like to use the custom output method, you should specify it with the constructor or the <a class="el" href="#a377498f52fd6e95c07e7aa80c5b91fb5" title="Gets or sets the delegate used to output a log.">Logger.Output</a> property. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aa57229a382a7c22bc10ef8f386989e25" name="aa57229a382a7c22bc10ef8f386989e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57229a382a7c22bc10ef8f386989e25">&#9670;&#160;</a></span>Logger() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Logger.Logger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class. </p>
+<p>This constructor initializes the logging level with the Error level. </p>
+
+</div>
+</div>
+<a id="a762250388de7e7a849436a12677568f4" name="a762250388de7e7a849436a12677568f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a762250388de7e7a849436a12677568f4">&#9670;&#160;</a></span>Logger() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Logger.Logger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class with the specified logging level. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>One of the <a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db" title="Specifies the logging level.">LogLevel</a> enum values that specifies the logging level. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad224e7b984f9f120d54ac8ac4c653f16" name="ad224e7b984f9f120d54ac8ac4c653f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad224e7b984f9f120d54ac8ac4c653f16">&#9670;&#160;</a></span>Logger() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Logger.Logger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; <a class="el" href="class_web_socket_sharp_1_1_log_data.html">LogData</a>, string &gt;</td>          <td class="paramname"><span class="paramname"><em>output</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_logger.html" title="Provides a set of methods and properties for logging.">Logger</a> class with the specified logging level, path to the log file, and delegate used to output a log. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>One of the <a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db" title="Specifies the logging level.">LogLevel</a> enum values that specifies the logging level. </td></tr>
+    <tr><td class="paramname">file</td><td>A string that specifies the path to the log file. </td></tr>
+    <tr><td class="paramname">output</td><td>An T:System.Action&lt;LogData, string&gt; that specifies the delegate used to output a log. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ad1921a540cc99c610a0010e7916611b6" name="ad1921a540cc99c610a0010e7916611b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1921a540cc99c610a0010e7916611b6">&#9670;&#160;</a></span>Debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Logger.Debug </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs the specified message as a log with the Debug level. </p>
+<p>If the current logging level is higher than the Debug level, this method does not output the message as a log. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a891667593d18e5c210a6bc6c5a89afe8" name="a891667593d18e5c210a6bc6c5a89afe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891667593d18e5c210a6bc6c5a89afe8">&#9670;&#160;</a></span>Error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Logger.Error </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs the specified message as a log with the Error level. </p>
+<p>If the current logging level is higher than the Error level, this method does not output the message as a log. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98e0e69a101b404d8cd9d67c712a61fc" name="a98e0e69a101b404d8cd9d67c712a61fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e0e69a101b404d8cd9d67c712a61fc">&#9670;&#160;</a></span>Fatal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Logger.Fatal </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs the specified message as a log with the Fatal level. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa2f19e917f9f1e6bb8da88de76d32e9" name="aaa2f19e917f9f1e6bb8da88de76d32e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2f19e917f9f1e6bb8da88de76d32e9">&#9670;&#160;</a></span>Info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Logger.Info </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs the specified message as a log with the Info level. </p>
+<p>If the current logging level is higher than the Info level, this method does not output the message as a log. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b2a0801003482519f0d251f3fe71399" name="a1b2a0801003482519f0d251f3fe71399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2a0801003482519f0d251f3fe71399">&#9670;&#160;</a></span>Trace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Logger.Trace </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs the specified message as a log with the Trace level. </p>
+<p>If the current logging level is higher than the Trace level, this method does not output the message as a log. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ea145d825fbe4ba83521a1a6b09327f" name="a1ea145d825fbe4ba83521a1a6b09327f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea145d825fbe4ba83521a1a6b09327f">&#9670;&#160;</a></span>Warn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WebSocketSharp.Logger.Warn </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs the specified message as a log with the Warn level. </p>
+<p>If the current logging level is higher than the Warn level, this method does not output the message as a log. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>A string that specifies the message to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a7fdfa5d2b2256014e3f2c19b735c4967" name="a7fdfa5d2b2256014e3f2c19b735c4967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdfa5d2b2256014e3f2c19b735c4967">&#9670;&#160;</a></span>File</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Logger.File</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the path to the log file. </p>
+<p>A string that represents the path to the log file if any. </p>
+
+</div>
+</div>
+<a id="af0d626621d736a09f0b6f726e643eb21" name="af0d626621d736a09f0b6f726e643eb21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d626621d736a09f0b6f726e643eb21">&#9670;&#160;</a></span>Level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db">LogLevel</a> WebSocketSharp.Logger.Level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the current logging level. </p>
+<p>A log with lower than the value of this property cannot be outputted. </p>
+<p>One of the <a class="el" href="namespace_web_socket_sharp.html#a7975f130c9b09a51ac5dd65eea7c84db" title="Specifies the logging level.">LogLevel</a> enum values. </p>
+<p>It represents the current logging level. </p>
+
+</div>
+</div>
+<a id="a377498f52fd6e95c07e7aa80c5b91fb5" name="a377498f52fd6e95c07e7aa80c5b91fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377498f52fd6e95c07e7aa80c5b91fb5">&#9670;&#160;</a></span>Output</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;<a class="el" href="class_web_socket_sharp_1_1_log_data.html">LogData</a>, string&gt; WebSocketSharp.Logger.Output</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the delegate used to output a log. </p>
+<p>An T:System.Action&lt;LogData, string&gt; delegate. </p>
+<p>It represents the delegate called when the logger outputs a log. </p>
+<p>The string parameter passed to the delegate is the value of the <a class="el" href="#a7fdfa5d2b2256014e3f2c19b735c4967" title="Gets or sets the path to the log file.">Logger.File</a> property. </p>
+<p>If the value to set is <code>null</code>, the default output method is set. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SkyWayUnitySDK/Assets/SkyWay/Scripts/Deps/websocket-sharp/websocket-sharp/<b>Logger.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

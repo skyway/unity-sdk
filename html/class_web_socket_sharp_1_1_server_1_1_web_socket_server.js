@@ -1,0 +1,27 @@
+var class_web_socket_sharp_1_1_server_1_1_web_socket_server =
+[
+    [ "WebSocketServer", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a3a70719d3a8dc8536188bde24a0131f9", null ],
+    [ "WebSocketServer", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a681c2379294a4430e32cdf0dea978444", null ],
+    [ "WebSocketServer", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#ae3f3dec09398621dc8b4542507fc3538", null ],
+    [ "WebSocketServer", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a77228b0c71a50ac07df968b7295a3651", null ],
+    [ "WebSocketServer", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#ae1f58ef2616335f6837e945bcde12524", null ],
+    [ "WebSocketServer", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0e483f66b347a98a2b11fe32c2078882", null ],
+    [ "AddWebSocketService< TBehavior >", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a69ebb915142f649202303290a8693553", null ],
+    [ "AddWebSocketService< TBehavior >", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#ab4793a99325be1361d8f095398ad6ef8", null ],
+    [ "RemoveWebSocketService", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#acbdf0aeee1143c60620f82a3914ad4f0", null ],
+    [ "Start", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a069ca555b0b947b41ed68735a1baa977", null ],
+    [ "Stop", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0977fb3ad05d5c0387cc6e2d90e88c5e", null ],
+    [ "Address", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a87b2b351e14de3c986b4fa8f254a3398", null ],
+    [ "AuthenticationSchemes", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a6ca889a769ad2a88c93c96c435477696", null ],
+    [ "IsListening", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a56542076f2f0d73cb1cf844c0ae56758", null ],
+    [ "IsSecure", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a90b02425f5626827c18ab546b2fdbbdc", null ],
+    [ "KeepClean", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#afe23bc7a03848165019b051048437176", null ],
+    [ "Log", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a25cf9913517f846e43213025f101abe1", null ],
+    [ "Port", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a94f5756e8be8b70eadb2fd9cc4154668", null ],
+    [ "Realm", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a1b04dd72fc586ace31f06b354b30a71e", null ],
+    [ "ReuseAddress", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a3fcb100693dd7e04236cd65b5f1ccb08", null ],
+    [ "SslConfiguration", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#ac8796162e5bc665b67b9adcb52b6dcc1", null ],
+    [ "UserCredentialsFinder", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0a6ba933ed4ab3c3d307124bc78485f2", null ],
+    [ "WaitTime", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a9a19f38fe957eca09604b5c527d71005", null ],
+    [ "WebSocketServices", "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#ae8f93f5ffd09a71e7eb6105fc82777a4", null ]
+];

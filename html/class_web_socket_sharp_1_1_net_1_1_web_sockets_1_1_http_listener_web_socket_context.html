@@ -1,0 +1,773 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.12.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext クラス</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_http_listener_web_socket_context.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_http_listener_web_socket_context-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Provides the access to the information in a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request to a <a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html" title="Provides a simple, programmatically controlled HTTP listener.">HttpListener</a> instance.  
+ <a href="#details">[詳解]</a></p>
+<div class="dynheader">
+WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_http_listener_web_socket_context.png" usemap="#WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext_map" alt=""/>
+  <map id="WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext_map" name="WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext_map">
+<area href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html" title="Exposes the access to the information in a WebSocket handshake request." alt="WebSocketSharp.Net.WebSockets.WebSocketContext" shape="rect" coords="0,0,381,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4aa6a368341cc6fa494e85c01b56a058" id="r_a4aa6a368341cc6fa494e85c01b56a058"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aa6a368341cc6fa494e85c01b56a058">ToString</a> ()</td></tr>
+<tr class="memdesc:a4aa6a368341cc6fa494e85c01b56a058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that represents the current instance.  <br /></td></tr>
+<tr class="separator:a4aa6a368341cc6fa494e85c01b56a058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:aee6b7507326120cad68a07ac855dd2a5" id="r_aee6b7507326120cad68a07ac855dd2a5"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie_collection.html">CookieCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee6b7507326120cad68a07ac855dd2a5">CookieCollection</a><code> [get]</code></td></tr>
+<tr class="memdesc:aee6b7507326120cad68a07ac855dd2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HTTP cookies included in the handshake request.  <br /></td></tr>
+<tr class="separator:aee6b7507326120cad68a07ac855dd2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12e40b22d0b48c02537f7a6562d071f" id="r_ad12e40b22d0b48c02537f7a6562d071f"><td class="memItemLeft" align="right" valign="top">override NameValueCollection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad12e40b22d0b48c02537f7a6562d071f">Headers</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad12e40b22d0b48c02537f7a6562d071f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HTTP headers included in the handshake request.  <br /></td></tr>
+<tr class="separator:ad12e40b22d0b48c02537f7a6562d071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fba3da81526bc7f474636336720b6d" id="r_a50fba3da81526bc7f474636336720b6d"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50fba3da81526bc7f474636336720b6d">Host</a><code> [get]</code></td></tr>
+<tr class="memdesc:a50fba3da81526bc7f474636336720b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Host header included in the handshake request.  <br /></td></tr>
+<tr class="separator:a50fba3da81526bc7f474636336720b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332ccec036e56b7bd1d15c33322da064" id="r_a332ccec036e56b7bd1d15c33322da064"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a332ccec036e56b7bd1d15c33322da064">IsAuthenticated</a><code> [get]</code></td></tr>
+<tr class="memdesc:a332ccec036e56b7bd1d15c33322da064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the client is authenticated.  <br /></td></tr>
+<tr class="separator:a332ccec036e56b7bd1d15c33322da064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94cfa46b3adfac6b3bf56326078209b" id="r_af94cfa46b3adfac6b3bf56326078209b"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af94cfa46b3adfac6b3bf56326078209b">IsLocal</a><code> [get]</code></td></tr>
+<tr class="memdesc:af94cfa46b3adfac6b3bf56326078209b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the handshake request is sent from the local computer.  <br /></td></tr>
+<tr class="separator:af94cfa46b3adfac6b3bf56326078209b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0849f283a0ce4e565f9a670f24dc616" id="r_aa0849f283a0ce4e565f9a670f24dc616"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0849f283a0ce4e565f9a670f24dc616">IsSecureConnection</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa0849f283a0ce4e565f9a670f24dc616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether a secure connection is used to send the handshake request.  <br /></td></tr>
+<tr class="separator:aa0849f283a0ce4e565f9a670f24dc616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc747ddb92a30d1b54eb46fd0ad345ac" id="r_adc747ddb92a30d1b54eb46fd0ad345ac"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc747ddb92a30d1b54eb46fd0ad345ac">IsWebSocketRequest</a><code> [get]</code></td></tr>
+<tr class="memdesc:adc747ddb92a30d1b54eb46fd0ad345ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the request is a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request.  <br /></td></tr>
+<tr class="separator:adc747ddb92a30d1b54eb46fd0ad345ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ddd1588314356959b8a7d2b33b11e1" id="r_a76ddd1588314356959b8a7d2b33b11e1"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76ddd1588314356959b8a7d2b33b11e1">Origin</a><code> [get]</code></td></tr>
+<tr class="memdesc:a76ddd1588314356959b8a7d2b33b11e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Origin header included in the handshake request.  <br /></td></tr>
+<tr class="separator:a76ddd1588314356959b8a7d2b33b11e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3eebcf26f2546060d1999f2bc6732e" id="r_abb3eebcf26f2546060d1999f2bc6732e"><td class="memItemLeft" align="right" valign="top">override NameValueCollection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb3eebcf26f2546060d1999f2bc6732e">QueryString</a><code> [get]</code></td></tr>
+<tr class="memdesc:abb3eebcf26f2546060d1999f2bc6732e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the query string included in the handshake request.  <br /></td></tr>
+<tr class="separator:abb3eebcf26f2546060d1999f2bc6732e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1426cf9c92740071af2bcca3bd34d3ab" id="r_a1426cf9c92740071af2bcca3bd34d3ab"><td class="memItemLeft" align="right" valign="top">override Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1426cf9c92740071af2bcca3bd34d3ab">RequestUri</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1426cf9c92740071af2bcca3bd34d3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the URI requested by the client.  <br /></td></tr>
+<tr class="separator:a1426cf9c92740071af2bcca3bd34d3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2be05a71e266ce0f7173a6b65d91b6d" id="r_aa2be05a71e266ce0f7173a6b65d91b6d"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2be05a71e266ce0f7173a6b65d91b6d">SecWebSocketKey</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa2be05a71e266ce0f7173a6b65d91b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Sec-WebSocket-Key header included in the handshake request.  <br /></td></tr>
+<tr class="separator:aa2be05a71e266ce0f7173a6b65d91b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4da1a84083b402783efb347ccec3abd" id="r_ac4da1a84083b402783efb347ccec3abd"><td class="memItemLeft" align="right" valign="top">override IEnumerable&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4da1a84083b402783efb347ccec3abd">SecWebSocketProtocols</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac4da1a84083b402783efb347ccec3abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the names of the subprotocols from the Sec-WebSocket-Protocol header included in the handshake request.  <br /></td></tr>
+<tr class="separator:ac4da1a84083b402783efb347ccec3abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288fc91fb76034bcad4f1cd16159e38f" id="r_a288fc91fb76034bcad4f1cd16159e38f"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a288fc91fb76034bcad4f1cd16159e38f">SecWebSocketVersion</a><code> [get]</code></td></tr>
+<tr class="memdesc:a288fc91fb76034bcad4f1cd16159e38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Sec-WebSocket-Version header included in the handshake request.  <br /></td></tr>
+<tr class="separator:a288fc91fb76034bcad4f1cd16159e38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9dc7cb45f849eb077d2af03e9869961" id="r_aa9dc7cb45f849eb077d2af03e9869961"><td class="memItemLeft" align="right" valign="top">override System.Net.IPEndPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9dc7cb45f849eb077d2af03e9869961">ServerEndPoint</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa9dc7cb45f849eb077d2af03e9869961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the endpoint to which the handshake request is sent.  <br /></td></tr>
+<tr class="separator:aa9dc7cb45f849eb077d2af03e9869961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070da61f47804322eb7d02f62fdbd624" id="r_a070da61f47804322eb7d02f62fdbd624"><td class="memItemLeft" align="right" valign="top">override IPrincipal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a070da61f47804322eb7d02f62fdbd624">User</a><code> [get]</code></td></tr>
+<tr class="memdesc:a070da61f47804322eb7d02f62fdbd624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the client information.  <br /></td></tr>
+<tr class="separator:a070da61f47804322eb7d02f62fdbd624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba3ba86b8873fb1d4b22d46d3668bad" id="r_adba3ba86b8873fb1d4b22d46d3668bad"><td class="memItemLeft" align="right" valign="top">override System.Net.IPEndPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adba3ba86b8873fb1d4b22d46d3668bad">UserEndPoint</a><code> [get]</code></td></tr>
+<tr class="memdesc:adba3ba86b8873fb1d4b22d46d3668bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the endpoint from which the handshake request is sent.  <br /></td></tr>
+<tr class="separator:adba3ba86b8873fb1d4b22d46d3668bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32282a72a64d35d6fa886ac20a5eda57" id="r_a32282a72a64d35d6fa886ac20a5eda57"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="class_web_socket_sharp_1_1_web_socket.html">WebSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32282a72a64d35d6fa886ac20a5eda57">WebSocket</a><code> [get]</code></td></tr>
+<tr class="memdesc:a32282a72a64d35d6fa886ac20a5eda57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface used for two-way communication between the client and server.  <br /></td></tr>
+<tr class="separator:a32282a72a64d35d6fa886ac20a5eda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html">WebSocketSharp.Net.WebSockets.WebSocketContext</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:a104c7aa1305c86df3a14ed83569b8718 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a104c7aa1305c86df3a14ed83569b8718"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie_collection.html">CookieCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a104c7aa1305c86df3a14ed83569b8718">CookieCollection</a><code> [get]</code></td></tr>
+<tr class="memdesc:a104c7aa1305c86df3a14ed83569b8718 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HTTP cookies included in the handshake request.  <br /></td></tr>
+<tr class="separator:a104c7aa1305c86df3a14ed83569b8718 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47c22fb4ff3ac7de5779b7c73f44e23 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_ad47c22fb4ff3ac7de5779b7c73f44e23"><td class="memItemLeft" align="right" valign="top">NameValueCollection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#ad47c22fb4ff3ac7de5779b7c73f44e23">Headers</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad47c22fb4ff3ac7de5779b7c73f44e23 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HTTP headers included in the handshake request.  <br /></td></tr>
+<tr class="separator:ad47c22fb4ff3ac7de5779b7c73f44e23 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0985ecef8bf24ed186c85a5d988a7cb inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_ac0985ecef8bf24ed186c85a5d988a7cb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#ac0985ecef8bf24ed186c85a5d988a7cb">Host</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac0985ecef8bf24ed186c85a5d988a7cb inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Host header included in the handshake request.  <br /></td></tr>
+<tr class="separator:ac0985ecef8bf24ed186c85a5d988a7cb inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396a5b08b360dcf6cfcfce62661a410c inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a396a5b08b360dcf6cfcfce62661a410c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a396a5b08b360dcf6cfcfce62661a410c">IsAuthenticated</a><code> [get]</code></td></tr>
+<tr class="memdesc:a396a5b08b360dcf6cfcfce62661a410c inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the client is authenticated.  <br /></td></tr>
+<tr class="separator:a396a5b08b360dcf6cfcfce62661a410c inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c09ffa41795bd2743c05ca36f0ce03 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a72c09ffa41795bd2743c05ca36f0ce03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a72c09ffa41795bd2743c05ca36f0ce03">IsLocal</a><code> [get]</code></td></tr>
+<tr class="memdesc:a72c09ffa41795bd2743c05ca36f0ce03 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the handshake request is sent from the local computer.  <br /></td></tr>
+<tr class="separator:a72c09ffa41795bd2743c05ca36f0ce03 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072df48ec6e5d9a44893906b1ddef819 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a072df48ec6e5d9a44893906b1ddef819"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a072df48ec6e5d9a44893906b1ddef819">IsSecureConnection</a><code> [get]</code></td></tr>
+<tr class="memdesc:a072df48ec6e5d9a44893906b1ddef819 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether a secure connection is used to send the handshake request.  <br /></td></tr>
+<tr class="separator:a072df48ec6e5d9a44893906b1ddef819 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e18b7c8875067c954ac686ff1fd06a inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_ad9e18b7c8875067c954ac686ff1fd06a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#ad9e18b7c8875067c954ac686ff1fd06a">IsWebSocketRequest</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad9e18b7c8875067c954ac686ff1fd06a inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the request is a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request.  <br /></td></tr>
+<tr class="separator:ad9e18b7c8875067c954ac686ff1fd06a inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a0f3496a69d16e591fa327cb83190c inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a99a0f3496a69d16e591fa327cb83190c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a99a0f3496a69d16e591fa327cb83190c">Origin</a><code> [get]</code></td></tr>
+<tr class="memdesc:a99a0f3496a69d16e591fa327cb83190c inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Origin header included in the handshake request.  <br /></td></tr>
+<tr class="separator:a99a0f3496a69d16e591fa327cb83190c inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893af3f0ac3439d6b22bedab2c8fadf5 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a893af3f0ac3439d6b22bedab2c8fadf5"><td class="memItemLeft" align="right" valign="top">NameValueCollection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a893af3f0ac3439d6b22bedab2c8fadf5">QueryString</a><code> [get]</code></td></tr>
+<tr class="memdesc:a893af3f0ac3439d6b22bedab2c8fadf5 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the query string included in the handshake request.  <br /></td></tr>
+<tr class="separator:a893af3f0ac3439d6b22bedab2c8fadf5 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b65a212556037d57da2aca869903a7 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a37b65a212556037d57da2aca869903a7"><td class="memItemLeft" align="right" valign="top">Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a37b65a212556037d57da2aca869903a7">RequestUri</a><code> [get]</code></td></tr>
+<tr class="memdesc:a37b65a212556037d57da2aca869903a7 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the URI requested by the client.  <br /></td></tr>
+<tr class="separator:a37b65a212556037d57da2aca869903a7 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b587240296fb37fd89e708ecfd26fbb inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a1b587240296fb37fd89e708ecfd26fbb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a1b587240296fb37fd89e708ecfd26fbb">SecWebSocketKey</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1b587240296fb37fd89e708ecfd26fbb inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Sec-WebSocket-Key header included in the handshake request.  <br /></td></tr>
+<tr class="separator:a1b587240296fb37fd89e708ecfd26fbb inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81e208d94ffeabe3176495359f966b2 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_aa81e208d94ffeabe3176495359f966b2"><td class="memItemLeft" align="right" valign="top">IEnumerable&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#aa81e208d94ffeabe3176495359f966b2">SecWebSocketProtocols</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa81e208d94ffeabe3176495359f966b2 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the names of the subprotocols from the Sec-WebSocket-Protocol header included in the handshake request.  <br /></td></tr>
+<tr class="separator:aa81e208d94ffeabe3176495359f966b2 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c89c302a9c3af95edb447ea065df6cd inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a3c89c302a9c3af95edb447ea065df6cd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a3c89c302a9c3af95edb447ea065df6cd">SecWebSocketVersion</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3c89c302a9c3af95edb447ea065df6cd inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value of the Sec-WebSocket-Version header included in the handshake request.  <br /></td></tr>
+<tr class="separator:a3c89c302a9c3af95edb447ea065df6cd inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b10977aa1a225e64b811893c2c9812 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a66b10977aa1a225e64b811893c2c9812"><td class="memItemLeft" align="right" valign="top">System.Net.IPEndPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a66b10977aa1a225e64b811893c2c9812">ServerEndPoint</a><code> [get]</code></td></tr>
+<tr class="memdesc:a66b10977aa1a225e64b811893c2c9812 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the endpoint to which the handshake request is sent.  <br /></td></tr>
+<tr class="separator:a66b10977aa1a225e64b811893c2c9812 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16b8f5635c85a5d4790c7a44280dfe4 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_af16b8f5635c85a5d4790c7a44280dfe4"><td class="memItemLeft" align="right" valign="top">IPrincipal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#af16b8f5635c85a5d4790c7a44280dfe4">User</a><code> [get]</code></td></tr>
+<tr class="memdesc:af16b8f5635c85a5d4790c7a44280dfe4 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the client information.  <br /></td></tr>
+<tr class="separator:af16b8f5635c85a5d4790c7a44280dfe4 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d85ecee647e5805d6c886bf5ca2801 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_ac5d85ecee647e5805d6c886bf5ca2801"><td class="memItemLeft" align="right" valign="top">System.Net.IPEndPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#ac5d85ecee647e5805d6c886bf5ca2801">UserEndPoint</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac5d85ecee647e5805d6c886bf5ca2801 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the endpoint from which the handshake request is sent.  <br /></td></tr>
+<tr class="separator:ac5d85ecee647e5805d6c886bf5ca2801 inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b7e5b1b5fe4bcf31044a175770d0ea inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a04b7e5b1b5fe4bcf31044a175770d0ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_web_socket_sharp_1_1_web_socket.html">WebSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html#a04b7e5b1b5fe4bcf31044a175770d0ea">WebSocket</a><code> [get]</code></td></tr>
+<tr class="memdesc:a04b7e5b1b5fe4bcf31044a175770d0ea inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface used for two-way communication between the client and server.  <br /></td></tr>
+<tr class="separator:a04b7e5b1b5fe4bcf31044a175770d0ea inherit properties_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html">WebSocketSharp.Net.WebSockets.WebSocketContext</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a8a2988e6a7c90a106ad03ff416e054d9 inherit pro_methods_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context" id="r_a8a2988e6a7c90a106ad03ff416e054d9"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>WebSocketContext</b> ()</td></tr>
+<tr class="memdesc:a8a2988e6a7c90a106ad03ff416e054d9 inherit pro_methods_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context.html" title="Exposes the access to the information in a WebSocket handshake request.">WebSocketContext</a> class. <br /></td></tr>
+<tr class="separator:a8a2988e6a7c90a106ad03ff416e054d9 inherit pro_methods_class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_web_socket_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Provides the access to the information in a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request to a <a class="el" href="class_web_socket_sharp_1_1_net_1_1_http_listener.html" title="Provides a simple, programmatically controlled HTTP listener.">HttpListener</a> instance. </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a4aa6a368341cc6fa494e85c01b56a058" name="a4aa6a368341cc6fa494e85c01b56a058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa6a368341cc6fa494e85c01b56a058">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a string that represents the current instance. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A string that contains the request line and headers included in the handshake request. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="aee6b7507326120cad68a07ac855dd2a5" name="aee6b7507326120cad68a07ac855dd2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6b7507326120cad68a07ac855dd2a5">&#9670;&#160;</a></span>CookieCollection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie_collection.html">CookieCollection</a> WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.CookieCollection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the HTTP cookies included in the handshake request. </p>
+<p>A <a class="el" href="class_web_socket_sharp_1_1_net_1_1_cookie_collection.html" title="Provides a collection of instances of the Cookie class.">WebSocketSharp.Net.CookieCollection</a> that contains the cookies. </p>
+<p>An empty collection if not included. </p>
+
+</div>
+</div>
+<a id="ad12e40b22d0b48c02537f7a6562d071f" name="ad12e40b22d0b48c02537f7a6562d071f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12e40b22d0b48c02537f7a6562d071f">&#9670;&#160;</a></span>Headers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override NameValueCollection WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.Headers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the HTTP headers included in the handshake request. </p>
+<p>A NameValueCollection that contains the headers. </p>
+
+</div>
+</div>
+<a id="a50fba3da81526bc7f474636336720b6d" name="a50fba3da81526bc7f474636336720b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fba3da81526bc7f474636336720b6d">&#9670;&#160;</a></span>Host</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.Host</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the Host header included in the handshake request. </p>
+<p>A string that represents the server host name requested by the client. </p>
+<p>It includes the port number if provided. </p>
+
+</div>
+</div>
+<a id="a332ccec036e56b7bd1d15c33322da064" name="a332ccec036e56b7bd1d15c33322da064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332ccec036e56b7bd1d15c33322da064">&#9670;&#160;</a></span>IsAuthenticated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.IsAuthenticated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the client is authenticated. </p>
+<p><code>true</code> if the client is authenticated; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="af94cfa46b3adfac6b3bf56326078209b" name="af94cfa46b3adfac6b3bf56326078209b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af94cfa46b3adfac6b3bf56326078209b">&#9670;&#160;</a></span>IsLocal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.IsLocal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the handshake request is sent from the local computer. </p>
+<p><code>true</code> if the handshake request is sent from the same computer as the server; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="aa0849f283a0ce4e565f9a670f24dc616" name="aa0849f283a0ce4e565f9a670f24dc616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0849f283a0ce4e565f9a670f24dc616">&#9670;&#160;</a></span>IsSecureConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.IsSecureConnection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether a secure connection is used to send the handshake request. </p>
+<p><code>true</code> if the connection is secure; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="adc747ddb92a30d1b54eb46fd0ad345ac" name="adc747ddb92a30d1b54eb46fd0ad345ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc747ddb92a30d1b54eb46fd0ad345ac">&#9670;&#160;</a></span>IsWebSocketRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.IsWebSocketRequest</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether the request is a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request. </p>
+<p><code>true</code> if the request is a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a76ddd1588314356959b8a7d2b33b11e1" name="a76ddd1588314356959b8a7d2b33b11e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ddd1588314356959b8a7d2b33b11e1">&#9670;&#160;</a></span>Origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.Origin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the Origin header included in the handshake request. </p>
+<p>A string that represents the value of the Origin header. </p>
+<p><code>null</code> if not included. </p>
+
+</div>
+</div>
+<a id="abb3eebcf26f2546060d1999f2bc6732e" name="abb3eebcf26f2546060d1999f2bc6732e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb3eebcf26f2546060d1999f2bc6732e">&#9670;&#160;</a></span>QueryString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override NameValueCollection WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.QueryString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the query string included in the handshake request. </p>
+<p>A NameValueCollection that contains the query parameters. </p>
+<p>An empty collection if not included. </p>
+
+</div>
+</div>
+<a id="a1426cf9c92740071af2bcca3bd34d3ab" name="a1426cf9c92740071af2bcca3bd34d3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1426cf9c92740071af2bcca3bd34d3ab">&#9670;&#160;</a></span>RequestUri</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override Uri WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.RequestUri</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the URI requested by the client. </p>
+<p>A Uri that represents the URI parsed from the request. </p>
+<p><code>null</code> if the URI cannot be parsed. </p>
+
+</div>
+</div>
+<a id="aa2be05a71e266ce0f7173a6b65d91b6d" name="aa2be05a71e266ce0f7173a6b65d91b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2be05a71e266ce0f7173a6b65d91b6d">&#9670;&#160;</a></span>SecWebSocketKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the Sec-WebSocket-Key header included in the handshake request. </p>
+<p>A string that represents the value of the Sec-WebSocket-Key header. </p>
+<p>The value is used to prove that the server received a valid <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> handshake request. </p>
+<p><code>null</code> if not included. </p>
+
+</div>
+</div>
+<a id="ac4da1a84083b402783efb347ccec3abd" name="ac4da1a84083b402783efb347ccec3abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4da1a84083b402783efb347ccec3abd">&#9670;&#160;</a></span>SecWebSocketProtocols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override IEnumerable&lt;string&gt; WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketProtocols</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the names of the subprotocols from the Sec-WebSocket-Protocol header included in the handshake request. </p>
+<p>An T:System.Collections.Generic.IEnumerable&lt;string&gt; instance. </p>
+<p>It provides an enumerator which supports the iteration over the collection of the names of the subprotocols. </p>
+
+</div>
+</div>
+<a id="a288fc91fb76034bcad4f1cd16159e38f" name="a288fc91fb76034bcad4f1cd16159e38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288fc91fb76034bcad4f1cd16159e38f">&#9670;&#160;</a></span>SecWebSocketVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.SecWebSocketVersion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value of the Sec-WebSocket-Version header included in the handshake request. </p>
+<p>A string that represents the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> protocol version specified by the client. </p>
+<p><code>null</code> if not included. </p>
+
+</div>
+</div>
+<a id="aa9dc7cb45f849eb077d2af03e9869961" name="aa9dc7cb45f849eb077d2af03e9869961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9dc7cb45f849eb077d2af03e9869961">&#9670;&#160;</a></span>ServerEndPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override System.Net.IPEndPoint WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.ServerEndPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the endpoint to which the handshake request is sent. </p>
+<p>A System.Net.IPEndPoint that represents the server IP address and port number. </p>
+
+</div>
+</div>
+<a id="a070da61f47804322eb7d02f62fdbd624" name="a070da61f47804322eb7d02f62fdbd624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070da61f47804322eb7d02f62fdbd624">&#9670;&#160;</a></span>User</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override IPrincipal WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.User</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the client information. </p>
+<p>A IPrincipal instance that represents identity, authentication, and security roles for the client. </p>
+<p><code>null</code> if the client is not authenticated. </p>
+
+</div>
+</div>
+<a id="adba3ba86b8873fb1d4b22d46d3668bad" name="adba3ba86b8873fb1d4b22d46d3668bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba3ba86b8873fb1d4b22d46d3668bad">&#9670;&#160;</a></span>UserEndPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override System.Net.IPEndPoint WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.UserEndPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the endpoint from which the handshake request is sent. </p>
+<p>A System.Net.IPEndPoint that represents the client IP address and port number. </p>
+
+</div>
+</div>
+<a id="a32282a72a64d35d6fa886ac20a5eda57" name="a32282a72a64d35d6fa886ac20a5eda57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32282a72a64d35d6fa886ac20a5eda57">&#9670;&#160;</a></span>WebSocket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="class_web_socket_sharp_1_1_web_socket.html">WebSocket</a> WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext.WebSocket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> interface used for two-way communication between the client and server. </p>
+<p>A <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocketSharp.WebSocket</a> that represents the interface. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SkyWayUnitySDK/Assets/SkyWay/Scripts/Deps/websocket-sharp/websocket-sharp/Net/WebSockets/<b>HttpListenerWebSocketContext.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a class="el" href="namespace_web_socket_sharp_1_1_net.html">Net</a></li><li class="navelem"><a class="el" href="namespace_web_socket_sharp_1_1_net_1_1_web_sockets.html">WebSockets</a></li><li class="navelem"><a class="el" href="class_web_socket_sharp_1_1_net_1_1_web_sockets_1_1_http_listener_web_socket_context.html">HttpListenerWebSocketContext</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>
