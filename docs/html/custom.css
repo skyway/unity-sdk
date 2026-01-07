@@ -1,0 +1,18 @@
+html {
+    --side-nav-background: #0E293E;
+    --side-nav-foreground: #fbfbfb;
+    --header-foreground: #fbfbfb;
+    --github-background: #0E293E;
+}
+
+html.dark-mode {
+    --side-nav-background: #0E293E;
+    --github-background: #fbfbfb;
+}
+
+.github-corner svg {
+    fill: var(--github-background);
+    color: var(--page-background-color);
+    width: 72px;
+    height: 72px;
+}
