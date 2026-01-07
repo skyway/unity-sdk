@@ -162,6 +162,14 @@ $(function(){initNavTree('class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_s
 <a class="el" href="class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_local_audio_stream.html">SWLocalAudioStream</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStream</b> ()</td></tr>
 <tr class="memdesc:ade70838b15033370833d27893f25cd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish可能なSWLocalAudioStreamを生成します。 <br /></td></tr>
 <tr class="separator:ade70838b15033370833d27893f25cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c12a03c3979e5a7731000a206798999" id="r_a8c12a03c3979e5a7731000a206798999"><td class="memItemLeft" align="right" valign="top"><a id="a8c12a03c3979e5a7731000a206798999" name="a8c12a03c3979e5a7731000a206798999"></a>
+<a class="el" href="struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html">SWAudioDevice</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllRecordingDevices</b> ()</td></tr>
+<tr class="memdesc:a8c12a03c3979e5a7731000a206798999"><td class="mdescLeft">&#160;</td><td class="mdescRight">利用可能な音声入力デバイスの一覧を取得します。 Windows以外ではご利用できません。 <br /></td></tr>
+<tr class="separator:a8c12a03c3979e5a7731000a206798999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada216daebdb72fb5943f9a0b52eea5b1" id="r_ada216daebdb72fb5943f9a0b52eea5b1"><td class="memItemLeft" align="right" valign="top"><a id="ada216daebdb72fb5943f9a0b52eea5b1" name="ada216daebdb72fb5943f9a0b52eea5b1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecordingDevice</b> (<a class="el" href="struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html">SWAudioDevice</a> device)</td></tr>
+<tr class="memdesc:ada216daebdb72fb5943f9a0b52eea5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">音声入力デバイスを指定します。 Windows以外ではご利用できません。 <code>Publish</code>している音声ソースに対して行いたい場合は一度<code>Unpublish</code>してから実行してください。 <br /></td></tr>
+<tr class="separator:ada216daebdb72fb5943f9a0b52eea5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>音声入力に関する操作を行うクラス。 </p>

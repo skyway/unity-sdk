@@ -5,6 +5,7 @@ var annotated_dup =
         [ "SkyWay", "namespace_com_1_1_ntt_1_1_sky_way.html", [
           [ "Core", "namespace_com_1_1_ntt_1_1_sky_way_1_1_core.html", [
             [ "RtcConfig", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_rtc_config.html", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_rtc_config" ],
+            [ "SWAudioDevice", "struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html", "struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device" ],
             [ "SWAudioSink", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_sink.html", null ],
             [ "SWAudioSource", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_source.html", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_source" ],
             [ "SWContext", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context" ],

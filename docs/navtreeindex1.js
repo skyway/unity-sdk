@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"class_web_socket_sharp_1_1_net_1_1_http_listener.html#ad53d5a5848c4dcdde31a7a2fb811908a":[5,0,1,0,7,4],
 "class_web_socket_sharp_1_1_net_1_1_http_listener.html#aee6368852331a3ab228acda1b19d3402":[5,0,1,0,7,1],
 "class_web_socket_sharp_1_1_net_1_1_http_listener.html#afe787656345d40a84cf962c92bcf34a7":[5,0,1,0,7,13],
 "class_web_socket_sharp_1_1_net_1_1_http_listener_context.html":[5,0,1,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_web_socket_sharp_1_1_server_1_1_web_socket_behavior.html#af64fb24cfd229793fcc775e0beab4f89":[5,0,1,1,3,15],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html":[5,0,1,1,4],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a069ca555b0b947b41ed68735a1baa977":[5,0,1,1,4,9],
-"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0977fb3ad05d5c0387cc6e2d90e88c5e":[5,0,1,1,4,10],
-"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0a6ba933ed4ab3c3d307124bc78485f2":[5,0,1,1,4,21]
+"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0977fb3ad05d5c0387cc6e2d90e88c5e":[5,0,1,1,4,10]
 };

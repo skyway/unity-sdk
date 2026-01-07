@@ -86,8 +86,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_web_socket_sharp_1_1_net_1_1_http_listener.html#aee6368852331a3ab228acda1b19d3402",
-"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0e483f66b347a98a2b11fe32c2078882"
+"class_web_socket_sharp_1_1_net_1_1_http_listener.html#ad53d5a5848c4dcdde31a7a2fb811908a",
+"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0a6ba933ed4ab3c3d307124bc78485f2"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['issetup_0',['isSetup',['../class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a71a7f827cda98d814a87ba4455438b40',1,'Com::Ntt::SkyWay::Core::SWContext']]]
+  ['deviceid_0',['deviceId',['../struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html#ae1b2c985bac309e962e28db862836f4b',1,'Com::Ntt::SkyWay::Core::SWAudioDevice']]],
+  ['devicename_1',['deviceName',['../struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html#a535ca2084730454361ed41060bfef563',1,'Com::Ntt::SkyWay::Core::SWAudioDevice']]]
 ];

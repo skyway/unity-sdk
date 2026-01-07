@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0a6ba933ed4ab3c3d307124bc78485f2":[5,0,1,1,4,21],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0e483f66b347a98a2b11fe32c2078882":[5,0,1,1,4,5],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a1b04dd72fc586ace31f06b354b30a71e":[5,0,1,1,4,18],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a25cf9913517f846e43213025f101abe1":[5,0,1,1,4,16],
@@ -217,5 +218,8 @@ var NAVTREEINDEX2 =
 "md__sky_way_unity_s_d_k_2_assets_2_sky_way_2_scripts_2_deps_2websocket-sharp_2_r_e_a_d_m_e.html":[3],
 "namespacemembers.html":[4,0],
 "namespacemembers_enum.html":[4,1],
-"pages.html":[]
+"pages.html":[],
+"struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html":[5,0,0,0,0,0,1],
+"struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html#a535ca2084730454361ed41060bfef563":[5,0,0,0,0,0,1,1],
+"struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html#ae1b2c985bac309e962e28db862836f4b":[5,0,0,0,0,0,1,0]
 };

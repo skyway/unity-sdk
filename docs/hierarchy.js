@@ -27,6 +27,7 @@ var hierarchy =
     [ "WebSocketSharp.Net.NetworkCredential", "class_web_socket_sharp_1_1_net_1_1_network_credential.html", null ],
     [ "Com.Ntt.SkyWay.Core.RtcConfig", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_rtc_config.html", null ],
     [ "WebSocketSharp.Net.ServerSslConfiguration", "class_web_socket_sharp_1_1_net_1_1_server_ssl_configuration.html", null ],
+    [ "Com.Ntt.SkyWay.Core.SWAudioDevice", "struct_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_device.html", null ],
     [ "Com.Ntt.SkyWay.Core.SWAudioSink", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_sink.html", null ],
     [ "Com.Ntt.SkyWay.Core.SWAudioSource", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_audio_source.html", null ],
     [ "Com.Ntt.SkyWay.Core.SWContext", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html", null ],
