@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0977fb3ad05d5c0387cc6e2d90e88c5e":[5,0,1,1,4,10],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0a6ba933ed4ab3c3d307124bc78485f2":[5,0,1,1,4,21],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a0e483f66b347a98a2b11fe32c2078882":[5,0,1,1,4,5],
 "class_web_socket_sharp_1_1_server_1_1_web_socket_server.html#a1b04dd72fc586ace31f06b354b30a71e":[5,0,1,1,4,18],
