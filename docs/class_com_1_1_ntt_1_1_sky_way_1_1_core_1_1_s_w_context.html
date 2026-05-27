@@ -162,6 +162,9 @@ $(function(){initNavTree('class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context
 <tr class="memitem:af1d2ec5986b211c866b28e6a24022917" id="r_af1d2ec5986b211c866b28e6a24022917"><td class="memItemLeft" align="right" valign="top">static async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1d2ec5986b211c866b28e6a24022917">Setup</a> (string token, <a class="el" href="class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context_options.html">SWContextOptions</a>? option=null)</td></tr>
 <tr class="memdesc:af1d2ec5986b211c866b28e6a24022917"><td class="mdescLeft">&#160;</td><td class="mdescRight">SkyWayの利用を開始します。 既に開始している場合はログを出力し、何も行いません。 Optionを変更したい場合は一度Disposeを行ってから再度実行してください。  <br /></td></tr>
 <tr class="separator:af1d2ec5986b211c866b28e6a24022917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb5b8efccbe25616cc1edfc2fe1a336" id="r_a8cb5b8efccbe25616cc1edfc2fe1a336"><td class="memItemLeft" align="right" valign="top">static async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cb5b8efccbe25616cc1edfc2fe1a336">SetupForDev</a> (string appId, string secretKey, <a class="el" href="class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context_options.html">SWContextOptions</a>? option=null)</td></tr>
+<tr class="memdesc:a8cb5b8efccbe25616cc1edfc2fe1a336"><td class="mdescLeft">&#160;</td><td class="mdescRight">SkyWayの利用を開始します。 このメソッドは、クイックスタートなどアプリの動作を確認する際に利用するためのものです。 認証情報の漏洩を防ぐため、このメソッドをリリース版アプリで利用することは控えてください。  <br /></td></tr>
+<tr class="separator:a8cb5b8efccbe25616cc1edfc2fe1a336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a2eb17f39a8cd2e37ef9bc0718ade4" id="r_ad6a2eb17f39a8cd2e37ef9bc0718ade4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6a2eb17f39a8cd2e37ef9bc0718ade4">UpdateAuthToken</a> (string authToken)</td></tr>
 <tr class="memdesc:ad6a2eb17f39a8cd2e37ef9bc0718ade4"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuthTokenを更新します。  <br /></td></tr>
 <tr class="separator:ad6a2eb17f39a8cd2e37ef9bc0718ade4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +234,50 @@ static ? Action&#160;</td><td class="memItemRight" valign="bottom"><b>onTokenExp
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">token</td><td>SkyWayの認証。</td></tr>
+    <tr><td class="paramname">option</td><td>SkyWayの通信の設定、ログレベルの設定。</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8cb5b8efccbe25616cc1edfc2fe1a336" name="a8cb5b8efccbe25616cc1edfc2fe1a336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb5b8efccbe25616cc1edfc2fe1a336">&#9670;&#160;</a></span>SetupForDev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async Task&lt; bool &gt; Com.Ntt.SkyWay.Core.SWContext.SetupForDev </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>appId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>secretKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context_options.html">SWContextOptions</a>?</td>          <td class="paramname"><span class="paramname"><em>option</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SkyWayの利用を開始します。 このメソッドは、クイックスタートなどアプリの動作を確認する際に利用するためのものです。 認証情報の漏洩を防ぐため、このメソッドをリリース版アプリで利用することは控えてください。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appId</td><td>アプリケーションID</td></tr>
+    <tr><td class="paramname">secretKey</td><td>シークレットキー</td></tr>
     <tr><td class="paramname">option</td><td>SkyWayの通信の設定、ログレベルの設定。</td></tr>
   </table>
   </dd>

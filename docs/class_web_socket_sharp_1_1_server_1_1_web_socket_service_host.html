@@ -1,0 +1,448 @@
+<!-- HTML header for doxygen 1.12.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NN5JX4B');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.17.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyWay Unity SDK: WebSocketSharp.Server.WebSocketServiceHost クラス</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN5JX4B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- https://tholman.com/github-corners/ -->
+  <a href="https://github.com/skyway/unity-sdk-beta" class="github-corner" title="View source on GitHub" target="_blank"
+    rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40"
+      style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg></a>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo-icon.svg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">SkyWay Unity SDK
+                </div>
+                <div id="projectbrief">公式APIリファレンス</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- 構築: Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_web_socket_sharp_1_1_server_1_1_web_socket_service_host.html','','class_web_socket_sharp_1_1_server_1_1_web_socket_service_host-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">WebSocketSharp.Server.WebSocketServiceHost クラス<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Exposes the methods and properties used to access the information in a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service provided by the WebSocketServer or HttpServer class.  
+ <a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:aaa71b87d255fc12c52d7e9036f76027c" id="r_aaa71b87d255fc12c52d7e9036f76027c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaa71b87d255fc12c52d7e9036f76027c">WebSocketServiceHost</a> (string path, <a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a> log)</td></tr>
+<tr class="memdesc:aaa71b87d255fc12c52d7e9036f76027c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the WebSocketServiceHost class with the specified path and logging function.  <br /></td></tr>
+<tr class="memitem:ab3ebca20583472394a206a46d5017c71" id="r_ab3ebca20583472394a206a46d5017c71"><td class="memItemLeft"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_behavior.html">WebSocketBehavior</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab3ebca20583472394a206a46d5017c71">CreateSession</a> ()</td></tr>
+<tr class="memdesc:ab3ebca20583472394a206a46d5017c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new session for the service.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a0d6249ae94bb6a859eb76299ebd7c1a4" id="r_a0d6249ae94bb6a859eb76299ebd7c1a4"><td class="memItemLeft"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0d6249ae94bb6a859eb76299ebd7c1a4">Log</a><code> [get]</code></td></tr>
+<tr class="memdesc:a0d6249ae94bb6a859eb76299ebd7c1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the logging function for the service.  <br /></td></tr>
+<tr class="memitem:ab3db84310e30be5f4a054392048e3c26" id="r_ab3db84310e30be5f4a054392048e3c26"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab3db84310e30be5f4a054392048e3c26">KeepClean</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab3db84310e30be5f4a054392048e3c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the service cleans up the inactive sessions periodically.  <br /></td></tr>
+<tr class="memitem:a02c8c752cf97af06b5d20a5299a08301" id="r_a02c8c752cf97af06b5d20a5299a08301"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a02c8c752cf97af06b5d20a5299a08301">Path</a><code> [get]</code></td></tr>
+<tr class="memdesc:a02c8c752cf97af06b5d20a5299a08301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path to the service.  <br /></td></tr>
+<tr class="memitem:a7b9d2ce7b2d37df8dc74547001ff73ce" id="r_a7b9d2ce7b2d37df8dc74547001ff73ce"><td class="memItemLeft"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html">WebSocketSessionManager</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7b9d2ce7b2d37df8dc74547001ff73ce">Sessions</a><code> [get]</code></td></tr>
+<tr class="memdesc:a7b9d2ce7b2d37df8dc74547001ff73ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the management function for the sessions in the service.  <br /></td></tr>
+<tr class="memitem:a625f5ece9ef010ea02e026363efd4332" id="r_a625f5ece9ef010ea02e026363efd4332"><td class="memItemLeft">Type&#160;</td><td class="memItemRight"><a class="el" href="#a625f5ece9ef010ea02e026363efd4332">BehaviorType</a><code> [get]</code></td></tr>
+<tr class="memdesc:a625f5ece9ef010ea02e026363efd4332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the behavior of the service.  <br /></td></tr>
+<tr class="memitem:a3e6bb171bd19cc7443512403dc9febcf" id="r_a3e6bb171bd19cc7443512403dc9febcf"><td class="memItemLeft">TimeSpan&#160;</td><td class="memItemRight"><a class="el" href="#a3e6bb171bd19cc7443512403dc9febcf">WaitTime</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3e6bb171bd19cc7443512403dc9febcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the time to wait for the response to the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> Ping or Close.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>Exposes the methods and properties used to access the information in a <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> service provided by the WebSocketServer or HttpServer class. </p>
+<p>This class is an abstract class. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="aaa71b87d255fc12c52d7e9036f76027c" name="aaa71b87d255fc12c52d7e9036f76027c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa71b87d255fc12c52d7e9036f76027c">&#9670;&#160;</a></span>WebSocketServiceHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebSocketSharp.Server.WebSocketServiceHost.WebSocketServiceHost </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a></td>          <td class="paramname"><span class="paramname"><em>log</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the WebSocketServiceHost class with the specified path and logging function. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A string that specifies the absolute path to the service. </td></tr>
+    <tr><td class="paramname">log</td><td>A Logger that specifies the logging function for the service. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ab3ebca20583472394a206a46d5017c71" name="ab3ebca20583472394a206a46d5017c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ebca20583472394a206a46d5017c71">&#9670;&#160;</a></span>CreateSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_behavior.html">WebSocketBehavior</a> WebSocketSharp.Server.WebSocketServiceHost.CreateSession </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel abstract">abstract</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new session for the service. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A WebSocketBehavior instance that represents the new session. </dd></dl>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">プロパティ詳解</h2>
+<a id="a625f5ece9ef010ea02e026363efd4332" name="a625f5ece9ef010ea02e026363efd4332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625f5ece9ef010ea02e026363efd4332">&#9670;&#160;</a></span>BehaviorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type WebSocketSharp.Server.WebSocketServiceHost.BehaviorType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel abstract">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the type of the behavior of the service. </p>
+<p>A Type that represents the type of the behavior of the service. </p>
+
+</div>
+</div>
+<a id="ab3db84310e30be5f4a054392048e3c26" name="ab3db84310e30be5f4a054392048e3c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3db84310e30be5f4a054392048e3c26">&#9670;&#160;</a></span>KeepClean</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WebSocketSharp.Server.WebSocketServiceHost.KeepClean</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether the service cleans up the inactive sessions periodically. </p>
+<p>The set operation works if the current state of the service is Ready or Stop. </p>
+<p><code>true</code> if the service cleans up the inactive sessions every 60 seconds; otherwise, <code>false</code>. </p>
+
+</div>
+</div>
+<a id="a0d6249ae94bb6a859eb76299ebd7c1a4" name="a0d6249ae94bb6a859eb76299ebd7c1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6249ae94bb6a859eb76299ebd7c1a4">&#9670;&#160;</a></span>Log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_logger.html">Logger</a> WebSocketSharp.Server.WebSocketServiceHost.Log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the logging function for the service. </p>
+<p>A Logger that provides the logging function. </p>
+
+</div>
+</div>
+<a id="a02c8c752cf97af06b5d20a5299a08301" name="a02c8c752cf97af06b5d20a5299a08301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c8c752cf97af06b5d20a5299a08301">&#9670;&#160;</a></span>Path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WebSocketSharp.Server.WebSocketServiceHost.Path</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the path to the service. </p>
+<p>A string that represents the absolute path to the service. </p>
+
+</div>
+</div>
+<a id="a7b9d2ce7b2d37df8dc74547001ff73ce" name="a7b9d2ce7b2d37df8dc74547001ff73ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9d2ce7b2d37df8dc74547001ff73ce">&#9670;&#160;</a></span>Sessions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_web_socket_sharp_1_1_server_1_1_web_socket_session_manager.html">WebSocketSessionManager</a> WebSocketSharp.Server.WebSocketServiceHost.Sessions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the management function for the sessions in the service. </p>
+<p>A WebSocketSessionManager that manages the sessions in the service. </p>
+
+</div>
+</div>
+<a id="a3e6bb171bd19cc7443512403dc9febcf" name="a3e6bb171bd19cc7443512403dc9febcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6bb171bd19cc7443512403dc9febcf">&#9670;&#160;</a></span>WaitTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeSpan WebSocketSharp.Server.WebSocketServiceHost.WaitTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the time to wait for the response to the <a class="el" href="class_web_socket_sharp_1_1_web_socket.html" title="Implements the WebSocket interface.">WebSocket</a> Ping or Close. </p>
+<p>The set operation works if the current state of the service is Ready or Stop. </p>
+<p>A TimeSpan that represents the time to wait for the response. </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>The value specified for a set operation is zero or less. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>SkyWayUnitySDK/Assets/SkyWay/Scripts/Deps/websocket-sharp/websocket-sharp/Server/<b>WebSocketServiceHost.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.12.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_web_socket_sharp.html">WebSocketSharp</a></li><li class="navelem"><a href="namespace_web_socket_sharp_1_1_server.html">Server</a></li><li class="navelem"><a href="class_web_socket_sharp_1_1_server_1_1_web_socket_service_host.html">WebSocketServiceHost</a></li>
+    <li class="footer">
+      ©NTT DOCOMO BUSINESS, Inc. All Rights Reserved.
+      Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg"
+          width="104" height="31" alt="doxygen" /></a></li>
+  </ul>
+</div>
+</body>
+</html>

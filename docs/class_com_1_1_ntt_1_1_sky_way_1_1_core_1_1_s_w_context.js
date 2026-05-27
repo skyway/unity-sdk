@@ -2,6 +2,7 @@ var class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context =
 [
     [ "Dispose", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a67c8c13077c867eb51da6feb454799a1", null ],
     [ "Setup", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#af1d2ec5986b211c866b28e6a24022917", null ],
+    [ "SetupForDev", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a8cb5b8efccbe25616cc1edfc2fe1a336", null ],
     [ "UpdateAuthToken", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#ad6a2eb17f39a8cd2e37ef9bc0718ade4", null ],
     [ "isSetup", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a71a7f827cda98d814a87ba4455438b40", null ],
     [ "onErrorHandler", "class_com_1_1_ntt_1_1_sky_way_1_1_core_1_1_s_w_context.html#a6e7d1debc77d2a79b3ec28ed2900e93e", null ],
